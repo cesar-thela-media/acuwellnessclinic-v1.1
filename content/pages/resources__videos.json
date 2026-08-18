@@ -1,0 +1,22 @@
+{
+  "path": "/resources/videos",
+  "type": "page",
+  "title": "Videos",
+  "metaTitle": "Videos » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX",
+  "metaDescription": "Videos  What is NADA?",
+  "canonicalPath": "/resources/videos",
+  "date": "2017-02-01T12:55:37",
+  "modified": "2017-02-01T12:55:37",
+  "excerpt": "<p>Videos What is NADA?</p>\n",
+  "image": "/media/wp-content/uploads/2019/02/Artboard-1@sishou-1024x1024.png",
+  "html": "<section id=\"section-8-2949\" class=\" ct-section\" ><div class=\"ct-section-inner-wrap\"><h1 id=\"headline-10-2949\" class=\"ct-headline\"><span id=\"span-11-2949\" class=\"ct-span\" >Videos</span></h1></div></section><section id=\"section-3-2949\" class=\" ct-section\" ><div class=\"ct-section-inner-wrap\"><div id=\"text_block-5-2949\" class=\"ct-text-block\" ><span id=\"span-6-2949\" class=\"ct-span oxy-stock-content-styles\" ><p><strong>Videos</strong></p>\n<p>What is NADA?</p>\n<p><iframe loading=\"lazy\" src=\"//www.youtube.com/embed/dGj0Om-6RzU\" width=\"560\" height=\"315\" frameborder=\"0\" allowfullscreen=\"allowfullscreen\"></iframe></p>\n</span></div></div></section>",
+  "categories": [],
+  "tags": [],
+  "author": 33,
+  "count": null,
+  "schemaTypes": [
+    "WebPage",
+    "BreadcrumbList",
+    "WebSite"
+  ]
+}

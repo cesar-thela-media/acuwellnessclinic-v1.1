@@ -1,0 +1,190 @@
+[
+  {
+    "route": "/",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [
+      "Leave this field empty if you're human:"
+    ],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 15,
+    "localSentenceCount": 20
+  },
+  {
+    "route": "/about-us",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 9,
+    "localSentenceCount": 14
+  },
+  {
+    "route": "/our-team",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 35,
+    "localSentenceCount": 41
+  },
+  {
+    "route": "/testimonials",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 78,
+    "localSentenceCount": 84
+  },
+  {
+    "route": "/clinic-forms",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 4,
+    "localSentenceCount": 10
+  },
+  {
+    "route": "/contact",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [
+      "Contact Form Demo First Name Last Name Email Phone/Mobile Subject - Select - General Appointment Request Testimonial Submission Question Comment Your Message Submit Form Disclaimer: Please refrain from submitting any individually identifiable health information through this form."
+    ],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 5,
+    "localSentenceCount": 10
+  },
+  {
+    "route": "/contact/map-directions",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 0,
+    "localSentenceCount": 6
+  },
+  {
+    "route": "/what-is-acupuncture",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 34,
+    "localSentenceCount": 39
+  },
+  {
+    "route": "/what-is-acupuncture/first-visit",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 22,
+    "localSentenceCount": 27
+  },
+  {
+    "route": "/treatment-modalities",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [
+      "Tuina (Asian Bodywork) Click here for details about Tuina. <section"
+    ],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 15,
+    "localSentenceCount": 20
+  },
+  {
+    "route": "/cancellations-late-arrivals",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 15,
+    "localSentenceCount": 20
+  },
+  {
+    "route": "/does-acupuncture-hurt",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 11,
+    "localSentenceCount": 16
+  },
+  {
+    "route": "/apw_wwt/pain",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 27,
+    "localSentenceCount": 32
+  },
+  {
+    "route": "/apw_qa/does-it-hurt",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "missingSentences": [],
+    "missingImages": [],
+    "missingCtas": [],
+    "missingFields": [],
+    "missingDisclaimer": false,
+    "missingSubmit": false,
+    "liveSentenceCount": 3,
+    "localSentenceCount": 8
+  }
+]

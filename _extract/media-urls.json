@@ -1,0 +1,4314 @@
+[
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/07/color-meridians.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-acupuncture.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/Asthma.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/apw_wwt/apw_wwt__asthma.json",
+      "content/pages/what-is-acupuncture__what-we-treat.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/Concussion.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/apw_wwt/apw_wwt__concussion.json",
+      "content/pages/what-is-acupuncture__what-we-treat.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/Headache-768x402.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_wwt/apw_wwt__headaches.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/Headache.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-acupuncture__what-we-treat.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/Hypertension-768x308.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_wwt/apw_wwt__hypertension.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/Hypertension.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-acupuncture__what-we-treat.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/IBS2-768x429.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_wwt/apw_wwt__ibs.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/IBS2.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-acupuncture__what-we-treat.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/Pain.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/apw_wwt/apw_wwt__pain.json",
+      "content/pages/what-is-acupuncture__what-we-treat.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/Parkinsons.png",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/apw_wwt/apw_wwt__parkinsons.json",
+      "content/pages/what-is-acupuncture__what-we-treat.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/Peripheral-Neur2.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/apw_wwt/apw_wwt__peripheral-neuropathy.json",
+      "content/pages/what-is-acupuncture__what-we-treat.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/08/Stroke.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/apw_wwt/apw_wwt__stroke.json",
+      "content/pages/what-is-acupuncture__what-we-treat.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2011/10/SSAW-Privacy-Policy-Jan-2017.pdf",
+    "refs": [
+      "content/all.json",
+      "content/pages/clinic-forms.json",
+      "CONTENT-PARITY.md",
+      "lib/site.ts",
+      "next.config.ts",
+      "next.config.ts"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/09/Blog-img-7-Reasons-to-Seek-Out-Acupuncture-_640-1.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__7.json",
+      "content/categories/category__allergies.json",
+      "content/categories/category__anxiety.json",
+      "content/categories/category__depression__page__2.json",
+      "content/categories/category__migraines.json",
+      "content/categories/category__pain.json",
+      "content/pages/blog__page__11.json",
+      "content/posts/7-reasons-to-seek-out-acupuncture.json",
+      "content/tags/tag__allergies-2.json",
+      "content/tags/tag__anxiety.json",
+      "content/tags/tag__depression.json",
+      "content/tags/tag__medicine.json",
+      "content/tags/tag__menstruation.json",
+      "content/tags/tag__pain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/09/Blog-img-Nutrition-for-Heart-Health-OM-Nutrition.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__diet-2__page__2.json",
+      "content/categories/category__health__page__3.json",
+      "content/categories/category__nutrition__page__2.json",
+      "content/pages/blog__page__11.json",
+      "content/posts/nutrition-for-heart-health-om-nutrition-hypertension.json",
+      "content/tags/tag__health.json",
+      "content/tags/tag__heart.json",
+      "content/tags/tag__hypertension.json",
+      "content/tags/tag__nutrition-2.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/10/Blog-img-How-to-Prepare-For-Seasonal-Affective-Disorder_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__7.json",
+      "content/categories/category__depression__page__2.json",
+      "content/pages/blog__page__11.json",
+      "content/posts/how-to-prepare-for-seasonal-affective-disorder.json",
+      "content/tags/tag__exercise.json",
+      "content/tags/tag__sad.json",
+      "content/tags/tag__seasonal-affective-disorder.json",
+      "content/tags/tag__sleep.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/11/Blog-img-Five-Ways-to-Alleviate-Insomnia_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__7.json",
+      "content/categories/category__insomnia.json",
+      "content/pages/blog__page__10.json",
+      "content/posts/five-ways-to-alleviate-insomnia.json",
+      "content/tags/tag__acupuncture-2.json",
+      "content/tags/tag__insomnia.json",
+      "content/tags/tag__sleep.json",
+      "content/tags/tag__yoga.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/11/Blog-img-Why-am-I-so-TIRED…and-how-to-fix_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__7.json",
+      "content/categories/category__fatigue.json",
+      "content/categories/category__traditional-chinese-medicine__page__7.json",
+      "content/pages/blog__page__10.json",
+      "content/posts/why-am-i-so-tiredand-how-to-fix.json",
+      "content/tags/tag__energy.json",
+      "content/tags/tag__fatigue.json",
+      "content/tags/tag__qi.json",
+      "content/tags/tag__tcm__page__2.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/11/Blogimg-Foods-for-the-Winter-Season_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__diet-2__page__2.json",
+      "content/categories/category__nutrition__page__2.json",
+      "content/pages/blog__page__10.json",
+      "content/posts/foods-for-the-winter-season.json",
+      "content/tags/tag__food.json",
+      "content/tags/tag__tcm__page__2.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/12/Blogimg-Fighting-Flu-Season-with-Acupuncture_640-300x225.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/fighting-flu-season-with-acupuncture.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/12/RUNNING.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/home.json",
+      "lib/site.ts"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/12/bay-1894512_1280.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/meridian-point-for-winter-large-intestine-4.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/12/going_deeper_kidneys.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/going-deeper-the-kidneys.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/12/hwn_w16_berries_wide.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__traditional-chinese-medicine-and-the-season-of-winter.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/12/hwn_w16_clock.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__exploring-the-24-hour-qi-clock.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2016/12/hwn_w16_wintertcm.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__strengthen-your-immune-system-with-tcm.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Blog-Heart-A-Fire_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__6.json",
+      "content/categories/category__traditional-chinese-medicine__page__7.json",
+      "content/categories/category__wellness-2__page__3.json",
+      "content/pages/blog__page__10.json",
+      "content/posts/heart-afire-the-fire-element.json",
+      "content/posts/heart-afire-the-fire-element.json",
+      "content/tags/tag__health.json",
+      "content/tags/tag__heart.json",
+      "content/tags/tag__tcm__page__2.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Blogimg-Valentine’s-Day_640-300x200.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/valentines-day-tcm-and-heart-health.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Blogimg-Valentine’s-Day_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__6.json",
+      "content/categories/category__traditional-chinese-medicine__page__7.json",
+      "content/pages/blog__page__10.json",
+      "content/posts/valentines-day-tcm-and-heart-health.json",
+      "content/tags/tag__health.json",
+      "content/tags/tag__heart.json",
+      "content/tags/tag__valentines.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Cupping-equip-300x154.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-cupping-therapy.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Cupping-equip.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-cupping-therapy.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Guasha-tools-300x109.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-guasha.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Guasha-tools-768x280.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-guasha.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Guasha-tools.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-guasha.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Moxibustion-300x200.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/pages/what-is-moxabustion.json",
+      "content/pages/what-is-moxabustion.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Moxibustion.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-moxabustion.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Tuina-300x209.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/pages/what-is-tuina.json",
+      "content/pages/what-is-tuina.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/Tuina.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-tuina.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/chinese-herbs-1024x664.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/chinese-herbal-medicine.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/chinese-herbs-300x195.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/pages/chinese-herbal-medicine.json",
+      "content/pages/chinese-herbal-medicine.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/chinese-herbs-768x498.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/chinese-herbal-medicine.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/chinese-herbs.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/chinese-herbal-medicine.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/estimiilg-283x300.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/pages/what-is-electro-acupuncture.json",
+      "content/pages/what-is-electro-acupuncture.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/estimiilg.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-electro-acupuncture.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/fruits_veggies-300x201.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/pages/what-is-nutritional-therapy.json",
+      "content/pages/what-is-nutritional-therapy.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/fruits_veggies.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-nutritional-therapy.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/tai-chi-chuan-300x212.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/pages/what-is-taichi-and-qigong.json",
+      "content/pages/what-is-taichi-and-qigong.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/tai-chi-chuan.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/what-is-taichi-and-qigong.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/time-300x200.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/pages/cancellations-late-arrivals.json",
+      "content/pages/cancellations-late-arrivals.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/01/time.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/cancellations-late-arrivals.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/02/Blogimg-All-about-moxibustion_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__6.json",
+      "content/categories/category__si-shou__page__2.json",
+      "content/categories/category__traditional-chinese-medicine__page__6.json",
+      "content/pages/blog__page__10.json",
+      "content/posts/all-about-moxibustion.json",
+      "content/posts/all-about-moxibustion.json",
+      "content/tags/tag__moxibustion.json",
+      "content/tags/tag__qi.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/02/Castor-Oil-Packs.pdf",
+    "refs": [
+      "content/all.json",
+      "content/pages/resources__one-pagers.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/02/Ear-Seeds-and-Tacks.pdf",
+    "refs": [
+      "content/all.json",
+      "content/pages/resources__one-pagers.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/02/Effect-of-Facial-Cosmetic-Acupuncture-on-Facial-Elasticity.pdf",
+    "refs": [
+      "content/all.json",
+      "content/pages/resources__more-research.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/02/Ginger-Bath.pdf",
+    "refs": [
+      "content/all.json",
+      "content/pages/resources__one-pagers.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/02/Gut-Biome-and-the-Brain.pdf",
+    "refs": [
+      "content/all.json",
+      "content/pages/resources__more-research.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/02/NADA-Research-summary.pdf",
+    "refs": [
+      "content/all.json",
+      "content/pages/resources__more-research.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/02/Quit-Smoking-Meta-analysis.pdf",
+    "refs": [
+      "content/all.json",
+      "content/pages/resources__more-research.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/02/older_couple_032017-1024x683.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-and-colon-cancer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/02/older_couple_032017-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-and-colon-cancer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/02/older_couple_032017.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__6.json",
+      "content/categories/category__cancer.json",
+      "content/pages/blog__page__9.json",
+      "content/tags/tag__chemotherapy.json",
+      "content/tags/tag__colon-cancer.json",
+      "content/tags/tag__immune-system.json",
+      "content/tags/tag__si-shou.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/03/Blog-img-Acupuncture-for-Addiction_640-bw-300x200.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-for-addiction.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/03/Blog-img-Acupuncture-for-Addiction_640-bw.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__6.json",
+      "content/pages/blog__page__9.json",
+      "content/posts/acupuncture-for-addiction.json",
+      "content/tags/tag__addiction.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/03/hwn-spring17-2.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__traditional-chinese-medicine-and-spring.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/03/hwn-spring17-3.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__ways-for-a-healthy-brain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/03/hwn-spring17-4.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__spring-acupuncture-tips-to-keep-you-healthy-happy-and-flexible.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/03/pexels-photo-62279-crop.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/does-your-liver-need-a-spring-tune-up.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/03/pexels-photo-62279-sq.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__6.json",
+      "content/pages/blog__page__9.json",
+      "content/posts/does-your-liver-need-a-spring-tune-up.json",
+      "content/tags/tag__allergies-2.json",
+      "content/tags/tag__liver.json",
+      "content/tags/tag__mood.json",
+      "content/tags/tag__pain.json",
+      "content/tags/tag__pms.json",
+      "content/tags/tag__spring.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/04/ACU_009-1024x680.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-not-just-needles.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/04/ACU_009-768x510.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-not-just-needles.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/04/ACU_009.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupressure.json",
+      "content/categories/category__nutrition__page__2.json",
+      "content/pages/blog__page__9.json",
+      "content/tags/tag__cupping.json",
+      "content/tags/tag__gua-sha.json",
+      "content/tags/tag__herbs.json",
+      "content/tags/tag__moxibustion.json",
+      "content/tags/tag__needles.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/04/Problem-areas-300x279.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/pages/resources__facial-rejuvenation.json",
+      "content/pages/resources__facial-rejuvenation.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/04/Problem-areas.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/resources__facial-rejuvenation.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/04/mothers-day-acupuncture.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__6.json",
+      "content/categories/category__womens-health.json",
+      "content/pages/blog__page__9.json",
+      "content/posts/seven-ways-acupuncture-can-help-mothers.json",
+      "content/posts/seven-ways-acupuncture-can-help-mothers.json",
+      "content/tags/tag__insomnia.json",
+      "content/tags/tag__migraines.json",
+      "content/tags/tag__pregnancy.json",
+      "content/tags/tag__stress.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/05/Blogimg-IBS-Traditional-Chinese-Medicine.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__6.json",
+      "content/categories/category__traditional-chinese-medicine__page__6.json",
+      "content/pages/blog__page__9.json",
+      "content/posts/ibs-relief-with-traditional-chinese-medicine.json",
+      "content/posts/ibs-relief-with-traditional-chinese-medicine.json",
+      "content/tags/tag__diet.json",
+      "content/tags/tag__ibs.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/05/Blogimg-Summer-Solstice.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__health__page__3.json",
+      "content/categories/category__wellness-2__page__3.json",
+      "content/pages/blog__page__9.json",
+      "content/posts/summer-solstice.json",
+      "content/posts/summer-solstice.json",
+      "content/tags/tag__summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/06/Blogimg-Eyes-Red-or-Inflamed-300x200.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/are-your-eyes-red-or-inflamed.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/06/Blogimg-Eyes-Red-or-Inflamed.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__traditional-chinese-medicine__page__6.json",
+      "content/pages/blog__page__9.json",
+      "content/posts/are-your-eyes-red-or-inflamed.json",
+      "content/tags/tag__dry-eyes.json",
+      "content/tags/tag__eyes.json",
+      "content/tags/tag__red-eye.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/06/belly-body-calories-diet-42069.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__acupuncture-weight-loss.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/06/fruit-2367029_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__many-dimensions-heart.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/06/kimchi-2337822_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__nutrition__page__2.json",
+      "content/categories/category__traditional-chinese-medicine__page__6.json",
+      "content/pages/blog__page__9.json",
+      "content/posts/fermented-foods-and-intestinal-health.json",
+      "content/posts/fermented-foods-and-intestinal-health.json",
+      "content/tags/tag__digestive-health.json",
+      "content/tags/tag__fermented-food.json",
+      "content/tags/tag__nutrition-2.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/06/pexels-photo-61129.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__seven-ways-protect-skin-cancer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/07/Tibet-region-for-soaks-and-tea-300x168.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tibetan-herbal-foot-soaks-soon.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/07/Tibet-region-for-soaks-and-tea-300x168.jpg?x41190",
+    "refs": [
+      "content/all.json",
+      "content/posts/tibetan-herbal-foot-soaks-soon.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/07/Tibet-region-for-soaks-and-tea-450x252.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tibetan-herbal-foot-soaks-soon.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/07/Tibet-region-for-soaks-and-tea-705x395.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tibetan-herbal-foot-soaks-soon.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/07/Tibet-region-for-soaks-and-tea-768x431.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tibetan-herbal-foot-soaks-soon.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/07/Tibet-region-for-soaks-and-tea.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tibetan-herbal-foot-soaks-soon.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/07/singing-bowl-2358464_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__traditional-chinese-medicine__page__6.json",
+      "content/pages/blog__page__8.json",
+      "content/posts/ssshhhh-organ-sound-vibration.json",
+      "content/posts/ssshhhh-organ-sound-vibration.json",
+      "content/tags/tag__meditation.json",
+      "content/tags/tag__sound-therapy.json",
+      "content/tags/tag__vibration.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/07/yoga-1284657_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__meditation.json",
+      "content/pages/blog__page__8.json",
+      "content/posts/easy-does-it-meditation.json",
+      "content/posts/easy-does-it-meditation.json",
+      "content/tags/tag__energy.json",
+      "content/tags/tag__focus.json",
+      "content/tags/tag__meditation.json",
+      "content/tags/tag__relaxation.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/08/7ccb42c82fc0e75901527fa38ae48b54-1024x768.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-and-alcohol-detoxification.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/08/7ccb42c82fc0e75901527fa38ae48b54-768x576.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-and-alcohol-detoxification.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/08/7ccb42c82fc0e75901527fa38ae48b54.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__5.json",
+      "content/categories/category__detox__page__2.json",
+      "content/pages/blog__page__8.json",
+      "content/tags/tag__acupuncture-2.json",
+      "content/tags/tag__alcohol.json",
+      "content/tags/tag__detox.json",
+      "content/tags/tag__tcm.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/08/Foot-soak-300x185.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/tibetan-herbal-foot-soaks-soon.json",
+      "content/posts/tibetan-herbal-foot-soaks-soon.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/08/Foot-soak.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__herbal-medicine__page__2.json",
+      "content/pages/blog__page__8.json",
+      "content/posts/tibetan-herbal-foot-soaks-soon.json",
+      "content/posts/tibetan-herbal-foot-soaks-soon.json",
+      "lib/site.ts"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/08/hands-2568594_1280-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-and-cervical-health.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/08/hands-2568594_1280.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__5.json",
+      "content/categories/category__fertility.json",
+      "content/categories/category__womens-health.json",
+      "content/pages/blog__page__8.json",
+      "content/posts/acupuncture-and-cervical-health.json",
+      "content/tags/tag__fertility.json",
+      "content/tags/tag__invitro.json",
+      "content/tags/tag__tcm__page__2.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/09/Blogimg-Building-Up-Protective-Qi.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__traditional-chinese-medicine__page__6.json",
+      "content/pages/blog__page__8.json",
+      "content/posts/building-protective-qi-with-tcm.json",
+      "content/posts/building-protective-qi-with-tcm.json",
+      "content/tags/tag__herbal-medicine.json",
+      "content/tags/tag__wei-qi.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/09/Blogimg-Increase-White-Blood-Cell-Count.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__traditional-chinese-medicine__page__6.json",
+      "content/pages/blog__page__8.json",
+      "content/posts/five-ways-to-increase-white-blood-cell-count-with-tcm.json",
+      "content/posts/five-ways-to-increase-white-blood-cell-count-with-tcm.json",
+      "content/tags/tag__cancer.json",
+      "content/tags/tag__leukopenia.json",
+      "content/tags/tag__tcm.json",
+      "content/tags/tag__white-blood-cells.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/09/china-2263731_1280.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__the-metal-element.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/09/pexels-photo-157310.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__traditional-chinese-medicine-fall.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/09/tea-2391081_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__fight-common-cold-tcm.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/10/Blogimg-Positive-Effects-of-Acupuncture.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__5.json",
+      "content/pages/blog__page__8.json",
+      "content/posts/positive-side-effects-of-acupuncture.json",
+      "content/posts/positive-side-effects-of-acupuncture.json",
+      "content/tags/tag__energy.json",
+      "content/tags/tag__pain.json",
+      "content/tags/tag__sleep.json",
+      "content/tags/tag__stress.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/10/healthy-fruits-veggies-768x341.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/eating-right-for-your-body-type.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/10/healthy-fruits-veggies.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__diet-2__page__2.json",
+      "content/pages/blog__page__8.json",
+      "content/posts/eating-right-for-your-body-type.json",
+      "content/tags/tag__five-elements.json",
+      "content/tags/tag__tcm.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/11/PPL_018.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__5.json",
+      "content/categories/category__traditional-chinese-medicine__page__6.json",
+      "content/pages/blog__page__7.json",
+      "content/posts/the-bladder-in-chinese-medicine.json",
+      "content/posts/the-bladder-in-chinese-medicine.json",
+      "content/tags/tag__back-pain.json",
+      "content/tags/tag__bladder.json",
+      "content/tags/tag__neck-pain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/11/goji-2170629_1280-e1511846362248-768x288.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/successful-tonics-to-boost-the-kidneys.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/11/goji-2170629_1280-e1511846362248.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__traditional-chinese-medicine__page__6.json",
+      "content/pages/blog__page__7.json",
+      "content/posts/successful-tonics-to-boost-the-kidneys.json",
+      "content/tags/tag__herbs.json",
+      "content/tags/tag__kidneys.json",
+      "content/tags/tag__tonics.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/12/3911558890_0e07e371c4_z.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__5.json",
+      "content/pages/blog__page__7.json",
+      "content/posts/auricular-acupuncture.json",
+      "content/tags/tag__auricular-acupuncture.json",
+      "content/tags/tag__ear.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/12/Blogimg-cold.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/why-am-i-so-cold.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/12/Blogimg-ear.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/auricular-acupuncture.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/12/cold-2722002_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__traditional-chinese-medicine__page__5.json",
+      "content/pages/blog__page__7.json",
+      "content/posts/why-am-i-so-cold.json",
+      "content/tags/tag__circulation.json",
+      "content/tags/tag__cold.json",
+      "content/tags/tag__qi.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/12/pexels-photo-237180.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__acupuncture-season-winter.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/12/pexels-photo-700535.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__five-acupuncture-points-winter.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2017/12/woman-flowers-holidays-girl-6270.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__fight-holiday-stress-with-acupuncture.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/01/BlogImg1.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/physical-aspects-of-the-heart.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/01/BlogImg2.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/mental-emotional-aspects-of-the-heart.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/01/heart-2211180_1280-700x700.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__5.json",
+      "content/categories/category__traditional-chinese-medicine__page__5.json",
+      "content/pages/blog__page__7.json",
+      "content/posts/physical-aspects-of-the-heart.json",
+      "content/tags/tag__heart.json",
+      "content/tags/tag__insomnia.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/01/smiley-2979107_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__5.json",
+      "content/categories/category__traditional-chinese-medicine__page__5.json",
+      "content/pages/blog__page__7.json",
+      "content/posts/mental-emotional-aspects-of-the-heart.json",
+      "content/tags/tag__adhd.json",
+      "content/tags/tag__anxiety.json",
+      "content/tags/tag__depression.json",
+      "content/tags/tag__heart.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/02/BlogHead_1-1024x253.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-acupuncture-points-for-spring.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/02/BlogHead_2.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/eating-according-to-tcm-five-foods-for-spring.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/02/BlogImg_1.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__5.json",
+      "content/categories/category__traditional-chinese-medicine__page__5.json",
+      "content/pages/blog__page__7.json",
+      "content/posts/five-acupuncture-points-for-spring.json",
+      "content/tags/tag__allergies-2.json",
+      "content/tags/tag__anger.json",
+      "content/tags/tag__congestion.json",
+      "content/tags/tag__headaches.json",
+      "content/tags/tag__high-blood-pressure.json",
+      "content/tags/tag__irritation.json",
+      "content/tags/tag__sinus-pain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/02/BlogImg_2.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__nutrition__page__2.json",
+      "content/categories/category__traditional-chinese-medicine__page__5.json",
+      "content/pages/blog__page__7.json",
+      "content/posts/eating-according-to-tcm-five-foods-for-spring.json",
+      "content/tags/tag__diet.json",
+      "content/tags/tag__food.json",
+      "content/tags/tag__nutrition-2.json",
+      "content/tags/tag__spring.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/03/aprBlogHead_1.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/herbal-tonics-for-allergies.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/03/aprBlogHead_2.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-allergies.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/03/aprBlog_img_1-768x513.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/herbal-tonics-for-allergies.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/03/aprBlog_img_1.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__4.json",
+      "content/categories/category__herbal-medicine__page__2.json",
+      "content/categories/category__traditional-chinese-medicine__page__5.json",
+      "content/pages/blog__page__6.json",
+      "content/tags/tag__allergies-2.json",
+      "content/tags/tag__cupping.json",
+      "content/tags/tag__herbs.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/03/aprBlog_img_2-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-allergies.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/03/aprBlog_img_2.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__5.json",
+      "content/categories/category__traditional-chinese-medicine__page__5.json",
+      "content/pages/blog__page__7.json",
+      "content/tags/tag__allergies-2.json",
+      "content/tags/tag__spring.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/03/pexels-photo-413707.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__acupuncture-the-liver-and-spring.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/03/pexels-photo-413735.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__does-your-liver-need-a-spring-tune-up.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/03/pexels-photo-72161.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__traditional-chinese-medicine-and-spring-2.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/04/pexels-photo-774095-1024x682.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/posts/why-you-should-get-regular-acupuncture-treatments.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/04/pexels-photo-774095-768x512.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/posts/why-you-should-get-regular-acupuncture-treatments.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/04/pexels-photo-774095.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__4.json",
+      "content/pages/blog__page__6.json",
+      "content/tags/tag__needles.json",
+      "content/tags/tag__phobia.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/04/young-woman-2699780_640.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__4.json",
+      "content/categories/category__traditional-chinese-medicine__page__5.json",
+      "content/pages/blog__page__6.json",
+      "content/posts/acupuncture-and-tcm-for-sprains-and-strains.json",
+      "content/posts/acupuncture-and-tcm-for-sprains-and-strains.json",
+      "content/tags/tag__exercise.json",
+      "content/tags/tag__sprains.json",
+      "content/tags/tag__strains.json",
+      "content/tags/tag__stretching.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/05/JuneBlogHead_MensHealth-1024x253.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/seven-ways-acupuncture-can-help-mens-health.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/05/JuneBlogHead_libido-1024x253.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tcm-and-libido-in-men.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/05/runners-635906_1920-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/seven-ways-acupuncture-can-help-mens-health.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/05/runners-635906_1920.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__4.json",
+      "content/categories/category__mens-health.json",
+      "content/categories/category__traditional-chinese-medicine__page__4.json",
+      "content/pages/blog__page__6.json",
+      "content/tags/tag__fathers-day.json",
+      "content/tags/tag__health.json",
+      "content/tags/tag__heart.json",
+      "content/tags/tag__men.json",
+      "content/tags/tag__prostate.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/05/wall-2794567_1280-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tcm-and-libido-in-men.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/05/wall-2794567_1280.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__4.json",
+      "content/categories/category__traditional-chinese-medicine__page__5.json",
+      "content/pages/blog__page__6.json",
+      "content/tags/tag__depression.json",
+      "content/tags/tag__health.json",
+      "content/tags/tag__libido.json",
+      "content/tags/tag__men.json",
+      "content/tags/tag__stress.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/06/JulyBlog_1.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-acupuncture-points-for-summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/06/JulyBlog_2.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/herbal-formulas-for-summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/06/acupuncture-summer.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__five-reasons-to-try-acupuncture-this-summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/06/blog_beach_family-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-acupuncture-points-for-summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/06/blog_beach_family.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__traditional-chinese-medicine__page__4.json",
+      "content/pages/blog__page__6.json",
+      "content/tags/tag__heart.json",
+      "content/tags/tag__small-intestine.json",
+      "content/tags/tag__summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/06/blog_watermelon-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/herbal-formulas-for-summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/06/blog_watermelon.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__traditional-chinese-medicine__page__4.json",
+      "content/pages/blog__page__6.json",
+      "content/tags/tag__herbal-medicine.json",
+      "content/tags/tag__herbs.json",
+      "content/tags/tag__summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/06/healthy-skin-acupuncture.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__acupuncture-and-maintaining-healthy-skin.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/06/summer-meditation.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__three-ways-to-alleviate-stress-in-under-10-minutes.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/07/AugBlog_Img_2.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/healthy-eating-according-to-traditional-chinese-medicine.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/07/AugBlog_img_1.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-acupuncture-points-for-indian-summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/07/blog-healthy-eating-768x576.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/healthy-eating-according-to-traditional-chinese-medicine.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/07/blog-healthy-eating.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__diet-2__page__2.json",
+      "content/categories/category__traditional-chinese-medicine__page__4.json",
+      "content/pages/blog__page__6.json",
+      "content/tags/tag__diet.json",
+      "content/tags/tag__eating.json",
+      "content/tags/tag__food.json",
+      "content/tags/tag__healthy.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/07/indian-summer-tcm-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-acupuncture-points-for-indian-summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/07/indian-summer-tcm.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__4.json",
+      "content/categories/category__traditional-chinese-medicine__page__4.json",
+      "content/pages/blog__page__6.json",
+      "content/tags/tag__spleen.json",
+      "content/tags/tag__stomach.json",
+      "content/tags/tag__summer.json",
+      "content/tags/tag__tcm.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/08/sepBlog_img_1-sm-768x576.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/herbal-tonics-to-reduce-stress.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/08/sepBlog_img_1-sm.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__herbal-medicine__page__2.json",
+      "content/categories/category__stress-2__page__2.json",
+      "content/categories/category__traditional-chinese-medicine__page__4.json",
+      "content/pages/blog__page__5.json",
+      "content/tags/tag__anxiety.json",
+      "content/tags/tag__herbs.json",
+      "content/tags/tag__stress.json",
+      "content/tags/tag__tonics.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/08/sepBlog_img_2-sm-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-acupuncture-helps-reduce-stress.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/08/sepBlog_img_2-sm.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__4.json",
+      "content/categories/category__stress-2__page__2.json",
+      "content/pages/blog__page__5.json",
+      "content/tags/tag__acupuncture-2.json",
+      "content/tags/tag__anxiety.json",
+      "content/tags/tag__depression.json",
+      "content/tags/tag__stress.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/08/sep_BlogHead_1-sm.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/herbal-tonics-to-reduce-stress.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/08/sep_BlogHead_2-sm.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-acupuncture-helps-reduce-stress.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/09/Blog1_Mental-Emotional-Aspects-Related-to-Lung.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/mental-and-emotional-aspects-of-the-lungs.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/09/Blog1_image-768x543.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/mental-and-emotional-aspects-of-the-lungs.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/09/Blog1_image.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__4.json",
+      "content/categories/category__traditional-chinese-medicine__page__4.json",
+      "content/pages/blog__page__5.json",
+      "content/tags/tag__five-elements.json",
+      "content/tags/tag__lungs.json",
+      "content/tags/tag__tcm.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/09/Blog2_Physical-Aspects-Related-to-Lung.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/physical-aspects-related-to-the-lungs.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/09/Blog2_image-768x510.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/physical-aspects-related-to-the-lungs.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/09/Blog2_image.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__traditional-chinese-medicine__page__4.json",
+      "content/pages/blog__page__5.json",
+      "content/tags/tag__allergies-2.json",
+      "content/tags/tag__breathing.json",
+      "content/tags/tag__lungs.json",
+      "content/tags/tag__tai-chi.json",
+      "content/tags/tag__wei-qi.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/09/acupuncture-hay-fever-tcm.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__acupuncture-and-hay-fever.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/09/acupuncture-in-autumn-apples.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__5-reasons-to-get-acupuncture-this-fall.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/09/reishi-mushroom-tcm.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__herbal-tonics-for-fall.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/10/Blog1_Walnuts-and-Your-Brain.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/walnuts-and-your-brain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/10/Blog1_img_Walnuts-and-Your-Brain-768x510.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/walnuts-and-your-brain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/10/Blog1_img_Walnuts-and-Your-Brain.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__diet-2__page__2.json",
+      "content/categories/category__nutrition__page__2.json",
+      "content/categories/category__traditional-chinese-medicine__page__3.json",
+      "content/pages/blog__page__5.json",
+      "content/tags/tag__diet.json",
+      "content/tags/tag__digestion.json",
+      "content/tags/tag__nutrition-2.json",
+      "content/tags/tag__omega-3.json",
+      "content/tags/tag__tcm.json",
+      "content/tags/tag__walnuts.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/10/Blog2_Shen-Housing-Your-Mind.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/the-shen-mind-connection.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/10/Blog2_img_Shen-Housing-Your-Mind-768x487.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/the-shen-mind-connection.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/10/Blog2_img_Shen-Housing-Your-Mind.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__traditional-chinese-medicine__page__4.json",
+      "content/pages/blog__page__5.json",
+      "content/tags/tag__anxiety.json",
+      "content/tags/tag__heart.json",
+      "content/tags/tag__mind.json",
+      "content/tags/tag__shen.json",
+      "content/tags/tag__stress.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/11/Blog1_TCM-and-Seasonal-Affective-Disorder.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tcm-and-seasonal-affective-disorder.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/11/Blog2_Acupuncture-for-Harnessing-Willpower.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-for-harnessing-willpower.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/11/Img_Acupuncture-for-Harnessing-Willpower-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-for-harnessing-willpower.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/11/Img_Acupuncture-for-Harnessing-Willpower.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__3.json",
+      "content/categories/category__traditional-chinese-medicine__page__3.json",
+      "content/pages/blog__page__5.json",
+      "content/tags/tag__energy.json",
+      "content/tags/tag__motivation.json",
+      "content/tags/tag__willpower.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/11/Img_TCM-and-Seasonal-Affective-Disorder-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tcm-and-seasonal-affective-disorder.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/11/Img_TCM-and-Seasonal-Affective-Disorder.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__4.json",
+      "content/categories/category__depression__page__2.json",
+      "content/categories/category__traditional-chinese-medicine__page__3.json",
+      "content/pages/blog__page__5.json",
+      "content/tags/tag__sad.json",
+      "content/tags/tag__seasonal-affective-disorder.json",
+      "content/tags/tag__tcm.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/12/Blog1_image-768x501.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/its-all-in-your-head-headaches-and-tcm.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/12/Blog1_image.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__headaches-migraines.json",
+      "content/categories/category__traditional-chinese-medicine__page__3.json",
+      "content/pages/blog__page__5.json",
+      "content/posts/its-all-in-your-head-headaches-and-tcm.json",
+      "content/tags/tag__headaches.json",
+      "content/tags/tag__pain.json",
+      "content/tags/tag__tcm.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/12/Blog2_5-reasons-to-get-acupuncture-for-migraines.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-migraines.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/12/Blog2_image-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-migraines.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/12/Blog2_image.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__3.json",
+      "content/categories/category__headaches-migraines.json",
+      "content/pages/blog__page__4.json",
+      "content/tags/tag__acupuncture-2.json",
+      "content/tags/tag__headaches.json",
+      "content/tags/tag__migraines.json",
+      "content/tags/tag__pain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/12/exercise-acupuncture.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__5-ways-to-help-you-wake-up-and-get-active.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/12/try-acupuncture-winter.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__5-reasons-to-try-acupuncture-this-winter.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2018/12/weather-pain-acupuncture.jpg",
+    "refs": [
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__how-weather-affects-pain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/01/Blog1_5-Herbal-Tonics-for-Digestion.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/herbal-tonics-for-digestion.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/01/Blog1_image-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/herbal-tonics-for-digestion.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/01/Blog1_image.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__digestion__page__2.json",
+      "content/categories/category__digestive-disorders.json",
+      "content/categories/category__herbal-medicine.json",
+      "content/categories/category__traditional-chinese-medicine__page__3.json",
+      "content/pages/blog__page__4.json",
+      "content/tags/tag__digestion.json",
+      "content/tags/tag__herbs.json",
+      "content/tags/tag__tea.json",
+      "content/tags/tag__tonics.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/01/Blog2_Five-Reasons-Acupuncture-Helps-Digestive-Function.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-acupuncture-helps-digestive-function.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/01/Blog2_image-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-acupuncture-helps-digestive-function.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/01/Blog2_image.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__3.json",
+      "content/categories/category__digestion.json",
+      "content/categories/category__digestive-disorders.json",
+      "content/pages/blog__page__4.json",
+      "content/tags/tag__acupuncture-2.json",
+      "content/tags/tag__diet.json",
+      "content/tags/tag__digestion.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/02/Artboard-1@sishou-1024x1024.png",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/apw_hwn/apw_hwn__3-simple-ways-to-alleviate-the-common-cold.json",
+      "content/apw_hwn/apw_hwn__5-reasons-to-get-acupuncture-this-fall.json",
+      "content/apw_hwn/apw_hwn__5-reasons-to-try-acupuncture-this-winter.json",
+      "content/apw_hwn/apw_hwn__5-ways-to-help-you-wake-up-and-get-active.json",
+      "content/apw_hwn/apw_hwn__acupuncture-and-hay-fever.json",
+      "content/apw_hwn/apw_hwn__acupuncture-and-maintaining-healthy-skin.json",
+      "content/apw_hwn/apw_hwn__acupuncture-season-winter.json",
+      "content/apw_hwn/apw_hwn__acupuncture-the-liver-and-spring.json",
+      "content/apw_hwn/apw_hwn__acupuncture-weight-loss.json",
+      "content/apw_hwn/apw_hwn__does-your-liver-need-a-spring-tune-up.json",
+      "content/apw_hwn/apw_hwn__exploring-the-24-hour-qi-clock.json",
+      "content/apw_hwn/apw_hwn__fight-common-cold-tcm.json",
+      "content/apw_hwn/apw_hwn__fight-holiday-stress-with-acupuncture.json",
+      "content/apw_hwn/apw_hwn__five-acupuncture-points-winter.json",
+      "content/apw_hwn/apw_hwn__five-reasons-to-try-acupuncture-this-summer.json",
+      "content/apw_hwn/apw_hwn__goji-berries-the-little-red-superfruit.json",
+      "content/apw_hwn/apw_hwn__herbal-tonics-for-fall.json",
+      "content/apw_hwn/apw_hwn__how-weather-affects-pain.json",
+      "content/apw_hwn/apw_hwn__many-dimensions-heart.json",
+      "content/apw_hwn/apw_hwn__seasonal-change-and-back-pain.json",
+      "content/apw_hwn/apw_hwn__seven-ways-protect-skin-cancer.json",
+      "content/apw_hwn/apw_hwn__spring-acupuncture-tips-to-keep-you-healthy-happy-and-flexible.json",
+      "content/apw_hwn/apw_hwn__strengthen-your-immune-system-with-tcm.json",
+      "content/apw_hwn/apw_hwn__the-metal-element.json",
+      "content/apw_hwn/apw_hwn__three-ways-to-alleviate-stress-in-under-10-minutes.json",
+      "content/apw_hwn/apw_hwn__traditional-chinese-medicine-and-spring-2.json",
+      "content/apw_hwn/apw_hwn__traditional-chinese-medicine-and-spring.json",
+      "content/apw_hwn/apw_hwn__traditional-chinese-medicine-and-the-season-of-winter.json",
+      "content/apw_hwn/apw_hwn__traditional-chinese-medicine-fall.json",
+      "content/apw_hwn/apw_hwn__ways-for-a-healthy-brain.json",
+      "content/apw_qa/apw_qa__does-it-hurt.json",
+      "content/apw_qa/apw_qa__how-are-acupuncturists-educated.json",
+      "content/apw_qa/apw_qa__how-many-treatments-will-i-need.json",
+      "content/apw_qa/apw_qa__how-much-does-it-cost.json",
+      "content/apw_qa/apw_qa__how-safe-is-acupuncture.json",
+      "content/apw_qa/apw_qa__how-should-i-prepare.json",
+      "content/apw_qa/apw_qa__is-acupuncture-safe-for-children.json",
+      "content/apw_qa/apw_qa__what-can-acupuncturists-treat.json",
+      "content/apw_qa/apw_qa__what-will-my-acupuncturist-do.json",
+      "content/apw_qa/apw_qa__why-did-my-acupuncturist-recommend-herbs.json",
+      "content/apw_qa/apw_qa__why-do-they-want-to-feel-my-pulse.json",
+      "content/apw_qa/apw_qa__why-do-they-want-to-look-at-my-tongue.json",
+      "content/apw_qa/apw_qa__will-my-insurance-cover-acupuncture.json",
+      "content/apw_wwt/apw_wwt__asthma.json",
+      "content/apw_wwt/apw_wwt__concussion.json",
+      "content/apw_wwt/apw_wwt__headaches.json",
+      "content/apw_wwt/apw_wwt__hypertension.json",
+      "content/apw_wwt/apw_wwt__ibs.json",
+      "content/apw_wwt/apw_wwt__pain.json",
+      "content/apw_wwt/apw_wwt__parkinsons.json",
+      "content/apw_wwt/apw_wwt__peripheral-neuropathy.json",
+      "content/apw_wwt/apw_wwt__stroke.json",
+      "content/categories/category__acupressure.json",
+      "content/categories/category__acupuncture.json",
+      "content/categories/category__acupuncture__page__2.json",
+      "content/categories/category__acupuncture__page__3.json",
+      "content/categories/category__acupuncture__page__4.json",
+      "content/categories/category__acupuncture__page__5.json",
+      "content/categories/category__acupuncture__page__6.json",
+      "content/categories/category__acupuncture__page__7.json",
+      "content/categories/category__allergies.json",
+      "content/categories/category__anxiety.json",
+      "content/categories/category__cancer.json",
+      "content/categories/category__children.json",
+      "content/categories/category__chinese-medicine-2.json",
+      "content/categories/category__chinese-medicine-2__page__2.json",
+      "content/categories/category__chinese-medicine-2__page__3.json",
+      "content/categories/category__cupping.json",
+      "content/categories/category__depression.json",
+      "content/categories/category__depression__page__2.json",
+      "content/categories/category__detox.json",
+      "content/categories/category__detox__page__2.json",
+      "content/categories/category__diet-2.json",
+      "content/categories/category__diet-2__page__2.json",
+      "content/categories/category__digestion.json",
+      "content/categories/category__digestion__page__2.json",
+      "content/categories/category__digestive-disorders.json",
+      "content/categories/category__electroacupuncture.json",
+      "content/categories/category__facial-rejuvenation.json",
+      "content/categories/category__fatigue.json",
+      "content/categories/category__fertility.json",
+      "content/categories/category__headaches-migraines.json",
+      "content/categories/category__health.json",
+      "content/categories/category__healthwellnews.json",
+      "content/categories/category__healthwellnews__page__2.json",
+      "content/categories/category__health__page__2.json",
+      "content/categories/category__health__page__3.json",
+      "content/categories/category__herbal-medicine.json",
+      "content/categories/category__herbal-medicine__page__2.json",
+      "content/categories/category__herbs.json",
+      "content/categories/category__insomnia.json",
+      "content/categories/category__massage.json",
+      "content/categories/category__meditation.json",
+      "content/categories/category__mens-health.json",
+      "content/categories/category__migraines.json",
+      "content/categories/category__neurological.json",
+      "content/categories/category__nutrition.json",
+      "content/categories/category__nutrition__page__2.json",
+      "content/categories/category__pain.json",
+      "content/categories/category__questions-and-answers.json",
+      "content/categories/category__si-shou.json",
+      "content/categories/category__si-shou__page__2.json",
+      "content/categories/category__stress-2.json",
+      "content/categories/category__stress-2__page__2.json",
+      "content/categories/category__testimonials.json",
+      "content/categories/category__traditional-chinese-medicine.json",
+      "content/categories/category__traditional-chinese-medicine__page__2.json",
+      "content/categories/category__traditional-chinese-medicine__page__3.json",
+      "content/categories/category__traditional-chinese-medicine__page__4.json",
+      "content/categories/category__traditional-chinese-medicine__page__5.json",
+      "content/categories/category__traditional-chinese-medicine__page__6.json",
+      "content/categories/category__traditional-chinese-medicine__page__7.json",
+      "content/categories/category__tuina.json",
+      "content/categories/category__uncategorized.json",
+      "content/categories/category__uncategorized__page__2.json",
+      "content/categories/category__uncategorized__page__3.json",
+      "content/categories/category__wellness-2.json",
+      "content/categories/category__wellness-2__page__2.json",
+      "content/categories/category__wellness-2__page__3.json",
+      "content/categories/category__what-we-treat.json",
+      "content/categories/category__womens-health.json",
+      "content/pages/about-us.json",
+      "content/pages/blog.json",
+      "content/pages/blog__page__10.json",
+      "content/pages/blog__page__11.json",
+      "content/pages/blog__page__2.json",
+      "content/pages/blog__page__3.json",
+      "content/pages/blog__page__4.json",
+      "content/pages/blog__page__5.json",
+      "content/pages/blog__page__6.json",
+      "content/pages/blog__page__7.json",
+      "content/pages/blog__page__8.json",
+      "content/pages/blog__page__9.json",
+      "content/pages/cancellations-late-arrivals.json",
+      "content/pages/chinese-herbal-medicine.json",
+      "content/pages/clinic-forms.json",
+      "content/pages/contact.json",
+      "content/pages/contact__map-directions.json",
+      "content/pages/health-well-news.json",
+      "content/pages/home.json",
+      "content/pages/our-team.json",
+      "content/pages/resources.json",
+      "content/pages/resources__facial-rejuvenation.json",
+      "content/pages/resources__more-research.json",
+      "content/pages/resources__one-pagers.json",
+      "content/pages/resources__videos.json",
+      "content/pages/testimonials.json",
+      "content/pages/treatment-modalities.json",
+      "content/pages/upcoming-events.json",
+      "content/pages/what-is-acupuncture.json",
+      "content/pages/what-is-acupuncture__first-visit.json",
+      "content/pages/what-is-acupuncture__q-a.json",
+      "content/pages/what-is-acupuncture__what-we-treat.json",
+      "content/pages/what-is-cupping-therapy.json",
+      "content/pages/what-is-electro-acupuncture.json",
+      "content/pages/what-is-guasha.json",
+      "content/pages/what-is-moxabustion.json",
+      "content/pages/what-is-nutritional-therapy.json",
+      "content/pages/what-is-taichi-and-qigong.json",
+      "content/pages/what-is-tuina.json",
+      "content/posts/2021-the-year-of-the-ox.json",
+      "content/posts/4-tips-for-an-energizing-joyful-summer.json",
+      "content/posts/7-reasons-to-seek-out-acupuncture.json",
+      "content/posts/7-ways-acupuncture-can-help-mens-health.json",
+      "content/posts/acupuncture-and-alcohol-detoxification.json",
+      "content/posts/acupuncture-and-cervical-health.json",
+      "content/posts/acupuncture-and-colon-cancer.json",
+      "content/posts/acupuncture-and-depression.json",
+      "content/posts/acupuncture-and-kids.json",
+      "content/posts/acupuncture-and-lingering-covid-19-symptoms.json",
+      "content/posts/acupuncture-and-opioid-addiction.json",
+      "content/posts/acupuncture-and-tcm-for-sprains-and-strains.json",
+      "content/posts/acupuncture-and-the-treatment-of-neurological-disorders.json",
+      "content/posts/acupuncture-for-addiction.json",
+      "content/posts/acupuncture-for-harnessing-willpower.json",
+      "content/posts/acupuncture-not-just-needles.json",
+      "content/posts/acupuncture-vs-morphine-for-pain-relief.json",
+      "content/posts/all-about-moxibustion.json",
+      "content/posts/an-update-back-to-regular-hours.json",
+      "content/posts/are-allergies-necessary.json",
+      "content/posts/are-your-eyes-red-or-inflamed.json",
+      "content/posts/auricular-acupuncture.json",
+      "content/posts/boost-it-with-ginseng.json",
+      "content/posts/building-protective-qi-with-tcm.json",
+      "content/posts/dandelion-detox-with-this-yellow-charmer.json",
+      "content/posts/does-acupuncture-hurt.json",
+      "content/posts/does-your-liver-need-a-spring-tune-up.json",
+      "content/posts/easy-does-it-meditation.json",
+      "content/posts/eating-according-to-tcm-five-foods-for-spring.json",
+      "content/posts/eating-right-for-your-body-type.json",
+      "content/posts/effects-of-acupuncture-on-alzheimers.json",
+      "content/posts/electroacupuncture-pain.json",
+      "content/posts/eye-disorders.json",
+      "content/posts/fermented-foods-and-intestinal-health.json",
+      "content/posts/fighting-flu-season-with-acupuncture.json",
+      "content/posts/five-acupuncture-points-for-indian-summer.json",
+      "content/posts/five-acupuncture-points-for-spring.json",
+      "content/posts/five-acupuncture-points-for-summer.json",
+      "content/posts/five-reasons-acupuncture-helps-digestive-function.json",
+      "content/posts/five-reasons-acupuncture-helps-reduce-stress.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-allergies.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-low-back-pain.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-migraines.json",
+      "content/posts/five-ways-to-alleviate-insomnia.json",
+      "content/posts/five-ways-to-increase-white-blood-cell-count-with-tcm.json",
+      "content/posts/foods-for-the-winter-season.json",
+      "content/posts/going-deeper-the-kidneys.json",
+      "content/posts/healthy-eating-according-to-traditional-chinese-medicine.json",
+      "content/posts/heart-afire-the-fire-element.json",
+      "content/posts/herbal-formulas-for-summer.json",
+      "content/posts/herbal-tonics-for-allergies.json",
+      "content/posts/herbal-tonics-for-digestion.json",
+      "content/posts/herbal-tonics-to-reduce-stress.json",
+      "content/posts/holiday-bonus-notice.json",
+      "content/posts/how-to-prepare-for-seasonal-affective-disorder.json",
+      "content/posts/ibs-relief-with-traditional-chinese-medicine.json",
+      "content/posts/is-your-gut-bacteria-causing-your-depression.json",
+      "content/posts/its-all-in-your-head-headaches-and-tcm.json",
+      "content/posts/keep-those-peepers-peeping.json",
+      "content/posts/mental-and-emotional-aspects-of-the-lungs.json",
+      "content/posts/mental-emotional-aspects-of-the-heart.json",
+      "content/posts/meridian-point-for-winter-large-intestine-4.json",
+      "content/posts/more-insight-into-how-acupuncture-works.json",
+      "content/posts/nutrition-for-heart-health-om-nutrition-hypertension.json",
+      "content/posts/our-obsession-with-optimum-optics.json",
+      "content/posts/physical-aspects-of-the-heart.json",
+      "content/posts/physical-aspects-related-to-the-lungs.json",
+      "content/posts/positive-side-effects-of-acupuncture.json",
+      "content/posts/seven-ways-acupuncture-can-help-mens-health.json",
+      "content/posts/seven-ways-acupuncture-can-help-mothers.json",
+      "content/posts/spring-cleansing-and-clearing.json",
+      "content/posts/ssshhhh-organ-sound-vibration.json",
+      "content/posts/successful-tonics-to-boost-the-kidneys.json",
+      "content/posts/summer-solstice.json",
+      "content/posts/tcm-and-libido-in-men.json",
+      "content/posts/tcm-and-seasonal-affective-disorder.json",
+      "content/posts/tcm-neurological-disorders.json",
+      "content/posts/tcm-tips-for-a-strong-immune-system.json",
+      "content/posts/the-bladder-in-chinese-medicine.json",
+      "content/posts/the-shen-mind-connection.json",
+      "content/posts/tibetan-herbal-foot-soaks-soon.json",
+      "content/posts/tis-the-season-to-nourish-your-heart.json",
+      "content/posts/traditional-chinese-medicine-in-winter.json",
+      "content/posts/using-acupuncture-to-treat-ptsd.json",
+      "content/posts/valentines-day-tcm-and-heart-health.json",
+      "content/posts/walnuts-and-your-brain.json",
+      "content/posts/we-want-to-treat-your-brains.json",
+      "content/posts/what-a-pain-in-the-wrist.json",
+      "content/posts/why-am-i-so-cold.json",
+      "content/posts/why-am-i-so-tiredand-how-to-fix.json",
+      "content/posts/why-you-should-get-regular-acupuncture-treatments.json",
+      "content/tags/tag__acupressure.json",
+      "content/tags/tag__acupuncture-2.json",
+      "content/tags/tag__addiction.json",
+      "content/tags/tag__adhd.json",
+      "content/tags/tag__aging.json",
+      "content/tags/tag__alcohol.json",
+      "content/tags/tag__allergies-2.json",
+      "content/tags/tag__alternative-medicine.json",
+      "content/tags/tag__anger.json",
+      "content/tags/tag__anxiety.json",
+      "content/tags/tag__appreciation.json",
+      "content/tags/tag__arnica.json",
+      "content/tags/tag__arthritis.json",
+      "content/tags/tag__asthma.json",
+      "content/tags/tag__astragalus.json",
+      "content/tags/tag__athletes.json",
+      "content/tags/tag__athletics.json",
+      "content/tags/tag__auricular-acupuncture.json",
+      "content/tags/tag__autoimmune.json",
+      "content/tags/tag__autumn.json",
+      "content/tags/tag__back-pain.json",
+      "content/tags/tag__back-to-school.json",
+      "content/tags/tag__balance.json",
+      "content/tags/tag__beets.json",
+      "content/tags/tag__bladder.json",
+      "content/tags/tag__blending.json",
+      "content/tags/tag__blood-pressure.json",
+      "content/tags/tag__brain.json",
+      "content/tags/tag__breathing.json",
+      "content/tags/tag__butternut-squash.json",
+      "content/tags/tag__cancer.json",
+      "content/tags/tag__chemotherapy.json",
+      "content/tags/tag__children.json",
+      "content/tags/tag__chinese-medicine.json",
+      "content/tags/tag__chinese.json",
+      "content/tags/tag__cholesterol.json",
+      "content/tags/tag__circulation.json",
+      "content/tags/tag__cleaning.json",
+      "content/tags/tag__clicking.json",
+      "content/tags/tag__cold.json",
+      "content/tags/tag__colon-cancer.json",
+      "content/tags/tag__colon.json",
+      "content/tags/tag__congestion.json",
+      "content/tags/tag__cupping.json",
+      "content/tags/tag__depression.json",
+      "content/tags/tag__detox.json",
+      "content/tags/tag__diabetes.json",
+      "content/tags/tag__diet.json",
+      "content/tags/tag__digestion.json",
+      "content/tags/tag__digestive-health.json",
+      "content/tags/tag__dry-eyes.json",
+      "content/tags/tag__ear.json",
+      "content/tags/tag__eating.json",
+      "content/tags/tag__eft.json",
+      "content/tags/tag__energy.json",
+      "content/tags/tag__exercise.json",
+      "content/tags/tag__eye-health.json",
+      "content/tags/tag__eyes.json",
+      "content/tags/tag__fall.json",
+      "content/tags/tag__fathers-day.json",
+      "content/tags/tag__fatigue.json",
+      "content/tags/tag__fermented-food.json",
+      "content/tags/tag__fertility.json",
+      "content/tags/tag__five-elements.json",
+      "content/tags/tag__flu.json",
+      "content/tags/tag__focus.json",
+      "content/tags/tag__food.json",
+      "content/tags/tag__foods.json",
+      "content/tags/tag__fruit.json",
+      "content/tags/tag__germs.json",
+      "content/tags/tag__gratitude-2.json",
+      "content/tags/tag__gua-sha.json",
+      "content/tags/tag__habits.json",
+      "content/tags/tag__hawthorn.json",
+      "content/tags/tag__headaches.json",
+      "content/tags/tag__health.json",
+      "content/tags/tag__healthy.json",
+      "content/tags/tag__hearing-loss.json",
+      "content/tags/tag__heart-disease.json",
+      "content/tags/tag__heart.json",
+      "content/tags/tag__herbal-medicine.json",
+      "content/tags/tag__herbs.json",
+      "content/tags/tag__high-blood-pressure.json",
+      "content/tags/tag__holidays.json",
+      "content/tags/tag__hypertension.json",
+      "content/tags/tag__ibs.json",
+      "content/tags/tag__immune-deficiencies.json",
+      "content/tags/tag__immune-system.json",
+      "content/tags/tag__insomina.json",
+      "content/tags/tag__insomnia.json",
+      "content/tags/tag__invitro.json",
+      "content/tags/tag__irritable-bowel-syndrome.json",
+      "content/tags/tag__irritation.json",
+      "content/tags/tag__jaw.json",
+      "content/tags/tag__joints.json",
+      "content/tags/tag__juice.json",
+      "content/tags/tag__kidney.json",
+      "content/tags/tag__kidneys.json",
+      "content/tags/tag__kids.json",
+      "content/tags/tag__leukopenia.json",
+      "content/tags/tag__libido.json",
+      "content/tags/tag__liver.json",
+      "content/tags/tag__love.json",
+      "content/tags/tag__lunar.json",
+      "content/tags/tag__lungs.json",
+      "content/tags/tag__massage.json",
+      "content/tags/tag__medicine.json",
+      "content/tags/tag__meditation.json",
+      "content/tags/tag__memory.json",
+      "content/tags/tag__men.json",
+      "content/tags/tag__mens-health.json",
+      "content/tags/tag__menstruation.json",
+      "content/tags/tag__mental-health.json",
+      "content/tags/tag__meridians.json",
+      "content/tags/tag__migraines.json",
+      "content/tags/tag__military.json",
+      "content/tags/tag__mind.json",
+      "content/tags/tag__mood.json",
+      "content/tags/tag__motivation.json",
+      "content/tags/tag__moxibustion.json",
+      "content/tags/tag__neck-pain.json",
+      "content/tags/tag__needles.json",
+      "content/tags/tag__new-year.json",
+      "content/tags/tag__nutrition-2.json",
+      "content/tags/tag__obesity.json",
+      "content/tags/tag__obsessive-compulsive-disorder.json",
+      "content/tags/tag__ocd.json",
+      "content/tags/tag__oils.json",
+      "content/tags/tag__olive-oil.json",
+      "content/tags/tag__olympics.json",
+      "content/tags/tag__omega-3.json",
+      "content/tags/tag__organize.json",
+      "content/tags/tag__pain.json",
+      "content/tags/tag__phobia.json",
+      "content/tags/tag__pms.json",
+      "content/tags/tag__popping.json",
+      "content/tags/tag__pregnancy.json",
+      "content/tags/tag__prostate.json",
+      "content/tags/tag__psoriasis.json",
+      "content/tags/tag__ptsd.json",
+      "content/tags/tag__qi.json",
+      "content/tags/tag__quit.json",
+      "content/tags/tag__red-eye.json",
+      "content/tags/tag__relaxation.json",
+      "content/tags/tag__sad.json",
+      "content/tags/tag__salmon.json",
+      "content/tags/tag__seasonal-affective-disorder.json",
+      "content/tags/tag__seniors.json",
+      "content/tags/tag__shen.json",
+      "content/tags/tag__si-shou.json",
+      "content/tags/tag__sinus-pain.json",
+      "content/tags/tag__skin.json",
+      "content/tags/tag__sleep.json",
+      "content/tags/tag__small-intestine.json",
+      "content/tags/tag__smoking.json",
+      "content/tags/tag__smoothies.json",
+      "content/tags/tag__sound-therapy.json",
+      "content/tags/tag__soup.json",
+      "content/tags/tag__spleen.json",
+      "content/tags/tag__sports.json",
+      "content/tags/tag__sprains.json",
+      "content/tags/tag__spring.json",
+      "content/tags/tag__stomach.json",
+      "content/tags/tag__strains.json",
+      "content/tags/tag__stress.json",
+      "content/tags/tag__stretching.json",
+      "content/tags/tag__sugar.json",
+      "content/tags/tag__summer.json",
+      "content/tags/tag__sun.json",
+      "content/tags/tag__sunscreen.json",
+      "content/tags/tag__superfoods.json",
+      "content/tags/tag__tai-chi.json",
+      "content/tags/tag__tapping.json",
+      "content/tags/tag__tcm.json",
+      "content/tags/tag__tcm__page__2.json",
+      "content/tags/tag__tea.json",
+      "content/tags/tag__thanks.json",
+      "content/tags/tag__tmj.json",
+      "content/tags/tag__tonics.json",
+      "content/tags/tag__treatment.json",
+      "content/tags/tag__valentines-day.json",
+      "content/tags/tag__valentines.json",
+      "content/tags/tag__vegetables.json",
+      "content/tags/tag__vibration.json",
+      "content/tags/tag__walnuts.json",
+      "content/tags/tag__wei-qi.json",
+      "content/tags/tag__weight-loss.json",
+      "content/tags/tag__weight.json",
+      "content/tags/tag__wellness-tcm-pain.json",
+      "content/tags/tag__wellness.json",
+      "content/tags/tag__white-blood-cells.json",
+      "content/tags/tag__willpower.json",
+      "content/tags/tag__winter.json",
+      "content/tags/tag__womens-health.json",
+      "content/tags/tag__work-stress.json",
+      "content/tags/tag__yoga.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/02/Artboard-1@sishou.png",
+    "refs": [
+      "content/all.json",
+      "content/posts/4-lifestyle-tweaks-to-thrive-this-spring%ef%bb%bf.json",
+      "lib/site.ts"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/Boost-it-with-ginseng-1024x252.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/boost-it-with-ginseng.json",
+      "content/posts/boost-it-with-ginseng.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/Boost-it-with-ginseng-300x74.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/boost-it-with-ginseng.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/Boost-it-with-ginseng-768x189.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/boost-it-with-ginseng.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/Boost-it-with-ginseng.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/boost-it-with-ginseng.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/Dandelion-Detox-1024x252.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/dandelion-detox-with-this-yellow-charmer.json",
+      "content/posts/dandelion-detox-with-this-yellow-charmer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/Dandelion-Detox-300x74.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/dandelion-detox-with-this-yellow-charmer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/Dandelion-Detox-768x189.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/dandelion-detox-with-this-yellow-charmer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/Dandelion-Detox.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/dandelion-detox-with-this-yellow-charmer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/blog1_image-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/dandelion-detox-with-this-yellow-charmer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/blog1_image.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__diet-2__page__2.json",
+      "content/categories/category__herbal-medicine.json",
+      "content/categories/category__traditional-chinese-medicine__page__3.json",
+      "content/pages/blog__page__4.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/blog2_image-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/boost-it-with-ginseng.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/03/blog2_image.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__uncategorized__page__2.json",
+      "content/pages/blog__page__4.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/04/beating-the-blues.png",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__3.json",
+      "content/categories/category__chinese-medicine-2__page__3.json",
+      "content/categories/category__detox.json",
+      "content/categories/category__diet-2__page__2.json",
+      "content/categories/category__digestion.json",
+      "content/categories/category__health__page__3.json",
+      "content/categories/category__nutrition__page__2.json",
+      "content/categories/category__wellness-2__page__3.json",
+      "content/pages/blog__page__4.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/04/istock-683044558-300x211.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/spring-cleansing-and-clearing.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/04/istock-683044558-768x540.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/spring-cleansing-and-clearing.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/04/istock-683044558.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/spring-cleansing-and-clearing.json",
+      "content/posts/spring-cleansing-and-clearing.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/04/unnamed-768x480.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/spring-cleansing-and-clearing.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/04/unnamed.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__uncategorized__page__2.json",
+      "content/pages/blog__page__4.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/05/4273350178_d649176a3f_z-1-300x200.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/using-acupuncture-to-treat-ptsd.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/05/4273350178_d649176a3f_z-1.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/using-acupuncture-to-treat-ptsd.json",
+      "content/posts/using-acupuncture-to-treat-ptsd.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/05/4273350178_d649176a3f_z.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__3.json",
+      "content/categories/category__anxiety.json",
+      "content/categories/category__chinese-medicine-2__page__3.json",
+      "content/categories/category__depression.json",
+      "content/categories/category__headaches-migraines.json",
+      "content/categories/category__health__page__2.json",
+      "content/categories/category__herbal-medicine.json",
+      "content/categories/category__herbs.json",
+      "content/categories/category__insomnia.json",
+      "content/categories/category__meditation.json",
+      "content/categories/category__mens-health.json",
+      "content/categories/category__migraines.json",
+      "content/categories/category__pain.json",
+      "content/categories/category__stress-2.json",
+      "content/categories/category__traditional-chinese-medicine__page__3.json",
+      "content/pages/blog__page__4.json",
+      "content/posts/using-acupuncture-to-treat-ptsd.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/05/couple-300x200.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/7-ways-acupuncture-can-help-mens-health.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/05/couple-768x513.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/7-ways-acupuncture-can-help-mens-health.json",
+      "content/posts/7-ways-acupuncture-can-help-mens-health.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/05/couple.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__3.json",
+      "content/categories/category__chinese-medicine-2__page__3.json",
+      "content/categories/category__diet-2.json",
+      "content/categories/category__digestion.json",
+      "content/categories/category__digestive-disorders.json",
+      "content/categories/category__fertility.json",
+      "content/categories/category__health__page__2.json",
+      "content/categories/category__insomnia.json",
+      "content/categories/category__mens-health.json",
+      "content/categories/category__nutrition.json",
+      "content/categories/category__pain.json",
+      "content/categories/category__si-shou__page__2.json",
+      "content/categories/category__stress-2.json",
+      "content/categories/category__traditional-chinese-medicine__page__3.json",
+      "content/pages/blog__page__4.json",
+      "content/posts/7-ways-acupuncture-can-help-mens-health.json",
+      "content/posts/7-ways-acupuncture-can-help-mens-health.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/06/1499987287340-Summertime-1024x683.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/4-tips-for-an-energizing-joyful-summer.json",
+      "content/posts/4-tips-for-an-energizing-joyful-summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/06/1499987287340-Summertime-300x200.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/4-tips-for-an-energizing-joyful-summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/06/1499987287340-Summertime-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/4-tips-for-an-energizing-joyful-summer.json",
+      "content/posts/4-tips-for-an-energizing-joyful-summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/06/1499987287340-Summertime.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__uncategorized__page__2.json",
+      "content/pages/blog__page__3.json",
+      "content/posts/4-tips-for-an-energizing-joyful-summer.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/06/Veggies-810x540-300x200.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tis-the-season-to-nourish-your-heart.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/06/Veggies-810x540-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/tis-the-season-to-nourish-your-heart.json",
+      "content/posts/tis-the-season-to-nourish-your-heart.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/06/Veggies-810x540.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__3.json",
+      "content/categories/category__chinese-medicine-2__page__3.json",
+      "content/categories/category__detox.json",
+      "content/categories/category__diet-2.json",
+      "content/categories/category__digestion.json",
+      "content/categories/category__health__page__2.json",
+      "content/pages/blog__page__3.json",
+      "content/posts/tis-the-season-to-nourish-your-heart.json",
+      "content/posts/tis-the-season-to-nourish-your-heart.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/07/Chickpea-Curry-2-300x199.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tcm-tips-for-a-strong-immune-system.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/07/Chickpea-Curry-2-768x509.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/tcm-tips-for-a-strong-immune-system.json",
+      "content/posts/tcm-tips-for-a-strong-immune-system.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/07/Chickpea-Curry-2.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__3.json",
+      "content/categories/category__chinese-medicine-2__page__3.json",
+      "content/categories/category__diet-2.json",
+      "content/categories/category__digestion.json",
+      "content/categories/category__health__page__2.json",
+      "content/categories/category__nutrition.json",
+      "content/categories/category__traditional-chinese-medicine__page__3.json",
+      "content/categories/category__wellness-2__page__2.json",
+      "content/pages/blog__page__3.json",
+      "content/posts/tcm-tips-for-a-strong-immune-system.json",
+      "content/posts/tcm-tips-for-a-strong-immune-system.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/08/448f0c6d-9a8a-49fc-acb1-98b890c02878-1-1024x768.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-low-back-pain.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-low-back-pain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/08/448f0c6d-9a8a-49fc-acb1-98b890c02878-1-300x225.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-low-back-pain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/08/448f0c6d-9a8a-49fc-acb1-98b890c02878-1-768x576.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-low-back-pain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/08/448f0c6d-9a8a-49fc-acb1-98b890c02878-1.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-low-back-pain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/08/448f0c6d-9a8a-49fc-acb1-98b890c02878-768x576.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/five-reasons-to-get-acupuncture-for-low-back-pain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/08/448f0c6d-9a8a-49fc-acb1-98b890c02878.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupressure.json",
+      "content/categories/category__acupuncture__page__3.json",
+      "content/categories/category__chinese-medicine-2__page__3.json",
+      "content/categories/category__health__page__2.json",
+      "content/categories/category__pain.json",
+      "content/categories/category__stress-2.json",
+      "content/categories/category__traditional-chinese-medicine__page__2.json",
+      "content/categories/category__wellness-2__page__2.json",
+      "content/pages/blog__page__3.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/08/pain-300x154.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-vs-morphine-for-pain-relief.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/08/pain.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__2.json",
+      "content/categories/category__chinese-medicine-2__page__2.json",
+      "content/categories/category__cupping.json",
+      "content/categories/category__health__page__2.json",
+      "content/categories/category__pain.json",
+      "content/categories/category__traditional-chinese-medicine__page__2.json",
+      "content/categories/category__wellness-2__page__2.json",
+      "content/pages/blog__page__3.json",
+      "content/posts/acupuncture-vs-morphine-for-pain-relief.json",
+      "content/posts/acupuncture-vs-morphine-for-pain-relief.json",
+      "content/posts/acupuncture-vs-morphine-for-pain-relief.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/09/intelligence-4234824__480-300x96.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/tcm-neurological-disorders.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/09/intelligence-4234824__480-768x247.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/tcm-neurological-disorders.json",
+      "content/posts/tcm-neurological-disorders.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/09/intelligence-4234824__480.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupressure.json",
+      "content/categories/category__acupuncture__page__2.json",
+      "content/categories/category__chinese-medicine-2__page__2.json",
+      "content/categories/category__depression.json",
+      "content/categories/category__diet-2.json",
+      "content/categories/category__headaches-migraines.json",
+      "content/categories/category__mens-health.json",
+      "content/categories/category__migraines.json",
+      "content/categories/category__neurological.json",
+      "content/categories/category__nutrition.json",
+      "content/categories/category__traditional-chinese-medicine__page__2.json",
+      "content/categories/category__wellness-2__page__2.json",
+      "content/pages/blog__page__3.json",
+      "content/posts/tcm-neurological-disorders.json",
+      "content/posts/tcm-neurological-disorders.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/10/Happy-kids-1-284x300.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-and-kids.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/10/Happy-kids-1-768x812.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-and-kids.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/10/Happy-kids-1.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/acupuncture-and-kids.json",
+      "content/posts/acupuncture-and-kids.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/10/Happy-kids-768x812.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-and-kids.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/10/Happy-kids.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__2.json",
+      "content/categories/category__children.json",
+      "content/categories/category__chinese-medicine-2__page__2.json",
+      "content/categories/category__healthwellnews.json",
+      "content/categories/category__health__page__2.json",
+      "content/categories/category__herbal-medicine.json",
+      "content/categories/category__herbs.json",
+      "content/categories/category__nutrition.json",
+      "content/categories/category__pain.json",
+      "content/categories/category__wellness-2__page__2.json",
+      "content/pages/blog__page__3.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/10/interstitium-1-620x280-1-300x135.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/more-insight-into-how-acupuncture-works.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/10/interstitium-1-620x280-1.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/posts/more-insight-into-how-acupuncture-works.json",
+      "content/posts/more-insight-into-how-acupuncture-works.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/10/interstitium-1-620x280.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupressure.json",
+      "content/categories/category__acupuncture__page__2.json",
+      "content/categories/category__chinese-medicine-2__page__2.json",
+      "content/categories/category__healthwellnews__page__2.json",
+      "content/categories/category__health__page__2.json",
+      "content/categories/category__si-shou__page__2.json",
+      "content/categories/category__stress-2.json",
+      "content/categories/category__traditional-chinese-medicine__page__2.json",
+      "content/categories/category__wellness-2__page__2.json",
+      "content/pages/blog__page__3.json",
+      "content/posts/more-insight-into-how-acupuncture-works.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/12/Winter-Veggies-768x432.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/traditional-chinese-medicine-in-winter.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/12/Winter-Veggies.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupressure.json",
+      "content/categories/category__acupuncture__page__2.json",
+      "content/categories/category__allergies.json",
+      "content/categories/category__cancer.json",
+      "content/categories/category__chinese-medicine-2__page__2.json",
+      "content/categories/category__detox.json",
+      "content/categories/category__diet-2.json",
+      "content/categories/category__digestion.json",
+      "content/categories/category__digestive-disorders.json",
+      "content/categories/category__health.json",
+      "content/categories/category__healthwellnews.json",
+      "content/categories/category__meditation.json",
+      "content/categories/category__nutrition.json",
+      "content/categories/category__traditional-chinese-medicine__page__2.json",
+      "content/categories/category__uncategorized__page__2.json",
+      "content/categories/category__wellness-2__page__2.json",
+      "content/pages/blog__page__2.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/12/person-holding-someone-else-s-hand-768x512.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-and-depression.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2019/12/person-holding-someone-else-s-hand.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__2.json",
+      "content/categories/category__anxiety.json",
+      "content/categories/category__chinese-medicine-2__page__2.json",
+      "content/categories/category__depression.json",
+      "content/categories/category__fatigue.json",
+      "content/categories/category__healthwellnews.json",
+      "content/categories/category__health__page__2.json",
+      "content/categories/category__herbal-medicine.json",
+      "content/categories/category__insomnia.json",
+      "content/categories/category__stress-2.json",
+      "content/categories/category__traditional-chinese-medicine__page__2.json",
+      "content/categories/category__uncategorized__page__2.json",
+      "content/categories/category__wellness-2__page__2.json",
+      "content/categories/category__what-we-treat.json",
+      "content/pages/blog__page__3.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2020/01/roasted-butternut-squash-soup-recipe-crispy-chickpeas-5-768x1159.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/is-your-gut-bacteria-causing-your-depression.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2020/01/roasted-butternut-squash-soup-recipe-crispy-chickpeas-5.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture__page__2.json",
+      "content/categories/category__allergies.json",
+      "content/categories/category__anxiety.json",
+      "content/categories/category__chinese-medicine-2__page__2.json",
+      "content/categories/category__depression.json",
+      "content/categories/category__detox.json",
+      "content/categories/category__diet-2.json",
+      "content/categories/category__digestion.json",
+      "content/categories/category__digestive-disorders.json",
+      "content/categories/category__fatigue.json",
+      "content/categories/category__health.json",
+      "content/categories/category__healthwellnews.json",
+      "content/categories/category__nutrition.json",
+      "content/categories/category__si-shou.json",
+      "content/categories/category__traditional-chinese-medicine__page__2.json",
+      "content/categories/category__wellness-2__page__2.json",
+      "content/pages/blog__page__2.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2020/02/images.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupressure.json",
+      "content/categories/category__acupuncture__page__2.json",
+      "content/categories/category__chinese-medicine-2__page__2.json",
+      "content/categories/category__electroacupuncture.json",
+      "content/categories/category__facial-rejuvenation.json",
+      "content/categories/category__health.json",
+      "content/categories/category__neurological.json",
+      "content/categories/category__pain.json",
+      "content/categories/category__si-shou.json",
+      "content/categories/category__traditional-chinese-medicine__page__2.json",
+      "content/categories/category__what-we-treat.json",
+      "content/pages/blog__page__2.json",
+      "content/posts/electroacupuncture-pain.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2020/05/healthy-eating-5.2020.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture.json",
+      "content/categories/category__anxiety.json",
+      "content/categories/category__chinese-medicine-2.json",
+      "content/categories/category__depression.json",
+      "content/categories/category__detox.json",
+      "content/categories/category__diet-2.json",
+      "content/categories/category__digestion.json",
+      "content/categories/category__digestive-disorders.json",
+      "content/categories/category__fatigue.json",
+      "content/categories/category__health.json",
+      "content/categories/category__healthwellnews.json",
+      "content/categories/category__nutrition.json",
+      "content/categories/category__si-shou.json",
+      "content/categories/category__traditional-chinese-medicine.json",
+      "content/categories/category__uncategorized__page__2.json",
+      "content/categories/category__wellness-2.json",
+      "content/pages/blog__page__2.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2020/07/download.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture.json",
+      "content/categories/category__allergies.json",
+      "content/categories/category__chinese-medicine-2.json",
+      "content/categories/category__detox.json",
+      "content/categories/category__diet-2.json",
+      "content/categories/category__health.json",
+      "content/categories/category__herbal-medicine.json",
+      "content/categories/category__herbs.json",
+      "content/categories/category__nutrition.json",
+      "content/categories/category__traditional-chinese-medicine.json",
+      "content/categories/category__uncategorized__page__2.json",
+      "content/categories/category__wellness-2.json",
+      "content/pages/blog__page__2.json",
+      "content/posts/are-allergies-necessary.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2020/09/Eyes.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupressure.json",
+      "content/categories/category__acupuncture.json",
+      "content/categories/category__allergies.json",
+      "content/categories/category__chinese-medicine-2.json",
+      "content/categories/category__headaches-migraines.json",
+      "content/categories/category__si-shou.json",
+      "content/categories/category__traditional-chinese-medicine.json",
+      "content/categories/category__uncategorized.json",
+      "content/categories/category__uncategorized.json",
+      "content/categories/category__wellness-2.json",
+      "content/categories/category__what-we-treat.json",
+      "content/pages/blog.json",
+      "content/pages/blog__page__2.json",
+      "content/pages/home.json",
+      "content/posts/eye-disorders.json",
+      "content/posts/our-obsession-with-optimum-optics.json",
+      "content/tags/tag__eyes.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2020/10/Zombie-Brains.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture.json",
+      "content/categories/category__anxiety.json",
+      "content/categories/category__chinese-medicine-2.json",
+      "content/categories/category__depression.json",
+      "content/categories/category__headaches-migraines.json",
+      "content/categories/category__neurological.json",
+      "content/categories/category__stress-2.json",
+      "content/categories/category__traditional-chinese-medicine.json",
+      "content/categories/category__uncategorized.json",
+      "content/categories/category__wellness-2.json",
+      "content/categories/category__what-we-treat.json",
+      "content/pages/blog.json",
+      "content/posts/we-want-to-treat-your-brains.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2020/11/images.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupressure.json",
+      "content/categories/category__acupuncture.json",
+      "content/categories/category__allergies.json",
+      "content/categories/category__anxiety.json",
+      "content/categories/category__chinese-medicine-2.json",
+      "content/categories/category__depression.json",
+      "content/categories/category__detox.json",
+      "content/categories/category__diet-2.json",
+      "content/categories/category__digestion.json",
+      "content/categories/category__digestive-disorders.json",
+      "content/categories/category__electroacupuncture.json",
+      "content/categories/category__facial-rejuvenation.json",
+      "content/categories/category__fatigue.json",
+      "content/categories/category__headaches-migraines.json",
+      "content/categories/category__health.json",
+      "content/categories/category__healthwellnews.json",
+      "content/categories/category__herbal-medicine.json",
+      "content/categories/category__herbs.json",
+      "content/categories/category__insomnia.json",
+      "content/categories/category__meditation.json",
+      "content/categories/category__mens-health.json",
+      "content/categories/category__migraines.json",
+      "content/categories/category__neurological.json",
+      "content/categories/category__nutrition.json",
+      "content/categories/category__pain.json",
+      "content/categories/category__si-shou.json",
+      "content/categories/category__stress-2.json",
+      "content/categories/category__traditional-chinese-medicine.json",
+      "content/categories/category__uncategorized.json",
+      "content/categories/category__wellness-2.json",
+      "content/categories/category__what-we-treat.json",
+      "content/categories/category__womens-health.json",
+      "content/pages/blog.json",
+      "content/posts/holiday-bonus-notice.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2020/12/images.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture.json",
+      "content/categories/category__anxiety.json",
+      "content/categories/category__chinese-medicine-2.json",
+      "content/categories/category__detox.json",
+      "content/categories/category__health.json",
+      "content/categories/category__healthwellnews.json",
+      "content/categories/category__pain.json",
+      "content/categories/category__traditional-chinese-medicine.json",
+      "content/categories/category__uncategorized.json",
+      "content/categories/category__wellness-2.json",
+      "content/categories/category__what-we-treat.json",
+      "content/pages/blog.json",
+      "content/posts/acupuncture-and-opioid-addiction.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2021/01/download.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture.json",
+      "content/categories/category__chinese-medicine-2.json",
+      "content/categories/category__detox.json",
+      "content/categories/category__electroacupuncture.json",
+      "content/categories/category__fatigue.json",
+      "content/categories/category__headaches-migraines.json",
+      "content/categories/category__herbal-medicine.json",
+      "content/categories/category__herbs.json",
+      "content/categories/category__insomnia.json",
+      "content/categories/category__mens-health.json",
+      "content/categories/category__si-shou.json",
+      "content/categories/category__traditional-chinese-medicine.json",
+      "content/categories/category__wellness-2.json",
+      "content/categories/category__what-we-treat.json",
+      "content/categories/category__womens-health.json",
+      "content/pages/blog.json",
+      "content/posts/acupuncture-and-lingering-covid-19-symptoms.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2021/02/Stef-and-Studen.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__uncategorized.json",
+      "content/pages/blog.json",
+      "content/pages/home.json",
+      "content/posts/does-acupuncture-hurt.json",
+      "content/tags/tag__acupuncture-2.json",
+      "content/tags/tag__alternative-medicine.json",
+      "content/tags/tag__pain.json",
+      "content/tags/tag__tcm.json",
+      "content/tags/tag__treatment.json",
+      "content/tags/tag__wellness.json",
+      "content/tags/tag__womens-health.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2021/02/images.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupuncture.json",
+      "content/categories/category__chinese-medicine-2.json",
+      "content/categories/category__si-shou.json",
+      "content/categories/category__traditional-chinese-medicine.json",
+      "content/categories/category__uncategorized.json",
+      "content/pages/blog.json",
+      "content/posts/2021-the-year-of-the-ox.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2021/06/download.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__acupressure.json",
+      "content/categories/category__acupuncture.json",
+      "content/categories/category__chinese-medicine-2.json",
+      "content/categories/category__depression.json",
+      "content/categories/category__health.json",
+      "content/categories/category__healthwellnews.json",
+      "content/categories/category__mens-health.json",
+      "content/categories/category__neurological.json",
+      "content/categories/category__si-shou.json",
+      "content/categories/category__stress-2.json",
+      "content/categories/category__traditional-chinese-medicine.json",
+      "content/categories/category__uncategorized.json",
+      "content/categories/category__wellness-2.json",
+      "content/categories/category__what-we-treat.json",
+      "content/categories/category__womens-health.json",
+      "content/pages/blog.json",
+      "content/pages/home.json",
+      "content/posts/effects-of-acupuncture-on-alzheimers.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2022/05/NeuroPic-768x154.jpg",
+    "refs": [
+      "content/all.json",
+      "content/posts/acupuncture-and-the-treatment-of-neurological-disorders.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2022/05/NeuroPic.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/all.json",
+      "content/categories/category__neurological.json",
+      "content/pages/blog.json",
+      "content/pages/home.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2023/03/IMG_5837-150x150.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/our-team.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2023/03/IMG_5837-300x300.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/pages/our-team.json",
+      "content/pages/our-team.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2023/03/unnamed-150x150.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/contact.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2024/03/aaron-1455x1536.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/our-team.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2024/03/aaron-284x300.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/our-team.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2024/03/aaron-768x811.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/our-team.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2024/03/aaron-970x1024.jpg",
+    "refs": [
+      "content/all.json",
+      "content/pages/our-team.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2024/03/aaron.jpg",
+    "refs": [
+      "content/all.json",
+      "content/all.json",
+      "content/pages/our-team.json",
+      "content/pages/our-team.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2026/08/Gannon-AOMASept2022-R-150x150.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/pages/contact.json"
+    ]
+  },
+  {
+    "url": "https://acuwellnessclinic.com/wp-content/uploads/2026/08/Gannon-AOMASept2022-R.jpeg",
+    "refs": [
+      "content/all.json",
+      "content/pages/our-team.json"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/*
+  Brand tokens recorded from live WP. Not applied as a designed theme.
+  Olive #8aa45e / hero overlay rgba(138,164,94,0.73)
+  Dusty blue #82a4c0
+  Charcoal #333333 / body #404040 / white
+  Fonts: IBM Plex Sans (body), Muli (headings/nav), Indie Flower (hero H1 + Buddha quote)
+*/
+
+@theme {
+  --color-olive: #8aa45e;
+  --color-dusty-blue: #82a4c0;
+  --color-charcoal: #333333;
+  --color-body: #404040;
+  --color-white: #ffffff;
+  --color-background: #ffffff;
+  --color-foreground: #404040;
+}
+
+html {
+  color-scheme: light only;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #222;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.prose-wp img {
+  height: auto;
+}
