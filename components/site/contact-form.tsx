@@ -1,6 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
 
 const SUBJECTS = [
   "General",
@@ -18,7 +22,8 @@ export function ContactForm() {
     e.preventDefault();
     setStatus("sending");
     setError("");
-    const form = new FormData(e.currentTarget);
+    const formEl = e.currentTarget;
+    const form = new FormData(formEl);
     const payload = {
       firstName: String(form.get("firstName") || ""),
       lastName: String(form.get("lastName") || ""),
@@ -34,8 +39,8 @@ export function ContactForm() {
         body: JSON.stringify({ type: "contact", payload }),
       });
       if (!res.ok) throw new Error("submit failed");
+      formEl.reset();
       setStatus("ok");
-      e.currentTarget.reset();
     } catch {
       setStatus("err");
       setError("Submission is temporarily unavailable.");
@@ -43,31 +48,42 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit}>
-      <p>
-        <label htmlFor="firstName">First Name</label>
-        <br />
-        <input id="firstName" name="firstName" required />
-      </p>
-      <p>
-        <label htmlFor="lastName">Last Name</label>
-        <br />
-        <input id="lastName" name="lastName" required />
-      </p>
-      <p>
-        <label htmlFor="email">Email</label>
-        <br />
-        <input id="email" name="email" type="email" required />
-      </p>
-      <p>
-        <label htmlFor="phone">Phone/Mobile</label>
-        <br />
-        <input id="phone" name="phone" type="tel" required />
-      </p>
-      <p>
-        <label htmlFor="subject">Subject</label>
-        <br />
-        <select id="subject" name="subject" required defaultValue="">
+    <form onSubmit={onSubmit} method="post" className="flex max-w-xl flex-col gap-5">
+      <div className="flex flex-col gap-2">
+        <Label htmlFor="firstName" className="font-sans text-sm text-charcoal">
+          First Name
+        </Label>
+        <Input id="firstName" name="firstName" required className="h-10 rounded-none" />
+      </div>
+      <div className="flex flex-col gap-2">
+        <Label htmlFor="lastName" className="font-sans text-sm text-charcoal">
+          Last Name
+        </Label>
+        <Input id="lastName" name="lastName" required className="h-10 rounded-none" />
+      </div>
+      <div className="flex flex-col gap-2">
+        <Label htmlFor="email" className="font-sans text-sm text-charcoal">
+          Email
+        </Label>
+        <Input id="email" name="email" type="email" required className="h-10 rounded-none" />
+      </div>
+      <div className="flex flex-col gap-2">
+        <Label htmlFor="phone" className="font-sans text-sm text-charcoal">
+          Phone/Mobile
+        </Label>
+        <Input id="phone" name="phone" type="tel" required className="h-10 rounded-none" />
+      </div>
+      <div className="flex flex-col gap-2">
+        <Label htmlFor="subject" className="font-sans text-sm text-charcoal">
+          Subject
+        </Label>
+        <select
+          id="subject"
+          name="subject"
+          required
+          defaultValue=""
+          className="h-10 rounded-none border border-input bg-transparent px-3 font-sans text-sm text-charcoal"
+        >
           <option value="" disabled>
             - Select -
           </option>
@@ -77,19 +93,24 @@ export function ContactForm() {
             </option>
           ))}
         </select>
-      </p>
-      <p>
-        <label htmlFor="message">Your Message</label>
-        <br />
-        <textarea id="message" name="message" required rows={6} />
-      </p>
-      <p>
-        <button type="submit" disabled={status === "sending"}>
-          Submit Form
-        </button>
-      </p>
-      {status === "ok" ? <p>Thank you. Your message has been sent.</p> : null}
-      {status === "err" ? <p>{error}</p> : null}
+      </div>
+      <div className="flex flex-col gap-2">
+        <Label htmlFor="message" className="font-sans text-sm text-charcoal">
+          Your Message
+        </Label>
+        <Textarea id="message" name="message" required rows={6} className="rounded-none" />
+      </div>
+      <Button
+        type="submit"
+        disabled={status === "sending"}
+        className="h-10 w-fit rounded-none bg-olive font-heading text-white hover:bg-olive/90"
+      >
+        Submit Form
+      </Button>
+      {status === "ok" ? (
+        <p className="font-sans text-sm text-charcoal">Thank you. Your message has been sent.</p>
+      ) : null}
+      {status === "err" ? <p className="font-sans text-sm text-charcoal">{error}</p> : null}
     </form>
   );
 }

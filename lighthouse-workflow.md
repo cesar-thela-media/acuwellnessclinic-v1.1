@@ -2,7 +2,7 @@
 
 Reusable playbook for recreating a live marketing site as a Vercel-first React app. Client-agnostic. Drop this file in a new project folder with `.env` (Shadcn Space credentials) and the target URL.
 
-**Version 3.4** — refined from the old lighthouse + v2.1 rules, plus the first full WP-to-React migration (Acuwellness). Update this file when a new project teaches a new rule. White-label the lesson. Do not paste client secrets.
+**Version 3.8** — refined from the old lighthouse + v2.1 rules, plus the first full WP-to-React migration (Acuwellness). Update this file when a new project teaches a new rule. White-label the lesson. Do not paste client secrets.
 
 ---
 
@@ -73,7 +73,7 @@ Capture before the first implementer prompt:
 - Mode A or B
 - Copy exceptions (name swaps, legal entity)
 - Known must-keep brand colors
-- 1–3 design references (can wait until design unlock)
+- 1–3 design references (Land-book first: https://land-book.com/). Conductor finds options; human picks. Keep the client’s colors, fonts, and exact copy. Steal **layout only** from the reference.
 - Booking system (Optimantra, Jane, Acuity, Calendly, leftover iframe, none)
 - Whether blogs / resources / PDFs are in scope
 
@@ -166,6 +166,26 @@ Do this after the gate and before Phase 5. Especially in Mode B (ditch WordPress
 
 ---
 
+## Design references (Land-book)
+
+Source: [Land-book](https://land-book.com/). Search wellness / clinic / spa / therapist, not SaaS.
+
+Rules:
+- Client brand stays (colors, type tokens, logo, photos, every word).
+- The reference supplies layout, section rhythm, hero structure, density, and motion — not copy or palette.
+- Conductor lists real `https://land-book.com/websites/...` links. Human picks 1 (or 2 if they want a hero from one and inner pages from another).
+- Prefer Reset-like calm holistic studios for acupuncture / wellness clinics unless the human picks a more medical look.
+- After a pick, the next implementer prompt names that Land-book URL (and the live preview if one exists) and says: layout from the reference, brand/copy from the client.
+- Default scope is **one section** (usually the hero). “Rebrand the whole reference as-is” is only if the human says so.
+- Replicate structure, not assets. No invented social-proof numbers. No reference videos/photos. Client media only (AI atmosphere for hero is allowed later).
+- A project may split references by section: one site for the hero, another for the rest of the UI / inner pages. Write that split into the implementer prompt. Do not mash two full sites into one section.
+
+### Per-project visual split (Acuwellness)
+
+- Hero: Waveyu first-screen layout (https://waveyu.webflow.io/). Chip + huge title + one CTA + full-bleed media.
+- Optional later cinematic story: Diamond Rose Lotus Temple scroll-scrub (https://diamondrosesanctuary.com/) — pinned canvas, frame sequence, text beats. Only if we have video/frames. Not the hero.
+- All other homepage sections and inner pages: Reset Wellness system (https://resetwellness.framer.website/) — layout, type mix, whitespace, cards, scroll-reveal. Client olive/dusty-blue/cream tokens, not Reset amber/black.
+
 ## Phase 5 — Brand lock
 
 Stay in the original color spectrum (matte variations allowed). Lock type from references + industry. Prefer free / obtainable fonts. No neon, no heavy glass, no excess gradient. Gradients use the locked primaries, 2–3 per page max.
@@ -222,6 +242,7 @@ Deploy personal Vercel. Test the production URL. Only then is it outreach / hand
 - When visual QA needs eyes on localhost or the live original, write a Claude Cowork prompt.
 - After a project teaches a new rule, update this file.
 - After the gate is green, the next prompt is Phase 4b hardening (localize assets, prove APIs, prove registry). Brand lock + Hero only after the human says design may start.
+- While the implementer is executing a section, the Conductor extracts the NEXT section's exact copy from content/ and drafts the next prompt. Do not send it until the current section is QAd.
 
 ---
 

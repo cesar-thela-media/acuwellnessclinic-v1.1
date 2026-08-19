@@ -1,4 +1,7 @@
-import { WpBody } from "@/components/site/wp-body";
+import Hero29 from "@/components/shadcn-space/blocks/hero-29/hero";
+import GetStarted from "@/components/shadcn-space/blocks/cta-05/cta";
+import AboutUs from "@/components/shadcn-space/blocks/about-us-11/about-us";
+import Blog from "@/components/shadcn-space/blocks/blog-02/blog";
 import { getDoc } from "@/lib/content";
 import { JsonLd, pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
@@ -14,8 +17,11 @@ export default function HomePage() {
   if (!doc) notFound();
   return (
     <article>
-      <JsonLd doc={doc} />
-      <WpBody html={doc.html} />
+      <JsonLd canonicalPath={doc.canonicalPath} metaTitle={doc.metaTitle} metaDescription={doc.metaDescription} />
+      <Hero29 />
+      <GetStarted />
+      <AboutUs />
+      <Blog />
     </article>
   );
 }

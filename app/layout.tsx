@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { IBM_Plex_Sans, Indie_Flower, Mulish } from "next/font/google";
 import { Footer } from "@/components/site/footer";
 import { GsapRoot } from "@/components/site/gsap-root";
 import { Header } from "@/components/site/header";
@@ -6,6 +7,27 @@ import { NewsletterPopup } from "@/components/site/newsletter-popup";
 import { NeuropathyPopup } from "@/components/site/neuropathy-popup";
 import { site } from "@/lib/site";
 import "./globals.css";
+
+const sans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-ibm-plex-sans",
+  display: "swap",
+});
+
+const heading = Mulish({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-muli",
+  display: "swap",
+});
+
+const hero = Indie_Flower({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-indie-flower",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -20,8 +42,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-US">
-      <body>
+    <html lang="en-US" className={`${sans.variable} ${heading.variable} ${hero.variable}`}>
+      <body className="font-sans">
         <GsapRoot>
           <Header />
           <main>{children}</main>

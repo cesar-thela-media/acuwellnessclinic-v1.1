@@ -22,12 +22,20 @@ export function pageMetadata(doc: ContentDoc) {
   };
 }
 
-export function JsonLd({ doc }: { doc: ContentDoc }) {
-  const path = doc.canonicalPath === "/" ? "/" : `${doc.canonicalPath}/`;
+export function JsonLd({
+  canonicalPath,
+  metaTitle,
+  metaDescription,
+}: {
+  canonicalPath: string;
+  metaTitle: string;
+  metaDescription: string;
+}) {
+  const path = canonicalPath === "/" ? "/" : `${canonicalPath}/`;
   const url = `${site.url}${path === "/" ? "/" : path}`;
   const crumbs = [{ name: "Home", item: `${site.url}/` }];
-  if (doc.canonicalPath !== "/") {
-    const parts = doc.canonicalPath.split("/").filter(Boolean);
+  if (canonicalPath !== "/") {
+    const parts = canonicalPath.split("/").filter(Boolean);
     let acc = "";
     for (const part of parts) {
       acc += `/${part}`;
@@ -40,8 +48,8 @@ export function JsonLd({ doc }: { doc: ContentDoc }) {
       "@type": "WebPage",
       "@id": `${url}#webpage`,
       url,
-      name: doc.metaTitle,
-      description: doc.metaDescription,
+      name: metaTitle,
+      description: metaDescription,
       isPartOf: { "@id": `${site.url}/#website` },
       inLanguage: site.inLanguage,
       breadcrumb: { "@id": `${url}#breadcrumb` },
