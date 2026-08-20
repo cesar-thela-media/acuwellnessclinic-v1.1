@@ -9,9 +9,6 @@ const isVercel = process.env.VERCEL === "1";
 const useStandalone =
   !isVercel && (process.env.OUTPUT_STANDALONE === "1" || process.env.RAILWAY === "1");
 
-const BOOK_HEADER =
-  "https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=WWUvSUxvR2NwdzlOYTBOUjdpdFR1dz09&lid=WkxqU1Z6MlROZDIxbTlndjBRVUNYUT09";
-
 const nextConfig: NextConfig = {
   ...(useStandalone ? { output: "standalone" as const } : {}),
   trailingSlash: true,
@@ -31,26 +28,6 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      {
-        source: "/schedule",
-        destination: BOOK_HEADER,
-        permanent: true,
-      },
-      {
-        source: "/schedule/",
-        destination: BOOK_HEADER,
-        permanent: true,
-      },
-      {
-        source: "/packages-and-new-patient-portal",
-        destination: "/clinic-forms",
-        permanent: true,
-      },
-      {
-        source: "/packages-and-new-patient-portal/",
-        destination: "/clinic-forms",
-        permanent: true,
-      },
       {
         source: "/modern-research",
         destination: "/resources/more-research",
