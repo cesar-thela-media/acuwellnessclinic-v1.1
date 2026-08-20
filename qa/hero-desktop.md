@@ -1,0 +1,208 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - paragraph [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "Si Shou Acupuncture and Wellness, PLLC" [ref=e6]
+      - paragraph [ref=e7]:
+        - link "Schedule An Appointment" [ref=e8] [cursor=pointer]:
+          - /url: https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=WWUvSUxvR2NwdzlOYTBOUjdpdFR1dz09&lid=WkxqU1Z6MlROZDIxbTlndjBRVUNYUT09
+      - navigation "Primary" [ref=e9]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "Home" [ref=e12] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e13]:
+            - link "About" [ref=e14] [cursor=pointer]:
+              - /url: /about-us
+            - list [ref=e15]:
+              - listitem [ref=e16]:
+                - link "About Us" [ref=e17] [cursor=pointer]:
+                  - /url: /about-us
+              - listitem [ref=e18]:
+                - link "Our Team" [ref=e19] [cursor=pointer]:
+                  - /url: /our-team
+              - listitem [ref=e20]:
+                - link "Testimonials" [ref=e21] [cursor=pointer]:
+                  - /url: /testimonials
+              - listitem [ref=e22]:
+                - link "Upcoming Events" [ref=e23] [cursor=pointer]:
+                  - /url: /upcoming-events
+              - listitem [ref=e24]:
+                - link "Treatment Modalities" [ref=e25] [cursor=pointer]:
+                  - /url: /treatment-modalities
+          - listitem [ref=e26]:
+            - link "Blog" [ref=e27] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e28]:
+            - link "About Acupuncture" [ref=e29] [cursor=pointer]:
+              - /url: /what-is-acupuncture
+            - list [ref=e30]:
+              - listitem [ref=e31]:
+                - link "What Is Acupuncture?" [ref=e32] [cursor=pointer]:
+                  - /url: /what-is-acupuncture
+              - listitem [ref=e33]:
+                - link "What We Treat" [ref=e34] [cursor=pointer]:
+                  - /url: /what-is-acupuncture/what-we-treat
+              - listitem [ref=e35]:
+                - link "First Visit" [ref=e36] [cursor=pointer]:
+                  - /url: /what-is-acupuncture/first-visit
+              - listitem [ref=e37]:
+                - link "Q & A" [ref=e38] [cursor=pointer]:
+                  - /url: /what-is-acupuncture/q-a
+          - listitem [ref=e39]:
+            - link "Clinic Forms" [ref=e40] [cursor=pointer]:
+              - /url: /clinic-forms
+          - listitem [ref=e41]:
+            - link "Resources" [ref=e42] [cursor=pointer]:
+              - /url: /resources
+            - list [ref=e43]:
+              - listitem [ref=e44]:
+                - link "Facial Rejuvenation" [ref=e45] [cursor=pointer]:
+                  - /url: /resources/facial-rejuvenation
+              - listitem [ref=e46]:
+                - link "More Research" [ref=e47] [cursor=pointer]:
+                  - /url: /resources/more-research
+              - listitem [ref=e48]:
+                - link "Patient Resources" [ref=e49] [cursor=pointer]:
+                  - /url: /resources/one-pagers
+              - listitem [ref=e50]:
+                - link "Videos" [ref=e51] [cursor=pointer]:
+                  - /url: /resources/videos
+          - listitem [ref=e52]:
+            - link "Contact" [ref=e53] [cursor=pointer]:
+              - /url: /contact
+            - list [ref=e54]:
+              - listitem [ref=e55]:
+                - link "Contact Form" [ref=e56] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e57]:
+                - link "Map & Directions" [ref=e58] [cursor=pointer]:
+                  - /url: /contact/map-directions
+      - paragraph [ref=e59]:
+        - link "Facebook" [ref=e60] [cursor=pointer]:
+          - /url: https://www.facebook.com/SiShouAcu/
+        - link "Instagram" [ref=e61] [cursor=pointer]:
+          - /url: https://www.instagram.com/sishouacu/
+    - main [ref=e62]:
+      - article [ref=e63]:
+        - generic [ref=e67]:
+          - paragraph [ref=e68]: ACUPUNCTURE IN SOUTH AUSTIN (OAK HILL), TX
+          - heading "DO THE THINGS THAT MAKE YOU HAPPY" [level=1] [ref=e69]
+        - generic [ref=e74]:
+          - generic [ref=e77]:
+            - generic [ref=e78]:
+              - heading "Are you ready to feel better?" [level=1] [ref=e79]
+              - generic [ref=e80]: Whether you're dealing with a significant health issue, not feeling your best, or want to feel even better, we can help. Our care is centered around each individual patient and their specific needs and goals helping you achieve harmonious health! When was the last time you talked with someone about your health and received the personal attention you deserve? Schedule your initial consultation with us today!
+              - link "Schedule My Consultation" [ref=e81] [cursor=pointer]:
+                - /url: https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=WWUvSUxvR2NwdzlOYTBOUjdpdFR1dz09&lid=WkxqU1Z6MlROZDIxbTlndjBRVUNYUT09
+            - generic [ref=e82]: "\"Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.\" ~Buddha"
+          - iframe [ref=e89]:
+            - generic [ref=f1e1]:
+              - generic "YouTube Video Player" [ref=f1e3]
+              - generic [ref=f1e5]:
+                - generic:
+                  - generic:
+                    - generic [ref=f1e6] [cursor=pointer]
+                    - button "Play video" [ref=f1e10] [cursor=pointer]
+                    - button "Hide player controls" [ref=f1e12] [cursor=pointer]
+                    - generic [ref=f1e19]:
+                      - generic [ref=f1e20]:
+                        - link "Si Shou Acupuncture & Wellness" [ref=f1e21] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=S2ewQXzt8oM
+                        - link "Si Shou Acupuncture & Wellness, PLLC" [ref=f1e22] [cursor=pointer]:
+                          - /url: /channel/UCLoA0EUQO4V3zyvOHJ42W2g
+                      - generic [ref=f1e24]:
+                        - button [ref=f1e25] [cursor=pointer]
+                        - generic [ref=f1e27]:
+                          - generic: Si Shou Acupuncture & Wellness, PLLC
+                          - generic: 2 subscribers
+          - generic [ref=e91]:
+            - heading "RECENT ARTICLES" [level=1] [ref=e92]
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - link "June 2, 2022" [ref=e96] [cursor=pointer]:
+                  - /url: /eye-disorders/
+                - generic [ref=e98]:
+                  - link "Eye Disorders" [ref=e99] [cursor=pointer]:
+                    - /url: /eye-disorders/
+                  - paragraph [ref=e101]: There are hundreds of different eye diseases that lead to vision loss. Degenerative eye diseases, from diabetic retinopathy to age-related macular degeneration, often have no cure while many others are treatable and even preventable. You can assist in your own eye health by following a healthy lifestyle and seeing your Ophthalmologist in conjunction with your […]
+                  - link "Read More" [ref=e102] [cursor=pointer]:
+                    - /url: /eye-disorders/
+              - generic [ref=e103]:
+                - link "May 26, 2022" [ref=e104] [cursor=pointer]:
+                  - /url: /acupuncture-and-the-treatment-of-neurological-disorders/
+                - generic [ref=e106]:
+                  - link "Acupuncture and the Treatment of Neurological Disorders" [ref=e107] [cursor=pointer]:
+                    - /url: /acupuncture-and-the-treatment-of-neurological-disorders/
+                  - paragraph [ref=e109]: "Neurological disorders cover a wide swath of health issues, including: traumatic brain injuries and concussions, headaches, Parkinson's disease, strokes, Bell's palsy, Alzheimer's disease, seizures, and MS (just to name a few). According to the World Health Organization, nearly 1 billion people suffer worldwide from some sort of neurological disorder. What most people don't know is that […]"
+                  - link "Read More" [ref=e110] [cursor=pointer]:
+                    - /url: /acupuncture-and-the-treatment-of-neurological-disorders/
+              - generic [ref=e111]:
+                - link "June 2, 2021" [ref=e112] [cursor=pointer]:
+                  - /url: /effects-of-acupuncture-on-alzheimers/
+                - generic [ref=e114]:
+                  - link "Effects of Acupuncture on Alzheimer’s" [ref=e115] [cursor=pointer]:
+                    - /url: /effects-of-acupuncture-on-alzheimers/
+                  - paragraph [ref=e117]: June is Alzheimer’s Awareness Month. Among people over 65 years old, Alzheimer’s is the disease that is found to cause most cases of dementia. Dementia is the loss of cognitive function so severe it interferes with daily life and ranges in severity from the loss of memory, ability to think, reason, plan and can even […]
+                  - link "Read More" [ref=e118] [cursor=pointer]:
+                    - /url: /effects-of-acupuncture-on-alzheimers/
+              - generic [ref=e119]:
+                - link "February 10, 2021" [ref=e120] [cursor=pointer]:
+                  - /url: /does-acupuncture-hurt/
+                - generic [ref=e122]:
+                  - link "Does Acupuncture Hurt?" [ref=e123] [cursor=pointer]:
+                    - /url: /does-acupuncture-hurt/
+                  - paragraph [ref=e125]: This is by far the most commonly asked question by new patients. The quick answer is, it shouldn’t. Kate might not be so willing to allow students to practice on her and we wouldn’t have so many happily returning and referring patients if it hurt! There are hundreds of acupuncture points on the body. […]
+                  - link "Read More" [ref=e126] [cursor=pointer]:
+                    - /url: /does-acupuncture-hurt/
+    - contentinfo [ref=e127]:
+      - paragraph [ref=e128]:
+        - link "(512) 387-4002" [ref=e129] [cursor=pointer]:
+          - /url: tel:5123874002
+      - heading "Booking" [level=2] [ref=e130]
+      - paragraph [ref=e131]:
+        - link "Schedule Appointment with Kate" [ref=e132] [cursor=pointer]:
+          - /url: https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=Q3VuRUF1cFl4ZEVvbWNDU0JJcVJtZz09&lid=STFPSDU4d3JQeFdOWmIwRHhDcWtzQT09
+      - paragraph [ref=e133]:
+        - link "Schedule Appointment with Aaron" [ref=e134] [cursor=pointer]:
+          - /url: https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=Q3VuRUF1cFl4ZEVvbWNDU0JJcVJtZz09&lid=STFPSDU4d3JQeFdOWmIwRHhDcWtzQT09
+      - heading "Hours" [level=2] [ref=e135]
+      - list [ref=e136]:
+        - listitem [ref=e137]: "Mon: 10:00am - 5:00pm"
+        - listitem [ref=e138]: "Tue: 2:00pm - 6:00pm"
+        - listitem [ref=e139]: "Wed: 10:00am - 5:00pm"
+        - listitem [ref=e140]: "Thu: 10:00am - 2:00pm"
+        - listitem [ref=e141]: "Fri: 10:00am - 7:00pm"
+        - listitem [ref=e142]: "Sat: 10:00am - 3:00pm"
+        - listitem [ref=e143]: "Sun: Closed"
+      - paragraph [ref=e144]: Si Shou Acupuncture and Wellness, PLLC5424 W US Hwy 290 Service Rd Ste 106Austin, TX 78735
+    - dialog [ref=e145]:
+      - heading "Would You Like to Receive Our Newsletter?" [level=2] [ref=e146]
+      - generic [ref=e147]:
+        - paragraph [ref=e148]:
+          - text: First Name
+          - textbox "First Name" [ref=e149]
+        - paragraph [ref=e150]:
+          - text: Last Name
+          - textbox "Last Name" [ref=e151]
+        - paragraph [ref=e152]:
+          - text: "Email address:"
+          - textbox "Email address:" [ref=e153]:
+            - /placeholder: Your email address
+        - paragraph [ref=e154]:
+          - button "Subscribe" [ref=e155]
+      - paragraph [ref=e156]:
+        - button "Close" [ref=e157]
+    - dialog [ref=e158]:
+      - heading "Neuropathy Special" [level=2] [ref=e159]
+      - paragraph [ref=e160]:
+        - text: "When you sign up for a full treatment plan for Peripheral Neuropathy, you will receive 20 Tibetan foot soaks at no additional charge($300 value). These foot soaks help treat the neuropathy by improving the circulation in the small vessels of the feet. They definitely should be part of any treatment plan to improve a neuropathy. Enter code: PN2022 in the comments section when you sign up for an Initial Consultation and your foot soaks will be ready to go when you arrive. Also available if you book over the phone."
+        - link "Click here to book now." [ref=e161] [cursor=pointer]:
+          - /url: https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=QVBCdnp5Y2I2K3o5K2kwdnhaQWkydz09&lid=S1ZJUUlSYUZvZUFwcEJWbE1RTkM4Zz09
+      - paragraph [ref=e162]
+      - paragraph [ref=e163]:
+        - button "CLOSE" [ref=e164]
+  - button "Open Next.js Dev Tools" [ref=e170] [cursor=pointer]
+  - alert [ref=e174]

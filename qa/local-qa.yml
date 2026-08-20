@@ -1,0 +1,133 @@
+- generic:
+  - generic:
+    - banner:
+      - generic:
+        - link:
+          - /url: /
+        - navigation:
+          - generic:
+            - list:
+              - listitem:
+                - link:
+                  - /url: /
+                  - text: Home
+              - listitem:
+                - generic:
+                  - link:
+                    - /url: /about-us
+                    - text: About
+                  - button
+              - listitem:
+                - link:
+                  - /url: /blog
+                  - text: Blog
+              - listitem:
+                - generic:
+                  - link:
+                    - /url: /what-is-acupuncture
+                    - text: About Acupuncture
+                  - button
+              - listitem:
+                - link:
+                  - /url: /clinic-forms
+                  - text: Clinic Forms
+              - listitem:
+                - generic:
+                  - link:
+                    - /url: /resources
+                    - text: Resources
+                  - button
+              - listitem:
+                - generic:
+                  - link:
+                    - /url: /contact
+                    - text: Contact
+                  - button
+        - generic:
+          - link:
+            - /url: https://www.facebook.com/SiShouAcu/
+            - text: Facebook
+          - link:
+            - /url: https://www.instagram.com/sishouacu/
+            - text: Instagram
+          - link:
+            - /url: https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=WWUvSUxvR2NwdzlOYTBOUjdpdFR1dz09&lid=WkxqU1Z6MlROZDIxbTlndjBRVUNYUT09
+            - text: Schedule An Appointment
+    - main:
+      - article:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=1]: Q & A
+              - paragraph: Some common questions about acupuncture are answered below. Call us if you have other questions or if you are interested in improving your life through acupuncture treatment.
+            - list:
+              - listitem:
+                - link:
+                  - /url: /apw_qa/does-it-hurt/
+                  - text: Does it hurt?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/how-are-acupuncturists-educated/
+                  - text: How are acupuncturists educated?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/how-many-treatments-will-i-need/
+                  - text: How many treatments will I need?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/how-much-does-it-cost/
+                  - text: How much does it cost?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/how-safe-is-acupuncture/
+                  - text: How safe is acupuncture?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/how-should-i-prepare/
+                  - text: How should I prepare?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/is-acupuncture-safe-for-children/
+                  - text: Is acupuncture safe for children?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/what-can-acupuncturists-treat/
+                  - text: What can acupuncturists treat?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/what-will-my-acupuncturist-do/
+                  - text: What will my acupuncturist do?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/why-did-my-acupuncturist-recommend-herbs/
+                  - text: Why did my acupuncturist recommend herbs?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/why-do-they-want-to-feel-my-pulse/
+                  - text: Why do they want to feel my pulse?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/why-do-they-want-to-look-at-my-tongue/
+                  - text: Why do they want to look at my tongue?
+              - listitem:
+                - link:
+                  - /url: /apw_qa/will-my-insurance-cover-acupuncture/
+                  - text: Will my insurance cover acupuncture?
+    - contentinfo
+  - button "Open Next.js Dev Tools" [ref=e102] [cursor=pointer]
+  - alert
+  - dialog [ref=e107]:
+    - heading "Would You Like to Receive Our Newsletter?" [level=2] [ref=e109]
+    - generic [ref=e110]:
+      - generic [ref=e111]:
+        - generic [ref=e112]: First Name
+        - textbox "First Name" [active] [ref=e113]
+      - generic [ref=e114]:
+        - generic [ref=e115]: Last Name
+        - textbox "Last Name" [ref=e116]
+      - generic [ref=e117]:
+        - generic [ref=e118]: "Email address:"
+        - textbox "Email address:" [ref=e119]:
+          - /placeholder: Your email address
+      - button "Subscribe" [ref=e120]
+    - button "Close" [ref=e121]

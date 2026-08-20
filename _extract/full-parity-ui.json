@@ -1,0 +1,587 @@
+[
+  {
+    "route": "/",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 2382,
+    "localLen": 2383,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment DO THE THINGS THAT MAKE YOU HAPPY ACUPUNCTURE IN SOUTH AUSTIN (OAK HILL), TX Are you ready to feel better?",
+      "Schedule My Consultation \"Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.\" ~Buddha RECENT ARTICLES June 2, 2022 Eye Disorders There are hundreds of different eye diseases that lead to vision loss.",
+      "What most people don't know is that [&hellip;] Read More June 2, 2021 Effects of Acupuncture on Alzheimer’s June is Alzheimer’s Awareness Month.",
+      "There are hundreds of acupuncture points on the body. [&hellip;] Read More <section"
+    ],
+    "extraSentences": [
+      "ACUPUNCTURE IN SOUTH AUSTIN (OAK HILL), TX DO THE THINGS THAT MAKE YOU HAPPY Schedule An Appointment Are you ready to feel better?",
+      "Schedule My Consultation &quot;Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.&quot; ~Buddha RECENT ARTICLES June 2, 2022 Eye Disorders There are hundreds of different eye diseases that lead to vision loss.",
+      "What most people don't know is that […] Read More June 2, 2021 Effects of Acupuncture on Alzheimer’s June is Alzheimer’s Awareness Month.",
+      "There are hundreds of acupuncture points on the body. […] Read More Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/about-us",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 1250,
+    "localLen": 1246,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment About Us What is Sì Shòu Acupuncture and Wellness?",
+      "The 4 Guardians guarding the 4 compass directions At the heart of Chinese mythology are four spiritual creatures (Sì Shòu 四獸) -- four celestial emblems -- each guarding a direction on the compass."
+    ],
+    "extraSentences": [
+      "The 4 Guardians guarding the 4 compass directions Guardian Direction Season Color 5 Element Tortoise North Winter Black Water White Tiger West Fall White Metal Red Bird/ Phoenix South Summer Red Fire Dragon East Spring Blue/Green Wood About Us » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/blog",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 4262,
+    "localLen": 4269,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment June 2, 2022 Eye Disorders There are hundreds of different eye diseases that lead to vision loss."
+    ],
+    "extraSentences": [
+      "Blog June 2, 2022 Eye Disorders There are hundreds of different eye diseases that lead to vision loss."
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/cancellations-late-arrivals",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 1796,
+    "localLen": 1825,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Cancellations and Late Arrivals We all know that life happens and schedules can change, but please understand that in fairness to our practitioners, staff and patients, we have established the following Cancellation and Lateness Policy."
+    ],
+    "extraSentences": [
+      "Cancellations and Late Arrivals » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/chinese-herbal-medicine",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 1072,
+    "localLen": 1102,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment What is Chinese Herbal Medicine?"
+    ],
+    "extraSentences": [
+      "What is Chinese Herbal Medicine? » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/clinic-forms",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 438,
+    "localLen": 448,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Clinic Forms Kate's and Aaron's New Patients:",
+      "SSAW Privacy Policy Jan 2017 <section"
+    ],
+    "extraSentences": [
+      "SSAW Privacy Policy Jan 2017 Clinic Forms » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/contact",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 768,
+    "localLen": 755,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Contact Schedule Appointment With Kate Schedule Appointment With Aaron If you prefer to send us a message, please complete the form below and we will get back to you within 24 hours.",
+      "Contact Form Demo First Name Last Name Email Phone/Mobile Subject - Select - General Appointment Request Testimonial Submission Question Comment Your Message Submit Form Disclaimer:"
+    ],
+    "extraSentences": [],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/contact/map-directions",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 88,
+    "localLen": 211,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Map & Directions <section"
+    ],
+    "extraSentences": [
+      "Map & Directions Sì Shòu Acupuncture and Wellness, PLLC 5424 W US Hwy 290 Service Rd Ste #106 Austin, TX 78735 (512) 387-4002 Map & Directions » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/health-well-news",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 88,
+    "localLen": 102,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Health Well News <section"
+    ],
+    "extraSentences": [
+      "Health Well News Health Well News » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/our-team",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 4139,
+    "localLen": 4145,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Our Team Kate Gannon Schedule Appointment With Kate Like many, Kate came to acupuncture after a host of health issues her allopathic doctors could not resolve.",
+      "Tx Acu License# AC02101 <section"
+    ],
+    "extraSentences": [],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/resources",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 321,
+    "localLen": 328,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Resources This page has a variety of resources for your use. please let us know if you have any questions."
+    ],
+    "extraSentences": [],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/resources/facial-rejuvenation",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 1727,
+    "localLen": 1744,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Facial Rejuvenation Cosmetic Acupuncture/Cupping For the Face and neck If you want to look and feel your best, then Cosmetic Acupuncture/Cupping is for you!",
+      "Diet, Lifestyle and skin care are also evaluated and addressed. <section"
+    ],
+    "extraSentences": [
+      "Facial Rejuvenation » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/resources/more-research",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 231,
+    "localLen": 242,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment More Research More Research Effect of Facial Cosmetic Acupuncture on Facial Elasticity Gut Biome and the Brain NADA Research summary Quit Smoking-Meta-analysis <section"
+    ],
+    "extraSentences": [],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/resources/one-pagers",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 146,
+    "localLen": 161,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Patient Resources How To:",
+      "Castor Oil Packs Ear Seeds and Tacks Ginger Bath <section"
+    ],
+    "extraSentences": [
+      "Castor Oil Packs Ear Seeds and Tacks Ginger Bath Patient Resources » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/resources/videos",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 99,
+    "localLen": 103,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Videos Videos What is NADA? <section"
+    ],
+    "extraSentences": [
+      "Videos » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/testimonials",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 8689,
+    "localLen": 8709,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Testimonials Leave A Review Best Massage Ever!",
+      "You're amazing.\" - CJ Improved quality of life Gary was diagnosed with Parkinson’s Disease 14 years ago.",
+      "Michelle B SFC (Ret) US Army <section"
+    ],
+    "extraSentences": [
+      "Testimonials Leave A Review Best Massage Ever! &quot;This was the best massage I've ever had.",
+      "You're amazing.&quot; - CJ Improved quality of life Gary was diagnosed with Parkinson’s Disease 14 years ago.",
+      "Michelle B SFC (Ret) US Army Testimonials » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/treatment-modalities",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 1168,
+    "localLen": 1165,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Treatment Modalities We utilize a wide variety of modalities to treat our patients.",
+      "Modality Description Acupuncture Click here for details about Acupuncture.",
+      "Tuina (Asian Bodywork) Click here for details about Tuina. <section"
+    ],
+    "extraSentences": [
+      "Treatment Modalities » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/upcoming-events",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 87,
+    "localLen": 100,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Upcoming Events <section"
+    ],
+    "extraSentences": [
+      "Upcoming Events Upcoming Events » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/what-is-acupuncture",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 3820,
+    "localLen": 3827,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment What Is Acupuncture?",
+      "Qi (pronounced \"chee\") is the energy, or life force, involved in every aspect of the body."
+    ],
+    "extraSentences": [
+      "Qi (pronounced &quot;chee&quot;) is the energy, or life force, involved in every aspect of the body.",
+      "What Is Acupuncture? » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/what-is-acupuncture/first-visit",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 3407,
+    "localLen": 3424,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment First Visit \"A journey of a thousand miles begins with a single step.\" – Lao-tzu Initial visits generally last from 30 to 90 minutes.",
+      "Unfortunately there is no magic point to \"fix it\" though we all wish for a magic weight loss point. 🙂 In order for you to get the results you want, it will be important for you to take a role in your health as well."
+    ],
+    "extraSentences": [
+      "&quot;A journey of a thousand miles begins with a single step.&quot; – Lao-tzu Initial visits generally last from 30 to 90 minutes.",
+      "Unfortunately there is no magic point to &quot;fix it&quot; though we all wish for a magic weight loss point. 🙂 In order for you to get the results you want, it will be important for you to take a role in your health as well.",
+      "First Visit » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/what-is-acupuncture/q-a",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 11065,
+    "localLen": 654,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment Q & A Some common questions about acupuncture are answered below.",
+      "I am not going to lie to you...We are putting a very fine needle through your skin and frankly our X-Ray vision is terrible.",
+      "It should be very comfortable once the needles are in place.",
+      "If it is not, simply let us know so we can modify the positioning of the needles.",
+      "In this country, acupuncture is typically considered a medical modality.",
+      "In order a person to practice acupuncture, they must attend an accredited school and successfully complete approximately 4 1/4 years of schooling.",
+      "They are required to pass 4 national boards through the National Certification Commission for Acupuncture and Oriental Medicine.",
+      "These boards cover not only Acupuncture and Foundations of TCM, but also Biomedicine and Herbal Medicine.",
+      "Texas then also requires a Jurisprudence exam and licensure through the Texas Acupuncture Board.",
+      "In Texas, acupuncture is part of the Texas Medical Board.",
+      "Acupuncturists are also required to complete 34 hours of continuing education credit every 2 years to renew their license.",
+      "Acupuncture needles themselves are actually regulated by the FDA as a regulated medical device."
+    ],
+    "extraSentences": [
+      "Q & A » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment",
+      "Click here for the portal."
+    ],
+    "ok": false
+  },
+  {
+    "route": "/what-is-acupuncture/what-we-treat",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 3739,
+    "localLen": 3687,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment What We Treat Below is a list of conditions that we can effectively treat.",
+      "Examples of primary headaches are tension headaches (TTH), [&hellip;] Read More Hypertension Hypertension-related diseases are among the leading causes of mortality in the world.",
+      "Once all other ailments have been ruled out, IBS is [&hellip;] Read More Pain Chinese medicine has been used for several thousand years and incorporates several modalities including acupuncture and Chinese herbal medicine.",
+      "Pain is defined as uncomfortable and unpleasant physical feelings [&hellip;] Read More Parkinson's Parkinson’s disease (PD) is the second-most-common chronic neurodegenerative disease.",
+      "Peripheral neuropathy is usually secondary to [&hellip;] Read More Stroke Strokes are the leading cause of cerebral and physical long term-disability within the United States."
+    ],
+    "extraSentences": [
+      "Examples of primary headaches are tension headaches (TTH), […] Read More Hypertension Hypertension-related diseases are among the leading causes of mortality in the world.",
+      "Once all other ailments have been ruled out, IBS is […] Read More Pain Chinese medicine has been used for several thousand years and incorporates several modalities including acupuncture and Chinese herbal medicine.",
+      "Pain is defined as uncomfortable and unpleasant physical feelings […] Read More Parkinson's Parkinson’s disease (PD) is the second-most-common chronic neurodegenerative disease.",
+      "Peripheral neuropathy is usually secondary to […] Read More Stroke Strokes are the leading cause of cerebral and physical long term-disability within the United States."
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/what-is-cupping-therapy",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 3026,
+    "localLen": 3048,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment What is Cupping Therapy?"
+    ],
+    "extraSentences": [
+      "What is Cupping Therapy? » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/what-is-electro-acupuncture",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 658,
+    "localLen": 684,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment What is Electro-acupuncture?"
+    ],
+    "extraSentences": [
+      "What is Electro-acupuncture? » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/what-is-guasha",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 1054,
+    "localLen": 1068,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment What is Gua Sha?"
+    ],
+    "extraSentences": [
+      "What is Gua Sha? » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/what-is-moxabustion",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 858,
+    "localLen": 876,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment What is Moxabustion?"
+    ],
+    "extraSentences": [
+      "What is Moxabustion? » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/what-is-nutritional-therapy",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 758,
+    "localLen": 784,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment What is Nutritional Therapy?",
+      "Therefore your diet becomes a focal point in the process. <section"
+    ],
+    "extraSentences": [
+      "What is Nutritional Therapy? » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/what-is-taichi-and-qigong",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 726,
+    "localLen": 750,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment What is TaiChi and Qigong?"
+    ],
+    "extraSentences": [
+      "What is TaiChi and Qigong? » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  },
+  {
+    "route": "/what-is-tuina",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 871,
+    "localLen": 883,
+    "missingSentences": [
+      "Visit our Facebook Visit our Instagram Schedule An Appointment What is Tuina?"
+    ],
+    "extraSentences": [
+      "What is Tuina? » Si Shou Acupuncture and Wellness, PLLC | Acupuncture in Austin, TX"
+    ],
+    "missingHeadings": [],
+    "missingCtas": [
+      "Visit our Facebook",
+      "Schedule An Appointment"
+    ],
+    "ok": false
+  }
+]

@@ -1,0 +1,132 @@
+- generic [active] [ref=f62e1]:
+  - generic [ref=f62e2]:
+    - banner [ref=f62e3]:
+      - generic [ref=f62e4]:
+        - link [ref=f62e5] [cursor=pointer]:
+          - /url: /
+          - img "Si Shou Acupuncture and Wellness, PLLC" [ref=f62e6]
+        - navigation "Main" [ref=f62e7]:
+          - list [ref=f62e9]:
+            - listitem [ref=f62e10]:
+              - link "Home" [ref=f62e11] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=f62e12]:
+              - button "About" [ref=f62e13]
+            - listitem [ref=f62e16]:
+              - link "Blog" [ref=f62e17] [cursor=pointer]:
+                - /url: /blog
+            - listitem [ref=f62e18]:
+              - button "About Acupuncture" [ref=f62e19]
+            - listitem [ref=f62e22]:
+              - link "Clinic Forms" [ref=f62e23] [cursor=pointer]:
+                - /url: /clinic-forms
+            - listitem [ref=f62e24]:
+              - button "Resources" [ref=f62e25]
+            - listitem [ref=f62e28]:
+              - button "Contact" [ref=f62e29]
+        - generic [ref=f62e32]:
+          - link "Facebook" [ref=f62e33] [cursor=pointer]:
+            - /url: https://www.facebook.com/SiShouAcu/
+          - link "Instagram" [ref=f62e34] [cursor=pointer]:
+            - /url: https://www.instagram.com/sishouacu/
+          - link "Schedule An Appointment" [ref=f62e35] [cursor=pointer]:
+            - /url: https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=WWUvSUxvR2NwdzlOYTBOUjdpdFR1dz09&lid=WkxqU1Z6MlROZDIxbTlndjBRVUNYUT09
+    - main [ref=f62e36]:
+      - article [ref=f62e37]:
+        - generic [ref=f62e41]:
+          - paragraph [ref=f62e42]: ACUPUNCTURE IN SOUTH AUSTIN (OAK HILL), TX
+          - heading "DO THE THINGS THAT MAKE YOU HAPPY" [level=1] [ref=f62e43]
+        - generic [ref=f62e45]:
+          - generic [ref=f62e47]:
+            - heading "Are you ready to feel better?" [level=2] [ref=f62e48]
+            - paragraph [ref=f62e49]:
+              - text: Whether you're dealing with a significant health issue, not feeling your best, or want to feel even better, we can help. Our care is centered around each individual patient and their specific needs and goals helping you achieve harmonious health! When was the last time you talked with someone about your health and received the personal attention you deserve?
+              - strong [ref=f62e50]: Schedule your initial consultation with us today!
+          - generic [ref=f62e55]:
+            - blockquote [ref=f62e56]: "\"Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.\""
+            - paragraph [ref=f62e57]: ~Buddha
+        - iframe [ref=f62e61]:
+          - generic [ref=f63e1]:
+            - generic "YouTube Video Player" [ref=f63e3]
+            - generic [ref=f63e5]:
+              - generic:
+                - generic:
+                  - generic [ref=f63e6] [cursor=pointer]
+                  - button "Play video" [ref=f63e10] [cursor=pointer]
+                  - button "Hide player controls" [ref=f63e12] [cursor=pointer]
+                  - generic [ref=f63e14]:
+                    - generic [ref=f63e19]:
+                      - generic [ref=f63e20]:
+                        - link "Si Shou Acupuncture & Wellness" [ref=f63e21] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=S2ewQXzt8oM
+                        - link "Si Shou Acupuncture & Wellness, PLLC" [ref=f63e22] [cursor=pointer]:
+                          - /url: /channel/UCLoA0EUQO4V3zyvOHJ42W2g
+                      - generic [ref=f63e24]:
+                        - button [ref=f63e55] [cursor=pointer]:
+                          - img "thumbnail-image" [ref=f63e56]
+                        - generic [ref=f63e27]:
+                          - generic: Si Shou Acupuncture & Wellness, PLLC
+                          - generic: 2 subscribers
+                    - generic [ref=f63e28]:
+                      - button "Share" [ref=f63e31] [cursor=pointer]
+                      - link "Watch on YouTube" [ref=f63e42] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=S2ewQXzt8oM
+                        - generic [ref=f63e43]: Watch on
+        - generic [ref=f62e63]:
+          - heading "RECENT ARTICLES" [level=2] [ref=f62e64]
+          - generic [ref=f62e65]:
+            - generic [ref=f62e67]:
+              - link "June 2, 2022" [ref=f62e68] [cursor=pointer]:
+                - /url: /eye-disorders/
+              - link "Eye Disorders" [ref=f62e71] [cursor=pointer]:
+                - /url: /eye-disorders/
+              - paragraph [ref=f62e72]: There are hundreds of different eye diseases that lead to vision loss. Degenerative eye diseases, from diabetic retinopathy to age-related macular degeneration, often have no cure while many others are treatable and even preventable. You can assist in your own eye health by following a healthy lifestyle and seeing your Ophthalmologist in conjunction with your […]
+              - link "Read More" [ref=f62e73] [cursor=pointer]:
+                - /url: /eye-disorders/
+            - generic [ref=f62e75]:
+              - link "May 26, 2022" [ref=f62e76] [cursor=pointer]:
+                - /url: /acupuncture-and-the-treatment-of-neurological-disorders/
+              - link "Acupuncture and the Treatment of Neurological Disorders" [ref=f62e79] [cursor=pointer]:
+                - /url: /acupuncture-and-the-treatment-of-neurological-disorders/
+              - paragraph [ref=f62e80]: "Neurological disorders cover a wide swath of health issues, including: traumatic brain injuries and concussions, headaches, Parkinson's disease, strokes, Bell's palsy, Alzheimer's disease, seizures, and MS (just to name a few). According to the World Health Organization, nearly 1 billion people suffer worldwide from some sort of neurological disorder. What most people don't know is that […]"
+              - link "Read More" [ref=f62e81] [cursor=pointer]:
+                - /url: /acupuncture-and-the-treatment-of-neurological-disorders/
+            - generic [ref=f62e83]:
+              - link "June 2, 2021" [ref=f62e84] [cursor=pointer]:
+                - /url: /effects-of-acupuncture-on-alzheimers/
+              - link "Effects of Acupuncture on Alzheimer’s" [ref=f62e87] [cursor=pointer]:
+                - /url: /effects-of-acupuncture-on-alzheimers/
+              - paragraph [ref=f62e88]: June is Alzheimer’s Awareness Month. Among people over 65 years old, Alzheimer’s is the disease that is found to cause most cases of dementia. Dementia is the loss of cognitive function so severe it interferes with daily life and ranges in severity from the loss of memory, ability to think, reason, plan and can even […]
+              - link "Read More" [ref=f62e89] [cursor=pointer]:
+                - /url: /effects-of-acupuncture-on-alzheimers/
+            - generic [ref=f62e91]:
+              - link "February 10, 2021" [ref=f62e92] [cursor=pointer]:
+                - /url: /does-acupuncture-hurt/
+              - link "Does Acupuncture Hurt?" [ref=f62e95] [cursor=pointer]:
+                - /url: /does-acupuncture-hurt/
+              - paragraph [ref=f62e96]: This is by far the most commonly asked question by new patients. The quick answer is, it shouldn’t. Kate might not be so willing to allow students to practice on her and we wouldn’t have so many happily returning and referring patients if it hurt! There are hundreds of acupuncture points on the body. […]
+              - link "Read More" [ref=f62e97] [cursor=pointer]:
+                - /url: /does-acupuncture-hurt/
+    - contentinfo [ref=f62e98]:
+      - generic [ref=f62e99]:
+        - link "(512) 387-4002" [ref=f62e101] [cursor=pointer]:
+          - /url: tel:5123874002
+        - generic [ref=f62e102]:
+          - heading "Booking" [level=2] [ref=f62e103]
+          - link "Schedule Appointment with Kate" [ref=f62e104] [cursor=pointer]:
+            - /url: https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=Q3VuRUF1cFl4ZEVvbWNDU0JJcVJtZz09&lid=STFPSDU4d3JQeFdOWmIwRHhDcWtzQT09
+          - link "Schedule Appointment with Aaron" [ref=f62e105] [cursor=pointer]:
+            - /url: https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=Q3VuRUF1cFl4ZEVvbWNDU0JJcVJtZz09&lid=STFPSDU4d3JQeFdOWmIwRHhDcWtzQT09
+        - generic [ref=f62e106]:
+          - heading "Hours" [level=2] [ref=f62e107]
+          - list [ref=f62e108]:
+            - listitem [ref=f62e109]: "Mon: 10:00am - 5:00pm"
+            - listitem [ref=f62e110]: "Tue: 2:00pm - 6:00pm"
+            - listitem [ref=f62e111]: "Wed: 10:00am - 5:00pm"
+            - listitem [ref=f62e112]: "Thu: 10:00am - 2:00pm"
+            - listitem [ref=f62e113]: "Fri: 10:00am - 7:00pm"
+            - listitem [ref=f62e114]: "Sat: 10:00am - 3:00pm"
+            - listitem [ref=f62e115]: "Sun: Closed"
+        - paragraph [ref=f62e116]: Si Shou Acupuncture and Wellness, PLLC5424 W US Hwy 290 Service Rd Ste 106Austin, TX 78735
+  - button "Open Next.js Dev Tools" [ref=f62e122] [cursor=pointer]
+  - alert [ref=f62e126]

@@ -1,0 +1,1969 @@
+{
+  "liveSitemap": 308,
+  "localSitemap": 450,
+  "missingLocal": [],
+  "compared": 308,
+  "failCount": 196,
+  "fails": [
+    {
+      "route": "/2021-the-year-of-the-ox",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3406,
+      "localLen": 3421,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/4-lifestyle-tweaks-to-thrive-this-spring﻿",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3535,
+      "localLen": 3567,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/7-ways-acupuncture-can-help-mens-health",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4686,
+      "localLen": 4718,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/about-us",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1187,
+      "localLen": 1187,
+      "missing": [
+        "east spring blue/green wood <section"
+      ]
+    },
+    {
+      "route": "/acupuncture-and-cervical-health",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4017,
+      "localLen": 4040,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/acupuncture-and-colon-cancer",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3229,
+      "localLen": 3249,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/acupuncture-and-kids",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3368,
+      "localLen": 3380,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/acupuncture-and-lingering-covid-19-symptoms",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1795,
+      "localLen": 1830,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/acupuncture-and-opioid-addiction",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2967,
+      "localLen": 2991,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/acupuncture-and-tcm-for-sprains-and-strains",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3701,
+      "localLen": 3736,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/acupuncture-and-the-treatment-of-neurological-disorders",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4295,
+      "localLen": 4342,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/acupuncture-for-addiction",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3845,
+      "localLen": 3862,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/acupuncture-for-harnessing-willpower",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3177,
+      "localLen": 3205,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/acupuncture-vs-morphine-for-pain-relief",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3864,
+      "localLen": 3895,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/all-about-moxibustion",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4114,
+      "localLen": 4127,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/3-simple-ways-to-alleviate-the-common-cold",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3845,
+      "localLen": 3963,
+      "missing": [
+        "tries to take control. <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/5-reasons-to-get-acupuncture-this-fall",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3051,
+      "localLen": 3161,
+      "missing": [
+        "mode through the use of acupuncture. <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/5-ways-to-help-you-wake-up-and-get-active",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3010,
+      "localLen": 3126,
+      "missing": [
+        "are you up for the challenge? <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/acupuncture-and-maintaining-healthy-skin",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3943,
+      "localLen": 4057,
+      "missing": [
+        "will thank you. <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/acupuncture-season-winter",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3574,
+      "localLen": 3680,
+      "missing": [
+        "aside from just some intriguing tales. <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/acupuncture-the-liver-and-spring",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3752,
+      "localLen": 3852,
+      "missing": [
+        "you won’t regret it. <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/fight-holiday-stress-with-acupuncture",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3579,
+      "localLen": 3687,
+      "missing": [
+        "and anxiety. you’ll be glad you did. <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/how-weather-affects-pain",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2817,
+      "localLen": 2899,
+      "missing": [
+        "medicine can help. <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/seven-ways-protect-skin-cancer",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3068,
+      "localLen": 3184,
+      "missing": [
+        "sure to reapply. <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/the-metal-element",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3413,
+      "localLen": 3481,
+      "missing": [
+        "lifetime of discomfort. <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/three-ways-to-alleviate-stress-in-under-10-minutes",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3500,
+      "localLen": 3634,
+      "missing": [
+        "you. happy relaxing! <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/traditional-chinese-medicine-and-spring",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3491,
+      "localLen": 3603,
+      "missing": [
+        "or physical impairments. <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/traditional-chinese-medicine-and-spring-2",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4725,
+      "localLen": 4837,
+      "missing": [
+        "medications for eye issues. <section"
+      ]
+    },
+    {
+      "route": "/apw_hwn/traditional-chinese-medicine-and-the-season-of-winter",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4658,
+      "localLen": 4798,
+      "missing": [
+        "symptoms of poor digestive function. <section"
+      ]
+    },
+    {
+      "route": "/apw_qa/does-it-hurt",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 302,
+      "localLen": 362,
+      "missing": [
+        "modify the positioning of the needles. <section"
+      ]
+    },
+    {
+      "route": "/apw_wwt/concussion",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3036,
+      "localLen": 3079,
+      "missing": [
+        "peripheral neuropathy stroke <section"
+      ]
+    },
+    {
+      "route": "/apw_wwt/peripheral-neuropathy",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4190,
+      "localLen": 4244,
+      "missing": [
+        "neuropathy stroke <section"
+      ]
+    },
+    {
+      "route": "/blog",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4117,
+      "localLen": 4118,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/boost-it-with-ginseng",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3163,
+      "localLen": 3176,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/cancellations-late-arrivals",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1733,
+      "localLen": 1756,
+      "missing": [
+        "without incurring further charges. <section"
+      ]
+    },
+    {
+      "route": "/category/acupuncture",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4038,
+      "localLen": 4041,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/allergies",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2956,
+      "localLen": 2957,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/anxiety",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4117,
+      "localLen": 4116,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/cancer",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1442,
+      "localLen": 1440,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/children",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1001,
+      "localLen": 1001,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/chinese-medicine-2",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4034,
+      "localLen": 4042,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/depression",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4170,
+      "localLen": 4172,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/detox",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4084,
+      "localLen": 4081,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/diet-2",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4171,
+      "localLen": 4167,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/electroacupuncture",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1462,
+      "localLen": 1472,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/facial-rejuvenation",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1089,
+      "localLen": 1100,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/fatigue",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2945,
+      "localLen": 2944,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/fertility",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1437,
+      "localLen": 1438,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/herbal-medicine",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4037,
+      "localLen": 4044,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/insomnia",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3282,
+      "localLen": 3282,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/mens-health",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3304,
+      "localLen": 3308,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/migraines",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2120,
+      "localLen": 2121,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/nutrition",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4160,
+      "localLen": 4161,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/si-shou",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3804,
+      "localLen": 3803,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/stress-2",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4173,
+      "localLen": 4171,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/traditional-chinese-medicine",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4038,
+      "localLen": 4058,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/uncategorized",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4037,
+      "localLen": 4042,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/wellness-2",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4091,
+      "localLen": 4091,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/what-we-treat",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3422,
+      "localLen": 3427,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/category/womens-health",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2486,
+      "localLen": 2492,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/contact/map-directions",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 25,
+      "localLen": 142,
+      "missing": [
+        "map & directions <section"
+      ]
+    },
+    {
+      "route": "/dandelion-detox-with-this-yellow-charmer",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3124,
+      "localLen": 3157,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/does-your-liver-need-a-spring-tune-up",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2867,
+      "localLen": 2897,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/eating-according-to-tcm-five-foods-for-spring",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3923,
+      "localLen": 3961,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/eating-right-for-your-body-type",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4546,
+      "localLen": 4569,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/electroacupuncture-pain",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2792,
+      "localLen": 2809,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/eye-disorders",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4152,
+      "localLen": 4157,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/five-acupuncture-points-for-indian-summer",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3741,
+      "localLen": 3774,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/five-acupuncture-points-for-spring",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3953,
+      "localLen": 3979,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/five-acupuncture-points-for-summer",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3707,
+      "localLen": 3733,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/five-reasons-to-get-acupuncture-for-allergies",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4393,
+      "localLen": 4430,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/five-reasons-to-get-acupuncture-for-low-back-pain",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3803,
+      "localLen": 3844,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/five-reasons-to-get-acupuncture-for-migraines",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3694,
+      "localLen": 3731,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/five-ways-to-increase-white-blood-cell-count-with-tcm",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4648,
+      "localLen": 4693,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/going-deeper-the-kidneys",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4408,
+      "localLen": 4425,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/health-well-news",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 25,
+      "localLen": 33,
+      "missing": [
+        "health well news <section"
+      ]
+    },
+    {
+      "route": "/healthy-eating-according-to-traditional-chinese-medicine",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4700,
+      "localLen": 4748,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/heart-afire-the-fire-element",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4309,
+      "localLen": 4330,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/herbal-formulas-for-summer",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4144,
+      "localLen": 4162,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/herbal-tonics-for-digestion",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4029,
+      "localLen": 4048,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/herbal-tonics-to-reduce-stress",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3757,
+      "localLen": 3779,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/how-to-prepare-for-seasonal-affective-disorder",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3110,
+      "localLen": 3148,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/ibs-relief-with-traditional-chinese-medicine",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4078,
+      "localLen": 4115,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/is-your-gut-bacteria-causing-your-depression",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2997,
+      "localLen": 3034,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/its-all-in-your-head-headaches-and-tcm",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4288,
+      "localLen": 4320,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/mental-and-emotional-aspects-of-the-lungs",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3236,
+      "localLen": 3269,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/nutrition-for-heart-health-om-nutrition-hypertension",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 6272,
+      "localLen": 6318,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/our-obsession-with-optimum-optics",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2765,
+      "localLen": 2790,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/packages-and-new-patient-portal",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2834,
+      "localLen": 2857,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/physical-aspects-related-to-the-lungs",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3210,
+      "localLen": 3239,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/resources/facial-rejuvenation",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1664,
+      "localLen": 1675,
+      "missing": [
+        "care are also evaluated and addressed. <section"
+      ]
+    },
+    {
+      "route": "/resources/one-pagers",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 83,
+      "localLen": 92,
+      "missing": [
+        "and tacks ginger bath <section"
+      ]
+    },
+    {
+      "route": "/resources/videos",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 36,
+      "localLen": 34,
+      "missing": [
+        "videos videos what is nada? <section"
+      ]
+    },
+    {
+      "route": "/schedule",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 24,
+      "localLen": 31,
+      "missing": [
+        "schedule online <section"
+      ]
+    },
+    {
+      "route": "/seven-ways-acupuncture-can-help-mens-health",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4744,
+      "localLen": 4780,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/seven-ways-acupuncture-can-help-mothers",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3050,
+      "localLen": 3081,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/spring-cleansing-and-clearing",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4668,
+      "localLen": 4689,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/summer-solstice",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2229,
+      "localLen": 2236,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/acupuncture-2",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2995,
+      "localLen": 3060,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/adhd",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 984,
+      "localLen": 1035,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/alcohol",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1060,
+      "localLen": 1117,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/alternative-medicine",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 981,
+      "localLen": 1064,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/anxiety",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2500,
+      "localLen": 2557,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/breathing",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 970,
+      "localLen": 1031,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/cancer",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1027,
+      "localLen": 1082,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/chemotherapy",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1045,
+      "localLen": 1112,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/chinese-medicine",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1007,
+      "localLen": 1082,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/colon-cancer",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1045,
+      "localLen": 1112,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/depression",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1989,
+      "localLen": 2052,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/detox",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1060,
+      "localLen": 1113,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/diet",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2845,
+      "localLen": 2896,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/digestion",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1717,
+      "localLen": 1778,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/digestive-health",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1030,
+      "localLen": 1105,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/dry-eyes",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1005,
+      "localLen": 1064,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/eating",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1040,
+      "localLen": 1095,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/energy",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2129,
+      "localLen": 2184,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/eyes",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1396,
+      "localLen": 1447,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/fathers-day",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1040,
+      "localLen": 1107,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/fatigue",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1037,
+      "localLen": 1094,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/fermented-food",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1030,
+      "localLen": 1101,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/focus",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1025,
+      "localLen": 1078,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/gua-sha",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1014,
+      "localLen": 1071,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/headaches",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1856,
+      "localLen": 1917,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/health",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2512,
+      "localLen": 2567,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/healthy",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1040,
+      "localLen": 1097,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/heart",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3715,
+      "localLen": 3768,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/herbal-medicine",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1357,
+      "localLen": 1430,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/herbs",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2953,
+      "localLen": 3006,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/hypertension",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1091,
+      "localLen": 1158,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/ibs",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 981,
+      "localLen": 1030,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/immune-system",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1045,
+      "localLen": 1114,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/insomnia",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1738,
+      "localLen": 1797,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/kidneys",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1428,
+      "localLen": 1485,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/leukopenia",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1027,
+      "localLen": 1090,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/libido",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 883,
+      "localLen": 938,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/liver",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1013,
+      "localLen": 1066,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/lungs",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1352,
+      "localLen": 1405,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/meditation",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1408,
+      "localLen": 1471,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/men",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1287,
+      "localLen": 1336,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/meridians",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1007,
+      "localLen": 1068,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/migraines",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1437,
+      "localLen": 1498,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/mind",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 980,
+      "localLen": 1031,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/mood",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1013,
+      "localLen": 1064,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/motivation",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 987,
+      "localLen": 1050,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/moxibustion",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1395,
+      "localLen": 1460,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/nutrition-2",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2189,
+      "localLen": 2250,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/omega-3",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 965,
+      "localLen": 1022,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/pain",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2877,
+      "localLen": 2928,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/phobia",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1030,
+      "localLen": 1085,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/pms",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1013,
+      "localLen": 1062,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/prostate",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1040,
+      "localLen": 1099,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/red-eye",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1005,
+      "localLen": 1062,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/relaxation",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1025,
+      "localLen": 1088,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/sad",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1432,
+      "localLen": 1481,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/seasonal-affective-disorder",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1432,
+      "localLen": 1529,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/shen",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 980,
+      "localLen": 1031,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/si-shou",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1045,
+      "localLen": 1102,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/sleep",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1719,
+      "localLen": 1772,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/small-intestine",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1022,
+      "localLen": 1095,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/sound-therapy",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1019,
+      "localLen": 1088,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/spleen",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1028,
+      "localLen": 1083,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/sprains",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 967,
+      "localLen": 1024,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/stomach",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1028,
+      "localLen": 1085,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/strains",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 967,
+      "localLen": 1024,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/stress",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2746,
+      "localLen": 2801,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/stretching",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 967,
+      "localLen": 1030,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/tai-chi",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 970,
+      "localLen": 1027,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/tonics",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1808,
+      "localLen": 1863,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/treatment",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 981,
+      "localLen": 1042,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/vibration",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1019,
+      "localLen": 1080,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/walnuts",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 965,
+      "localLen": 1022,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/wellness",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 981,
+      "localLen": 1040,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/white-blood-cells",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1027,
+      "localLen": 1104,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/willpower",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 987,
+      "localLen": 1048,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tag/womens-health",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 981,
+      "localLen": 1052,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tcm-and-seasonal-affective-disorder",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3962,
+      "localLen": 3989,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tcm-neurological-disorders",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4781,
+      "localLen": 4801,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tcm-tips-for-a-strong-immune-system",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 5479,
+      "localLen": 5539,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/testimonials",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 8626,
+      "localLen": 8630,
+      "missing": [
+        "michelle b sfc (ret) us army <section"
+      ]
+    },
+    {
+      "route": "/tibetan-herbal-foot-soaks-soon",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 1620,
+      "localLen": 1648,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/tis-the-season-to-nourish-your-heart",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4033,
+      "localLen": 4063,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/traditional-chinese-medicine-in-winter",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 2642,
+      "localLen": 2673,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/upcoming-events",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 24,
+      "localLen": 31,
+      "missing": [
+        "upcoming events <section"
+      ]
+    },
+    {
+      "route": "/using-acupuncture-to-treat-ptsd",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3703,
+      "localLen": 3726,
+      "missing": [
+        "women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/valentines-day-tcm-and-heart-health",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3798,
+      "localLen": 3827,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/we-want-to-treat-your-brains",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4315,
+      "localLen": 4336,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/what-a-pain-in-the-wrist",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3450,
+      "localLen": 3467,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/what-is-acupuncture",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 3757,
+      "localLen": 3769,
+      "missing": [
+        "common ailments and problems. <section"
+      ]
+    },
+    {
+      "route": "/what-is-acupuncture/q-a",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 11002,
+      "localLen": 10999,
+      "missing": [
+        "97026-infrared therapies <section"
+      ]
+    },
+    {
+      "route": "/what-is-electro-acupuncture",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 595,
+      "localLen": 615,
+      "missing": [
+        "these conditions. <section"
+      ]
+    },
+    {
+      "route": "/what-is-moxabustion",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 795,
+      "localLen": 807,
+      "missing": [
+        "be applied around the eyes. <section"
+      ]
+    },
+    {
+      "route": "/what-is-nutritional-therapy",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 695,
+      "localLen": 715,
+      "missing": [
+        "in the process. <section"
+      ]
+    },
+    {
+      "route": "/what-is-taichi-and-qigong",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 663,
+      "localLen": 681,
+      "missing": [
+        "and more mainstream as word gets out. <section"
+      ]
+    },
+    {
+      "route": "/what-is-tuina",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 808,
+      "localLen": 814,
+      "missing": [
+        "and applicable. <section"
+      ]
+    },
+    {
+      "route": "/why-am-i-so-tiredand-how-to-fix",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4600,
+      "localLen": 4624,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    },
+    {
+      "route": "/why-you-should-get-regular-acupuncture-treatments",
+      "liveStatus": 200,
+      "localStatus": 200,
+      "liveLen": 4245,
+      "localLen": 4286,
+      "missing": [
+        "treat (8) women's health (5) <section"
+      ]
+    }
+  ]
+}

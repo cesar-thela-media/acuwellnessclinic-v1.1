@@ -1,0 +1,329 @@
+[
+  {
+    "route": "/",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 2274,
+    "localLen": 2341,
+    "missing": [],
+    "extra": [
+      "read more si shou acupuncture and wellness, pllc",
+      "| acupuncture in austin, tx"
+    ]
+  },
+  {
+    "route": "/about-us",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 1178,
+    "localLen": 1187,
+    "missing": [],
+    "extra": [
+      "east spring blue/green wood about us"
+    ]
+  },
+  {
+    "route": "/our-team",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 4067,
+    "localLen": 4076,
+    "missing": [],
+    "extra": []
+  },
+  {
+    "route": "/testimonials",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 8617,
+    "localLen": 8630,
+    "missing": [],
+    "extra": [
+      "michelle b sfc (ret) us army testimonials"
+    ]
+  },
+  {
+    "route": "/upcoming-events",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 15,
+    "localLen": 31,
+    "missing": [],
+    "extra": [
+      "upcoming events upcoming events"
+    ]
+  },
+  {
+    "route": "/treatment-modalities",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 1096,
+    "localLen": 1117,
+    "missing": [],
+    "extra": []
+  },
+  {
+    "route": "/blog",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 4108,
+    "localLen": 4118,
+    "missing": [],
+    "extra": [
+      "blog june 2, 2022 eye disorders there are hundreds",
+      "treat (8) women's health (5) blog"
+    ]
+  },
+  {
+    "route": "/what-is-acupuncture",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 3748,
+    "localLen": 3769,
+    "missing": [],
+    "extra": [
+      "common ailments and problems. what is acupuncture?"
+    ]
+  },
+  {
+    "route": "/what-is-acupuncture/what-we-treat",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 3586,
+    "localLen": 3600,
+    "missing": [],
+    "extra": []
+  },
+  {
+    "route": "/what-is-acupuncture/first-visit",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 3335,
+    "localLen": 3347,
+    "missing": [],
+    "extra": [
+      "you are on the road to a healthier you! first visit"
+    ]
+  },
+  {
+    "route": "/what-is-acupuncture/q-a",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 10993,
+    "localLen": 10999,
+    "missing": [],
+    "extra": [
+      "97026-infrared therapies q & a"
+    ]
+  },
+  {
+    "route": "/clinic-forms",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 366,
+    "localLen": 379,
+    "missing": [],
+    "extra": []
+  },
+  {
+    "route": "/resources",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 249,
+    "localLen": 259,
+    "missing": [],
+    "extra": []
+  },
+  {
+    "route": "/resources/facial-rejuvenation",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 1655,
+    "localLen": 1675,
+    "missing": [],
+    "extra": [
+      "care are also evaluated and addressed. facial rejuvenation"
+    ]
+  },
+  {
+    "route": "/resources/more-research",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 159,
+    "localLen": 173,
+    "missing": [],
+    "extra": []
+  },
+  {
+    "route": "/resources/one-pagers",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 74,
+    "localLen": 92,
+    "missing": [],
+    "extra": [
+      "and tacks ginger bath patient resources"
+    ]
+  },
+  {
+    "route": "/resources/videos",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 27,
+    "localLen": 34,
+    "missing": [],
+    "extra": [
+      "videos videos what is nada? videos"
+    ]
+  },
+  {
+    "route": "/contact",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 696,
+    "localLen": 704,
+    "missing": [],
+    "extra": []
+  },
+  {
+    "route": "/contact/map-directions",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 16,
+    "localLen": 142,
+    "missing": [],
+    "extra": [
+      "map & directions sì shòu acupuncture and wellness,",
+      "pllc 5424 w us hwy 290 service rd ste #106 austin,",
+      "tx 78735 (512) 387-4002 map & directions"
+    ]
+  },
+  {
+    "route": "/cancellations-late-arrivals",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 1724,
+    "localLen": 1756,
+    "missing": [],
+    "extra": [
+      "without incurring further charges. cancellations"
+    ]
+  },
+  {
+    "route": "/chinese-herbal-medicine",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 1000,
+    "localLen": 1033,
+    "missing": [],
+    "extra": []
+  },
+  {
+    "route": "/what-is-guasha",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 982,
+    "localLen": 999,
+    "missing": [],
+    "extra": []
+  },
+  {
+    "route": "/what-is-cupping-therapy",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 2954,
+    "localLen": 2979,
+    "missing": [],
+    "extra": [
+      "patient. what is cupping therapy?"
+    ]
+  },
+  {
+    "route": "/what-is-moxabustion",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 786,
+    "localLen": 807,
+    "missing": [],
+    "extra": [
+      "be applied around the eyes. what is moxabustion?"
+    ]
+  },
+  {
+    "route": "/what-is-tuina",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 799,
+    "localLen": 814,
+    "missing": [],
+    "extra": [
+      "and applicable. what is tuina?"
+    ]
+  },
+  {
+    "route": "/what-is-nutritional-therapy",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 686,
+    "localLen": 715,
+    "missing": [],
+    "extra": [
+      "in the process. what is nutritional therapy?"
+    ]
+  },
+  {
+    "route": "/what-is-taichi-and-qigong",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 654,
+    "localLen": 681,
+    "missing": [],
+    "extra": [
+      "and more mainstream as word gets out. what is taichi"
+    ]
+  },
+  {
+    "route": "/what-is-electro-acupuncture",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 586,
+    "localLen": 615,
+    "missing": [],
+    "extra": [
+      "these conditions. what is electro-acupuncture?"
+    ]
+  },
+  {
+    "route": "/health-well-news",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 16,
+    "localLen": 33,
+    "missing": [],
+    "extra": [
+      "health well news health well news"
+    ]
+  },
+  {
+    "route": "/schedule",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 15,
+    "localLen": 31,
+    "missing": [],
+    "extra": [
+      "schedule online schedule online"
+    ]
+  },
+  {
+    "route": "/packages-and-new-patient-portal",
+    "liveStatus": 200,
+    "localStatus": 200,
+    "liveLen": 2825,
+    "localLen": 2857,
+    "missing": [],
+    "extra": [
+      "treat (8) women's health (5) packages and new patient"
+    ]
+  }
+]
