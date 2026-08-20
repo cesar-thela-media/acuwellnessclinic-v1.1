@@ -51,8 +51,8 @@ export const site = {
     portal: "https://www.optimantra.com/optimus/om/patient/login",
   },
   media: {
-    logo: "/media/wp-content/uploads/2019/02/Artboard-1@sishou.png",
-    hero: "/media/wp-content/uploads/2016/12/RUNNING.jpg",
+    logo: "/media/wp-content/uploads/2019/02/logo.png",
+    hero: "/media/wp-content/uploads/2017/01/chinese-herbs.jpg",
     neuropathy: "/media/wp-content/uploads/2017/08/Foot-soak.jpg",
     privacyPdf:
       "/media/wp-content/uploads/2011/10/SSAW-Privacy-Policy-Jan-2017.pdf",
