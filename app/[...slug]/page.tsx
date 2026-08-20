@@ -20,9 +20,27 @@ const DESIGNED = new Set([
 ]);
 
 export function generateStaticParams() {
-  return getAllDocs()
-    .filter((d) => d.path !== "/" && !DESIGNED.has(d.path))
-    .map((d) => ({ slug: d.path.replace(/^\//, "").split("/") }));
+  const seen = new Set<string>();
+  const params: { slug: string[] }[] = [];
+  for (const doc of getAllDocs()) {
+    if (doc.path === "/" || DESIGNED.has(doc.path)) continue;
+    const variants = [doc.path];
+    try {
+      variants.push(decodeURIComponent(doc.path));
+    } catch {
+      /* keep stored path */
+    }
+    variants.push(doc.path.replace(/%ef%bb%bf/gi, "").replace(/\uFEFF/g, ""));
+    for (const path of variants) {
+      if (!path || path === "/") continue;
+      const slug = path.replace(/^\//, "").split("/");
+      const key = slug.join("/");
+      if (seen.has(key)) continue;
+      seen.add(key);
+      params.push({ slug });
+    }
+  }
+  return params;
 }
 
 export async function generateMetadata({ params }: Props) {

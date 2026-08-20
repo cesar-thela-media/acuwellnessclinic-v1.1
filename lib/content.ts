@@ -20,7 +20,25 @@ export type ContentDoc = {
 };
 
 const docs = all as ContentDoc[];
-const byPath = new Map(docs.map((d) => [d.path, d]));
+
+function pathKeys(path: string): string[] {
+  const keys = new Set<string>([path]);
+  try {
+    keys.add(decodeURIComponent(path));
+  } catch {
+    /* keep raw */
+  }
+  const noBom = path.replace(/%ef%bb%bf/gi, "").replace(/\uFEFF/g, "");
+  keys.add(noBom);
+  keys.add(`${noBom}%ef%bb%bf`);
+  keys.add(`${noBom}\uFEFF`);
+  return [...keys];
+}
+
+const byPath = new Map<string, ContentDoc>();
+for (const doc of docs) {
+  for (const key of pathKeys(doc.path)) byPath.set(key, doc);
+}
 
 export function getAllDocs(): ContentDoc[] {
   return docs;
@@ -28,7 +46,13 @@ export function getAllDocs(): ContentDoc[] {
 
 export function getDoc(urlPath: string): ContentDoc | undefined {
   const normalized = urlPath === "" || urlPath === "/" ? "/" : `/${urlPath.replace(/^\/|\/$/g, "")}`;
-  return byPath.get(normalized);
+  const direct = byPath.get(normalized);
+  if (direct) return direct;
+  try {
+    return byPath.get(decodeURIComponent(normalized));
+  } catch {
+    return undefined;
+  }
 }
 
 export function getDocsByType(type: string): ContentDoc[] {
