@@ -1,8 +1,3 @@
-"use client";
-
-import { useRef } from "react";
-import { gsap, useGSAP } from "@/lib/gsap";
-
 const PORTAL = "https://www.optimantra.com/optimus/om/patient/login";
 const QUOTE = "\"A journey of a thousand miles begins with a single step.\"";
 const ATTR = "– Lao-tzu";
@@ -23,102 +18,113 @@ const FIX_3 = "By taking the right steps and planting the seeds of health, you a
 const PLAN_ITEMS = ["Your underlying imbalances", "Your time line of care", "What types of treatment you will receive"];
 const MOST_ITEMS = ["Please show up on time", "Click here for the patient portal", "Eat a small meal or snack before your visit and drink lots of water", "Wear loose, comfortable clothes", "Please feel free to bring a list of questions", "Refrain from overexertion, drugs or alcohol for at least six hours after treatment", "Keep notes between visits", "Follow your treatment plan as the results are cumulative"];
 
-function Band({ title }: { title: string }) {
-  return (
-    <section className="fv-line w-full bg-olive/15">
-      <div className="mx-auto w-full max-w-3xl px-6 py-10 sm:px-10 sm:py-12 lg:px-0">
-        <h2 className="text-center font-heading text-lg font-semibold tracking-[0.12em] text-charcoal sm:text-xl">
-          {title}
-        </h2>
-      </div>
-    </section>
-  );
-}
-
 export function FirstVisit() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useGSAP(
-    () => {
-      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (reduce) return;
-      gsap.from(".fv-line", {
-        autoAlpha: 0,
-        y: 18,
-        duration: 1.3,
-        stagger: 0.1,
-        ease: "power2.out",
-      });
-    },
-    { scope: ref },
-  );
-
   return (
-    <div ref={ref} className="w-full bg-white">
-      <header className="mx-auto w-full max-w-3xl px-6 pb-6 pt-20 sm:px-10 sm:pt-28 lg:px-0">
-        <h1 className="fv-line font-heading text-2xl font-semibold tracking-[0.18em] text-charcoal sm:text-3xl">
-          First Visit
-        </h1>
-      </header>
+    <div className="w-full bg-white">
+      <section className="bg-white">
+        <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-16">
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-charcoal sm:text-5xl md:text-6xl !m-0 text-balance">
+            First Visit
+          </h1>
+        </div>
+      </section>
 
-      <blockquote className="fv-line mx-auto w-full max-w-3xl border-y border-charcoal/20 px-6 py-12 text-center sm:px-10 lg:px-0">
-        <p className="font-hero text-2xl leading-snug text-charcoal sm:text-3xl">{QUOTE}</p>
-        <p className="mt-4 font-heading text-sm tracking-wide text-body">{ATTR}</p>
-      </blockquote>
+      <section className="bg-white pb-12 md:pb-20 lg:pb-24">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+          <blockquote className="max-w-3xl rounded-xl border border-charcoal/10 bg-charcoal/[0.03] p-6 shadow-sm md:p-8">
+            <p className="text-xl font-semibold leading-snug tracking-tight text-charcoal md:text-2xl !m-0">
+              {QUOTE}
+            </p>
+            <p className="mt-4 text-sm font-medium text-body !m-0">{ATTR}</p>
+          </blockquote>
+          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{OPEN_1}</p>
+          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{OPEN_2}</p>
+          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{OPEN_3}</p>
+        </div>
+      </section>
 
-      <div className="fv-line mx-auto flex w-full max-w-3xl flex-col gap-8 px-6 py-12 font-sans text-base leading-8 text-body sm:px-10 lg:px-0">
-        <p className="whitespace-pre-wrap">{OPEN_1}</p>
-        <p className="whitespace-pre-wrap">{OPEN_2}</p>
-        <p className="whitespace-pre-wrap">{OPEN_3}</p>
-      </div>
-
-      <Band title="Your treatment plan" />
-      <div className="fv-line mx-auto flex w-full max-w-3xl flex-col gap-6 px-6 py-12 font-sans text-base leading-8 text-body sm:px-10 lg:px-0">
-        <p className="whitespace-pre-wrap">{PLAN_P}</p>
-        <ul className="list-disc space-y-1 pl-6">
-          {PLAN_ITEMS.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-      </div>
-
-      <Band title="Getting the most out of treatment" />
-      <div className="fv-line mx-auto flex w-full max-w-3xl flex-col gap-6 px-6 py-12 font-sans text-base leading-8 text-body sm:px-10 lg:px-0">
-        <p className="whitespace-pre-wrap">{MOST_P}</p>
-        <ul className="list-disc space-y-1 pl-6">
-          {MOST_ITEMS.map((item) =>
-            item === "Click here for the patient portal" ? (
-              <li key={item}>
-                Click{" "}
-                <a href={PORTAL} className="text-olive underline">
-                  here for the patient portal
-                </a>
-              </li>
-            ) : (
+      <section className="w-full max-w-full overflow-x-clip bg-olive py-12 text-white md:py-20 lg:py-24">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+          <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl !m-0 text-balance">
+            Your treatment plan
+          </h2>
+          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+            {PLAN_P}
+          </p>
+          <ul className="max-w-3xl list-disc space-y-2 pl-6 text-base leading-relaxed text-white/90 md:text-lg">
+            {PLAN_ITEMS.map((item) => (
               <li key={item}>{item}</li>
-            ),
-          )}
-        </ul>
-      </div>
+            ))}
+          </ul>
+        </div>
+      </section>
 
-      <Band title="How treatment works" />
-      <div className="fv-line mx-auto flex w-full max-w-3xl flex-col gap-8 px-6 py-12 font-sans text-base leading-8 text-body sm:px-10 lg:px-0">
-        <p className="whitespace-pre-wrap">{WORK_1}</p>
-        <p className="whitespace-pre-wrap">{WORK_2}</p>
-      </div>
+      <section className="bg-white py-12 md:py-20 lg:py-24">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+          <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-charcoal sm:text-4xl !m-0 text-balance">
+            Getting the most out of treatment
+          </h2>
+          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{MOST_P}</p>
+          <ul className="max-w-3xl list-disc space-y-2 pl-6 text-base leading-relaxed text-body md:text-lg">
+            {MOST_ITEMS.map((item) =>
+              item === "Click here for the patient portal" ? (
+                <li key={item}>
+                  Click{" "}
+                  <a
+                    href={PORTAL}
+                    className="font-medium text-olive underline underline-offset-2"
+                  >
+                    here for the patient portal
+                  </a>
+                </li>
+              ) : (
+                <li key={item}>{item}</li>
+              ),
+            )}
+          </ul>
+        </div>
+      </section>
 
-      <Band title="Your role in the healing process" />
-      <div className="fv-line mx-auto flex w-full max-w-3xl flex-col gap-8 px-6 py-12 font-sans text-base leading-8 text-body sm:px-10 lg:px-0">
-        <p className="whitespace-pre-wrap">{ROLE_1}</p>
-        <p className="whitespace-pre-wrap">{ROLE_2}</p>
-      </div>
+      <section className="w-full max-w-full overflow-x-clip bg-olive py-12 text-white md:py-20 lg:py-24">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+          <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl !m-0 text-balance">
+            How treatment works
+          </h2>
+          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+            {WORK_1}
+          </p>
+          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+            {WORK_2}
+          </p>
+        </div>
+      </section>
 
-      <Band title="Acupuncture is not an instant fix" />
-      <div className="fv-line mx-auto flex w-full max-w-3xl flex-col gap-8 px-6 py-12 pb-24 font-sans text-base leading-8 text-body sm:px-10 sm:pb-28 lg:px-0">
-        <p className="whitespace-pre-wrap">{FIX_1}</p>
-        <p className="whitespace-pre-wrap">{FIX_2}</p>
-        <p className="whitespace-pre-wrap">{FIX_3}</p>
-      </div>
+      <section className="bg-white py-12 md:py-20 lg:py-24">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+          <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-charcoal sm:text-4xl !m-0 text-balance">
+            Your role in the healing process
+          </h2>
+          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{ROLE_1}</p>
+          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{ROLE_2}</p>
+        </div>
+      </section>
+
+      <section className="w-full max-w-full overflow-x-clip bg-olive py-12 text-white md:py-20 lg:py-24">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+          <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl !m-0 text-balance">
+            Acupuncture is not an instant fix
+          </h2>
+          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+            {FIX_1}
+          </p>
+          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+            {FIX_2}
+          </p>
+          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+            {FIX_3}
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

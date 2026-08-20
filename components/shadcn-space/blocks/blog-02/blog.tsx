@@ -1,32 +1,28 @@
-"use client";
-
-import { useRef } from "react";
 import Link from "next/link";
-import { Card, CardContent } from "@/components/ui/card";
-import { gsap, useGSAP } from "@/lib/gsap";
+import { ArrowUpRight } from "lucide-react";
 
 const HEADING = "RECENT ARTICLES";
 
 const posts = [
   {
     href: "/eye-disorders/",
-    image: "/media/wp-content/uploads/2020/09/Eyes.jpg",
+    image: "/media/wp-content/uploads/2017/06/Blogimg-Eyes-Red-or-Inflamed.jpg",
     date: "June 2, 2022",
     title: "Eye Disorders",
     excerpt:
-      "There are hundreds of different eye diseases that lead to vision loss. Degenerative eye diseases, from diabetic retinopathy to age-related macular degeneration, often have no cure while many others are treatable and even preventable. You can assist in your own eye health by following a healthy lifestyle and seeing your Ophthalmologist in conjunction with your […]",
+      "There are hundreds of different eye diseases that lead to vision loss. Degenerative eye diseases, from diabetic retinopathy to age-related macular degeneration, often have no cure while many others are treatable and … following a healthy lifestyle and seeing your Ophthalmologist in conjunction with your […]",
   },
   {
     href: "/acupuncture-and-the-treatment-of-neurological-disorders/",
-    image: "/media/wp-content/uploads/2022/05/NeuroPic.jpg",
+    image: "/media/wp-content/uploads/2011/08/Parkinsons.png",
     date: "May 26, 2022",
     title: "Acupuncture and the Treatment of Neurological Disorders",
     excerpt:
-      "Neurological disorders cover a wide swath of health issues, including: traumatic brain injuries and concussions, headaches, Parkinson's disease, strokes, Bell's palsy, Alzheimer's disease, seizures, and MS (just to name a few). According to the World Health Organization, nearly 1 billion people suffer worldwide from some sort of neurological disorder. What most people don't know is that […]",
+      "Neurological disorders cover a wide swath of health issues, including: traumatic brain injuries and concussions, headaches, Parkinson's disease, strokes, Bell's palsy, Alzheimer's disease, seizures, and MS (just to … rldwide from some sort of neurological disorder. What most people don't know is that […]",
   },
   {
     href: "/effects-of-acupuncture-on-alzheimers/",
-    image: "/media/wp-content/uploads/2021/06/download.jpg",
+    image: "/media/wp-content/uploads/2018/06/healthy-skin-acupuncture.jpg",
     date: "June 2, 2021",
     title: "Effects of Acupuncture on Alzheimer’s",
     excerpt:
@@ -34,7 +30,7 @@ const posts = [
   },
   {
     href: "/does-acupuncture-hurt/",
-    image: "/media/wp-content/uploads/2021/02/Stef-and-Studen.jpg",
+    image: "/media/wp-content/uploads/2017/08/hands-2568594_1280.jpg",
     date: "February 10, 2021",
     title: "Does Acupuncture Hurt?",
     excerpt:
@@ -43,68 +39,54 @@ const posts = [
 ] as const;
 
 const Blog = () => {
-  const ref = useRef<HTMLElement>(null);
-
-  useGSAP(
-    () => {
-      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (reduce) return;
-      gsap.from(".articles-line", {
-        autoAlpha: 0,
-        y: 16,
-        duration: 1.35,
-        stagger: 0.14,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ref.current,
-          start: "top 78%",
-          once: true,
-        },
-      });
-    },
-    { scope: ref },
-  );
-
   return (
-    <section ref={ref} className="w-full bg-white py-24 sm:py-32 lg:py-40">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-16 px-6 sm:px-10 lg:px-12">
-        <h2 className="articles-line font-heading text-sm font-semibold tracking-[0.22em] text-charcoal">
-          {HEADING}
-        </h2>
-        <div className="grid grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
+    <section className="w-full bg-cream py-20 md:py-24 lg:py-28">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-6 sm:px-10 lg:px-16">
+        <div className="flex flex-col gap-4">
+          <p className="font-display text-lg italic text-olive !m-0">03</p>
+          <h2 className="max-w-md font-display text-3xl leading-[1.12] tracking-[-0.01em] text-forest sm:text-4xl !m-0">
+            {HEADING}
+          </h2>
+        </div>
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {posts.map((post) => (
-            <Card
+            <article
               key={post.href}
-              className="articles-line border-0 bg-transparent p-0 shadow-none ring-0"
+              className="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-[0_16px_40px_-24px_rgba(44,58,40,0.35)]"
             >
-              <CardContent className="flex flex-col gap-5 p-0">
-                <Link href={post.href} className="block overflow-hidden">
-                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-olive/20">
-                    <img
-                      src={post.image}
-                      alt=""
-                      className="h-full w-full object-cover"
-                    />
-                    <span className="absolute bottom-0 left-0 bg-olive px-3 py-1 font-heading text-[11px] tracking-wide text-white">
-                      {post.date}
-                    </span>
-                  </div>
-                </Link>
+              <Link href={post.href} className="relative block overflow-hidden">
+                <div className="aspect-[4/3] w-full overflow-hidden bg-olive/20">
+                  <img
+                    src={post.image}
+                    alt=""
+                    className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <span className="absolute left-3 top-3 rounded-full bg-forest/90 px-3 py-1 font-heading text-[11px] font-semibold tracking-wide text-white backdrop-blur-sm">
+                  {post.date}
+                </span>
+              </Link>
+              <div className="flex flex-1 flex-col gap-3 p-6">
                 <Link
                   href={post.href}
-                  className="font-heading text-base font-semibold leading-snug text-charcoal"
+                  className="font-heading text-lg font-semibold leading-snug tracking-tight text-forest"
                 >
                   {post.title}
                 </Link>
-                <p className="font-sans text-sm leading-7 text-body">{post.excerpt}</p>
+                <p className="text-sm leading-relaxed text-body !m-0">{post.excerpt}</p>
                 <Link
                   href={post.href}
-                  className="font-heading text-sm tracking-wide text-olive"
+                  className="mt-auto inline-flex items-center gap-1.5 font-heading text-sm font-semibold text-olive transition-colors hover:text-forest"
                 >
                   Read More
+                  <ArrowUpRight
+                    size={14}
+                    aria-hidden="true"
+                    className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                  />
                 </Link>
-              </CardContent>
-            </Card>
+              </div>
+            </article>
           ))}
         </div>
       </div>

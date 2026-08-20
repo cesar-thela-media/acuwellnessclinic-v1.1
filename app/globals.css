@@ -5,7 +5,7 @@
   Olive #8aa45e / hero overlay rgba(138,164,94,0.73)
   Dusty blue #82a4c0
   Charcoal #333333 / body #404040 / white
-  Fonts: IBM Plex Sans (body), Muli (headings/nav), Indie Flower (hero H1 only)
+  Fonts: Geist (body), Manrope (headings/nav), Indie Flower (hero H1 only)
 */
 
 @theme {
@@ -17,9 +17,12 @@
   --color-background: #ffffff;
   --color-foreground: #404040;
   --color-hero-overlay: rgb(138 164 94 / 0.73);
-  --font-sans: var(--font-ibm-plex-sans), ui-sans-serif, system-ui, sans-serif;
-  --font-heading: var(--font-muli), ui-sans-serif, system-ui, sans-serif;
+  --color-cream: #f7f5ee;
+  --color-forest: #2c3a28;
+  --font-sans: var(--font-geist), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
   --font-hero: var(--font-indie-flower), cursive;
+  --font-display: var(--font-fraunces), Georgia, serif;
 }
 
 html {

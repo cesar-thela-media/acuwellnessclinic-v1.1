@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import { ArrowUpRight } from "lucide-react";
 import { site } from "@/lib/site";
 import { gsap, useGSAP } from "@/lib/gsap";
 
@@ -17,10 +18,10 @@ const Hero29 = () => {
       if (reduce) return;
       gsap.from(".hero-enter", {
         autoAlpha: 0,
-        y: 18,
-        duration: 0.7,
-        stagger: 0.12,
-        ease: "power2.out",
+        y: 22,
+        duration: 0.9,
+        stagger: 0.14,
+        ease: "power3.out",
       });
     },
     { scope: ref },
@@ -29,35 +30,42 @@ const Hero29 = () => {
   return (
     <section
       ref={ref}
-      className="relative flex min-h-svh w-full flex-col overflow-hidden bg-charcoal"
+      className="relative w-full overflow-hidden bg-forest"
     >
       <img
         src={site.media.hero}
         alt=""
-        className="absolute inset-0 z-0 h-full w-full object-cover"
+        className="absolute inset-0 h-full w-full object-cover"
       />
       <div
-        className="absolute inset-0 z-[1]"
-        style={{ background: "rgba(138,164,94,0.73)" }}
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(100deg, rgba(44,58,40,0.92) 0%, rgba(44,58,40,0.68) 45%, rgba(44,58,40,0.35) 100%)",
+        }}
       />
 
-      <div className="relative z-10 flex min-h-svh flex-1 flex-col justify-center">
-        <div className="mx-auto flex w-full max-w-5xl flex-col items-start gap-6 px-6 py-16 sm:gap-8 sm:px-10 lg:px-16">
-          <p className="hero-enter font-heading text-xs font-semibold tracking-[0.22em] text-white">
-            {CHIP}
-          </p>
-          <h1 className="hero-enter font-hero max-w-4xl text-[2.35rem] leading-[1.08] text-white sm:text-6xl lg:text-8xl">
-            {TITLE}
-          </h1>
-          <a
-            className="hero-enter inline-flex w-fit border border-white px-6 py-2.5 font-heading text-sm tracking-wide text-white transition-opacity hover:opacity-80"
-            href={site.booking.header}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {CTA}
-          </a>
-        </div>
+      <div className="relative z-10 mx-auto flex min-h-svh w-full max-w-7xl flex-col items-start justify-center gap-8 px-6 py-24 sm:px-10 lg:px-16">
+        <span className="hero-enter inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-4 py-1.5 font-heading text-[11px] font-semibold tracking-[0.18em] text-white backdrop-blur-sm">
+          <span className="h-1.5 w-1.5 rounded-full bg-olive" aria-hidden="true" />
+          {CHIP}
+        </span>
+        <h1 className="hero-enter max-w-4xl font-display text-5xl leading-[1.04] tracking-[-0.01em] text-white sm:text-6xl lg:text-7xl">
+          {TITLE}
+        </h1>
+        <a
+          className="hero-enter group inline-flex items-center gap-2 rounded-full bg-olive px-7 py-3.5 font-heading text-sm font-semibold text-forest transition-colors hover:bg-white"
+          href={site.booking.header}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {CTA}
+          <ArrowUpRight
+            size={16}
+            aria-hidden="true"
+            className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+          />
+        </a>
       </div>
     </section>
   );

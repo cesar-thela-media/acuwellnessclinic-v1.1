@@ -1,8 +1,4 @@
-"use client";
-
-import { useRef } from "react";
 import { site } from "@/lib/site";
-import { gsap, useGSAP } from "@/lib/gsap";
 
 const BOOK = site.booking.header;
 
@@ -36,55 +32,39 @@ const members = [
 ] as const;
 
 const Experts = () => {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useGSAP(
-    () => {
-      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (reduce) return;
-      gsap.from(".team-line", {
-        autoAlpha: 0,
-        y: 18,
-        duration: 1.3,
-        stagger: 0.12,
-        ease: "power2.out",
-        scrollTrigger: { trigger: ref.current, start: "top 80%", once: true },
-      });
-    },
-    { scope: ref },
-  );
-
   return (
-    <div ref={ref} className="w-full bg-white">
-      <div className="mx-auto flex w-full max-w-5xl flex-col gap-24 px-6 py-20 sm:px-10 sm:py-28 lg:px-12">
-        <h1 className="team-line font-heading text-2xl font-semibold tracking-[0.18em] text-charcoal sm:text-3xl">
+    <div className="w-full bg-white">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-16 px-4 py-16 sm:px-6 md:gap-24 md:py-24 lg:px-16">
+        <h1 className="text-4xl font-bold tracking-tight text-charcoal sm:text-5xl md:text-6xl !m-0 text-balance">
           Our Team
         </h1>
         {members.map((member) => (
           <article
             key={member.name}
-            className="team-line grid grid-cols-1 gap-10 lg:grid-cols-[280px_1fr] lg:gap-16"
+            className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,280px)_1fr] lg:gap-14"
           >
-            <img
-              src={member.image}
-              srcSet={member.srcSet}
-              sizes={member.sizes}
-              alt=""
-              className="aspect-[3/4] w-full max-w-xs object-cover"
-            />
-            <div className="flex flex-col items-start gap-6">
-              <h1 className="bio_head font-heading text-xl font-semibold text-charcoal sm:text-2xl">
+            <div className="relative overflow-hidden rounded-xl">
+              <img
+                src={member.image}
+                srcSet={member.srcSet}
+                sizes={member.sizes}
+                alt=""
+                className="aspect-[3/4] w-full max-w-xs object-cover object-center"
+              />
+            </div>
+            <div className="flex flex-col items-start gap-5">
+              <h2 className="bio_head text-xl font-bold tracking-tight text-charcoal sm:text-2xl !m-0">
                 {member.name}
-              </h1>
+              </h2>
               <a
                 href={BOOK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex bg-olive px-4 py-2 font-heading text-sm text-white"
+                className="inline-flex h-11 items-center rounded-lg bg-olive px-5 text-sm font-medium text-white transition-colors hover:bg-olive/90"
               >
                 {member.cta}
               </a>
-              <p className="whitespace-pre-wrap font-sans text-base leading-8 text-body">
+              <p className="whitespace-pre-wrap text-base leading-relaxed text-body !m-0">
                 {member.bio}
               </p>
             </div>

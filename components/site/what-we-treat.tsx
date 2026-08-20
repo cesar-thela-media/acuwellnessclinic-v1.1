@@ -1,9 +1,4 @@
-"use client";
-
-import { useRef } from "react";
 import Link from "next/link";
-import { Card, CardContent } from "@/components/ui/card";
-import { gsap, useGSAP } from "@/lib/gsap";
 
 const INTRO =
   "Below is a list of conditions that we can effectively treat. Click each topic to read more.";
@@ -66,65 +61,44 @@ const items = [
 ] as const;
 
 export function WhatWeTreat() {
-  const ref = useRef<HTMLElement>(null);
-
-  useGSAP(
-    () => {
-      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (reduce) return;
-      gsap.from(".wwt-line", {
-        autoAlpha: 0,
-        y: 16,
-        duration: 1.35,
-        stagger: 0.1,
-        ease: "power2.out",
-      });
-    },
-    { scope: ref },
-  );
-
   return (
-    <section ref={ref} className="w-full bg-white py-20 sm:py-28">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-12 px-6 sm:px-10 lg:px-12">
-        <div className="wwt-line mx-auto flex max-w-3xl flex-col gap-6">
-          <h1 className="font-heading text-2xl font-semibold tracking-[0.18em] text-charcoal sm:text-3xl">
-            What We Treat
-          </h1>
-          <p className="font-sans text-base leading-8 text-body">{INTRO}</p>
-        </div>
-        <div className="grid grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+    <div className="w-full bg-white">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-4 py-16 sm:px-6 md:gap-12 md:py-24 lg:px-16">
+        <h1 className="text-4xl font-bold tracking-tight text-charcoal sm:text-5xl md:text-6xl !m-0 text-balance">
+          What We Treat
+        </h1>
+        <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
+          {INTRO}
+        </p>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {items.map((item) => (
-            <Card
+            <article
               key={item.href}
-              className="wwt-line border-0 bg-transparent p-0 shadow-none ring-0"
+              className="group flex flex-col gap-4 rounded-xl border border-charcoal/10 bg-white p-5 shadow-sm md:p-6"
             >
-              <CardContent className="flex flex-col gap-5 p-0">
-                <Link href={item.href} className="block overflow-hidden">
-                  <div
-                    className="aspect-[4/3] w-full bg-olive/20 bg-cover bg-center"
-                    style={{ backgroundImage: `url(${item.image})` }}
+              <Link href={item.href} className="relative block overflow-hidden rounded-xl">
+                <div className="aspect-[4/3] w-full overflow-hidden bg-olive/20">
+                  <img
+                    src={item.image}
+                    alt=""
+                    className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
                   />
-                </Link>
-                <Link
-                  href={item.href}
-                  className="font-heading text-base font-semibold leading-snug text-charcoal"
-                >
-                  {item.title}
-                </Link>
-                <p className="whitespace-pre-wrap font-sans text-sm leading-7 text-body">
-                  {item.excerpt}
-                </p>
-                <Link
-                  href={item.href}
-                  className="font-heading text-sm tracking-wide text-olive"
-                >
-                  Read More
-                </Link>
-              </CardContent>
-            </Card>
+                </div>
+              </Link>
+              <Link
+                href={item.href}
+                className="text-lg font-semibold leading-snug tracking-tight text-charcoal"
+              >
+                {item.title}
+              </Link>
+              <p className="whitespace-pre-wrap text-sm leading-relaxed text-body !m-0">{item.excerpt}</p>
+              <Link href={item.href} className="text-sm font-medium text-olive hover:text-olive/80">
+                Read More
+              </Link>
+            </article>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

@@ -1,9 +1,5 @@
-"use client";
-
-import { useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { site } from "@/lib/site";
-import { gsap, useGSAP } from "@/lib/gsap";
 
 const HEADING = "Are you ready to feel better?";
 const BODY_BEFORE =
@@ -15,71 +11,43 @@ const QUOTE =
 const ATTRIBUTION = "~Buddha";
 
 export default function GetStarted() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useGSAP(
-    () => {
-      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (reduce) return;
-
-      gsap.from(".stmt-a .stmt-line", {
-        autoAlpha: 0,
-        y: 22,
-        duration: 1.15,
-        stagger: 0.2,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".stmt-a",
-          start: "top 75%",
-          once: true,
-        },
-      });
-
-      gsap.from(".stmt-b .stmt-line", {
-        autoAlpha: 0,
-        y: 18,
-        duration: 1.3,
-        stagger: 0.22,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: ".stmt-b",
-          start: "top 78%",
-          once: true,
-        },
-      });
-    },
-    { scope: ref },
-  );
-
   return (
-    <div ref={ref}>
-      <section className="stmt-a w-full bg-olive">
-        <div className="mx-auto flex w-full max-w-5xl flex-col items-start gap-8 px-6 py-24 sm:px-10 sm:py-28 lg:px-16 lg:py-32">
-          <h2 className="stmt-line font-heading max-w-3xl text-4xl leading-[1.1] font-semibold text-white sm:text-5xl lg:text-6xl">
-            {HEADING}
-          </h2>
-          <p className="stmt-line font-sans max-w-2xl text-base leading-7 text-white sm:text-lg sm:leading-8">
-            {BODY_BEFORE}
-            <strong>{BODY_BOLD}</strong>
-          </p>
-          <a
-            className="stmt-line inline-flex items-center gap-2 bg-white px-6 py-3 font-heading text-sm tracking-wide text-charcoal transition-opacity hover:opacity-80"
-            href={site.booking.header}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {CTA}
-            <ArrowRight size={14} aria-hidden="true" />
-          </a>
+    <div>
+      <section className="w-full overflow-x-clip bg-white">
+        <div className="mx-auto w-full max-w-7xl px-6 py-20 sm:px-10 md:py-28 lg:px-16 lg:py-32">
+          <div className="flex max-w-3xl flex-col gap-8">
+            <p className="font-display text-lg italic text-olive !m-0" aria-hidden="true">
+              02
+            </p>
+            <h2 className="max-w-3xl font-display text-4xl leading-[1.1] tracking-[-0.01em] text-forest sm:text-5xl lg:text-6xl !m-0">
+              {HEADING}
+            </h2>
+            <p className="max-w-2xl text-base leading-relaxed text-body md:text-lg !m-0">
+              {BODY_BEFORE}
+              <strong className="font-semibold text-forest">{BODY_BOLD}</strong>
+            </p>
+            <a
+              className="inline-flex h-11 items-center gap-1.5 rounded-full bg-olive px-5 font-heading text-sm font-semibold text-forest transition-colors hover:bg-forest hover:text-white"
+              href={site.booking.header}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {CTA}
+              <ArrowRight size={16} aria-hidden="true" />
+            </a>
+          </div>
         </div>
       </section>
 
-      <section className="stmt-b w-full bg-white">
-        <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-6 px-6 py-24 text-center sm:px-10 sm:py-32 lg:py-40">
-          <blockquote className="stmt-line font-hero text-2xl leading-snug text-charcoal sm:text-3xl lg:text-4xl">
+      <section className="w-full bg-cream">
+        <div className="mx-auto flex w-full max-w-3xl flex-col items-center gap-6 px-6 py-20 text-center md:py-28 lg:py-32">
+          <span className="font-display text-5xl leading-none text-olive/50 !m-0" aria-hidden="true">
+            &ldquo;
+          </span>
+          <blockquote className="font-display text-2xl leading-snug font-medium tracking-tight text-forest sm:text-3xl lg:text-4xl !m-0">
             {QUOTE}
           </blockquote>
-          <p className="stmt-line font-heading text-sm tracking-wide text-body">{ATTRIBUTION}</p>
+          <p className="font-heading text-sm font-semibold tracking-[0.14em] text-forest/60 !m-0">{ATTRIBUTION}</p>
         </div>
       </section>
     </div>

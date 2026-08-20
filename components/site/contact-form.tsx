@@ -48,33 +48,35 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} method="post" className="flex max-w-xl flex-col gap-5">
-      <div className="flex flex-col gap-2">
-        <Label htmlFor="firstName" className="font-sans text-sm text-charcoal">
-          First Name
-        </Label>
-        <Input id="firstName" name="firstName" required className="h-10 rounded-none" />
+    <form onSubmit={onSubmit} method="post" className="flex flex-col gap-5">
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div className="flex flex-col gap-2">
+          <Label htmlFor="firstName" className="text-sm font-medium text-charcoal">
+            First Name
+          </Label>
+          <Input id="firstName" name="firstName" required className="h-11 rounded-lg" />
+        </div>
+        <div className="flex flex-col gap-2">
+          <Label htmlFor="lastName" className="text-sm font-medium text-charcoal">
+            Last Name
+          </Label>
+          <Input id="lastName" name="lastName" required className="h-11 rounded-lg" />
+        </div>
       </div>
       <div className="flex flex-col gap-2">
-        <Label htmlFor="lastName" className="font-sans text-sm text-charcoal">
-          Last Name
-        </Label>
-        <Input id="lastName" name="lastName" required className="h-10 rounded-none" />
-      </div>
-      <div className="flex flex-col gap-2">
-        <Label htmlFor="email" className="font-sans text-sm text-charcoal">
+        <Label htmlFor="email" className="text-sm font-medium text-charcoal">
           Email
         </Label>
-        <Input id="email" name="email" type="email" required className="h-10 rounded-none" />
+        <Input id="email" name="email" type="email" required className="h-11 rounded-lg" />
       </div>
       <div className="flex flex-col gap-2">
-        <Label htmlFor="phone" className="font-sans text-sm text-charcoal">
+        <Label htmlFor="phone" className="text-sm font-medium text-charcoal">
           Phone/Mobile
         </Label>
-        <Input id="phone" name="phone" type="tel" required className="h-10 rounded-none" />
+        <Input id="phone" name="phone" type="tel" required className="h-11 rounded-lg" />
       </div>
       <div className="flex flex-col gap-2">
-        <Label htmlFor="subject" className="font-sans text-sm text-charcoal">
+        <Label htmlFor="subject" className="text-sm font-medium text-charcoal">
           Subject
         </Label>
         <select
@@ -82,7 +84,7 @@ export function ContactForm() {
           name="subject"
           required
           defaultValue=""
-          className="h-10 rounded-none border border-input bg-transparent px-3 font-sans text-sm text-charcoal"
+          className="h-11 rounded-lg border border-input bg-transparent px-3 text-sm text-charcoal"
         >
           <option value="" disabled>
             - Select -
@@ -95,15 +97,15 @@ export function ContactForm() {
         </select>
       </div>
       <div className="flex flex-col gap-2">
-        <Label htmlFor="message" className="font-sans text-sm text-charcoal">
+        <Label htmlFor="message" className="text-sm font-medium text-charcoal">
           Your Message
         </Label>
-        <Textarea id="message" name="message" required rows={6} className="rounded-none" />
+        <Textarea id="message" name="message" required rows={6} className="rounded-lg" />
       </div>
       <Button
         type="submit"
         disabled={status === "sending"}
-        className="h-10 w-fit rounded-none bg-olive font-heading text-white hover:bg-olive/90"
+        className="h-11 w-fit rounded-lg bg-olive font-medium text-white hover:bg-olive/90"
       >
         Submit Form
       </Button>

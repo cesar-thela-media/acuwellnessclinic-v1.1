@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans, Indie_Flower, Mulish } from "next/font/google";
+import { Fraunces, Geist, Indie_Flower, Manrope } from "next/font/google";
 import { Footer } from "@/components/site/footer";
 import { GsapRoot } from "@/components/site/gsap-root";
 import { Header } from "@/components/site/header";
@@ -8,17 +8,16 @@ import { NeuropathyPopup } from "@/components/site/neuropathy-popup";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const sans = IBM_Plex_Sans({
+const sans = Geist({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-ibm-plex-sans",
+  variable: "--font-geist",
   display: "swap",
 });
 
-const heading = Mulish({
+const heading = Manrope({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-muli",
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-manrope",
   display: "swap",
 });
 
@@ -26,6 +25,12 @@ const hero = Indie_Flower({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-indie-flower",
+  display: "swap",
+});
+
+const display = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
   display: "swap",
 });
 
@@ -42,7 +47,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-US" className={`${sans.variable} ${heading.variable} ${hero.variable}`}>
+    <html lang="en-US" className={`${sans.variable} ${heading.variable} ${hero.variable} ${display.variable}`}>
       <body className="font-sans">
         <GsapRoot>
           <Header />

@@ -1,8 +1,4 @@
-"use client";
-
-import { useRef } from "react";
 import { site } from "@/lib/site";
-import { gsap, useGSAP } from "@/lib/gsap";
 
 const testimonials = [
   {
@@ -94,53 +90,40 @@ const testimonials = [
 ] as const;
 
 export default function Testimonial() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useGSAP(
-    () => {
-      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (reduce) return;
-      gsap.from(".quote-line", {
-        autoAlpha: 0,
-        y: 18,
-        duration: 1.3,
-        stagger: 0.08,
-        ease: "power2.out",
-        scrollTrigger: { trigger: ref.current, start: "top 80%", once: true },
-      });
-    },
-    { scope: ref },
-  );
-
   return (
-    <div ref={ref} className="w-full bg-white">
-      <div className="mx-auto flex w-full max-w-3xl flex-col gap-20 px-6 py-20 sm:px-10 sm:py-28 lg:px-0">
-        <div className="quote-line flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
-          <h1 className="font-heading text-2xl font-semibold tracking-[0.18em] text-charcoal sm:text-3xl">
+    <div className="w-full bg-white">
+      <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-4 py-16 sm:px-6 md:gap-16 md:py-24 lg:px-16">
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <h1 className="text-4xl font-bold tracking-tight text-charcoal sm:text-5xl md:text-6xl !m-0 text-balance">
             Testimonials
           </h1>
           <a
             href={site.social.reviews}
             target="_self"
-            className="inline-flex w-fit bg-olive px-4 py-2 font-heading text-sm text-white"
+            className="inline-flex h-11 w-fit items-center rounded-lg bg-olive px-5 text-sm font-medium text-white transition-colors hover:bg-olive/90"
           >
             Leave A Review
           </a>
         </div>
-        <div className="flex flex-col gap-20">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
           {testimonials.map((item) => (
-            <article key={item.title} className="quote-line flex flex-col gap-5">
-              <h2 className="font-heading text-xl font-semibold text-charcoal">{item.title}</h2>
+            <article
+              key={item.title}
+              className="flex flex-col gap-4 rounded-xl border border-charcoal/10 bg-white p-6 shadow-sm md:p-8"
+            >
+              <h2 className="text-lg font-bold tracking-tight text-charcoal md:text-xl !m-0">
+                {item.title}
+              </h2>
               {item.quotes.map((quote) => (
                 <blockquote
                   key={quote.slice(0, 48)}
-                  className="whitespace-pre-wrap font-hero text-lg leading-8 text-charcoal"
+                  className="whitespace-pre-wrap text-base leading-relaxed text-body !m-0"
                 >
                   {quote}
                 </blockquote>
               ))}
               {item.attribution.length > 0 ? (
-                <p className="font-sans text-sm leading-6 text-body">
+                <p className="mt-auto text-sm font-medium leading-6 text-charcoal !m-0">
                   {item.attribution.map((line) => (
                     <span key={line} className="block">
                       {line}

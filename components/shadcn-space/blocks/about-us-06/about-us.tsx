@@ -1,8 +1,3 @@
-"use client";
-
-import { useRef } from "react";
-import { gsap, useGSAP } from "@/lib/gsap";
-
 const P1 =
   "We are a full service Oriental medicine clinic located in the Oak Hill region of Southwest Austin.  We offer acupuncture, acupressure, tuina (asian bodywork), cupping therapy, herbal medicine, guasha, nutritional support, taichi and qigong. Treating a wide range of both acute and chronic conditions, our natural focus is on pain management, sports medicine, auto-immune disease and facial rejuvenation.";
 
@@ -22,84 +17,69 @@ const GUARDIANS = [
 const COLS = ["Guardian", "Direction", "Season", "Color", "5 Element"] as const;
 
 const AboutUs06 = () => {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useGSAP(
-    () => {
-      const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      if (reduce) return;
-      gsap.from(".about-line", {
-        autoAlpha: 0,
-        y: 18,
-        duration: 1.3,
-        stagger: 0.12,
-        ease: "power2.out",
-        scrollTrigger: { trigger: ref.current, start: "top 80%", once: true },
-      });
-    },
-    { scope: ref },
-  );
-
   return (
-    <div ref={ref} className="w-full bg-white">
-      <header className="mx-auto w-full max-w-3xl px-6 pb-8 pt-20 sm:px-10 sm:pt-28 lg:px-0">
-        <h1 className="about-line font-heading text-2xl font-semibold tracking-[0.18em] text-charcoal sm:text-3xl">
-          About Us
-        </h1>
-      </header>
-
-      <div className="mx-auto w-full max-w-3xl px-6 sm:px-10 lg:px-0">
-        <p className="about-line font-heading text-lg font-semibold text-charcoal">
-          <em>
-            <strong>What is Sì Shòu Acupuncture and Wellness?</strong>
-          </em>
-        </p>
-      </div>
-
-      <section className="about-line mt-10 w-full bg-olive/15">
-        <div className="mx-auto flex w-full max-w-3xl flex-col gap-8 px-6 py-16 font-sans text-base leading-8 text-charcoal sm:px-10 sm:py-20 lg:px-0">
-          <p className="whitespace-pre-wrap">{P1}</p>
-          <p>{P2}</p>
-          <p>{P3}</p>
+    <div className="w-full bg-white">
+      <section className="bg-white">
+        <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-16">
+          <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-charcoal sm:text-5xl md:text-6xl !m-0 text-balance">
+            About Us
+          </h1>
+          <p className="mt-6 max-w-3xl text-lg font-semibold leading-snug text-charcoal md:text-xl !m-0">
+            <em>
+              <strong>What is Sì Shòu Acupuncture and Wellness?</strong>
+            </em>
+          </p>
         </div>
       </section>
 
-      <div className="mx-auto w-full max-w-3xl px-6 py-16 sm:px-10 sm:py-20 lg:px-0">
-        <p className="about-line font-heading text-lg font-semibold text-charcoal">
-          <em>
-            <strong>
-              Sì Shòu:{'  '}The 4 Guardians guarding the 4 compass directions
-            </strong>
-          </em>
-        </p>
-
-        <div className="about-line mt-14 overflow-x-auto">
-          <table className="w-full min-w-[28rem] border-collapse text-left font-sans text-sm text-charcoal">
-            <thead>
-              <tr className="border-b border-charcoal/20">
-                {COLS.map((label) => (
-                  <th key={label} className="py-3 pr-4">
-                    <strong>
-                      <u>{label}</u>
-                    </strong>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {GUARDIANS.map((row) => (
-                <tr key={row.guardian} className="border-b border-charcoal/10">
-                  <td className="py-3 pr-4">{row.guardian}</td>
-                  <td className="py-3 pr-4">{row.direction}</td>
-                  <td className="py-3 pr-4">{row.season}</td>
-                  <td className="py-3 pr-4">{row.color}</td>
-                  <td className="py-3">{row.element}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+      <section className="w-full max-w-full overflow-x-clip bg-olive py-12 text-white md:py-20 lg:py-24">
+        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+            {P1}
+          </p>
+          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg !m-0">{P2}</p>
         </div>
-      </div>
+      </section>
+
+      <section className="bg-white py-12 md:py-20 lg:py-24">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-16">
+          <p className="max-w-3xl text-lg font-semibold leading-snug text-charcoal md:text-xl !m-0">
+            <em>
+              <strong>
+                Sì Shòu :  The 4 Guardians guarding the 4 compass directions
+              </strong>
+            </em>
+          </p>
+          <p className="mt-6 max-w-3xl text-base leading-relaxed text-body md:text-lg !m-0">{P3}</p>
+
+          <div className="mt-10 overflow-x-auto rounded-xl border border-charcoal/10">
+            <table className="w-full min-w-[28rem] border-collapse text-left text-sm text-charcoal">
+              <thead>
+                <tr className="border-b border-charcoal/10 bg-charcoal/[0.03]">
+                  {COLS.map((label) => (
+                    <th key={label} className="px-4 py-3 font-semibold">
+                      <strong>
+                        <u>{label}</u>
+                      </strong>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {GUARDIANS.map((row) => (
+                  <tr key={row.guardian} className="border-b border-charcoal/10 last:border-0">
+                    <td className="px-4 py-3">{row.guardian}</td>
+                    <td className="px-4 py-3">{row.direction}</td>
+                    <td className="px-4 py-3">{row.season}</td>
+                    <td className="px-4 py-3">{row.color}</td>
+                    <td className="px-4 py-3">{row.element}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
