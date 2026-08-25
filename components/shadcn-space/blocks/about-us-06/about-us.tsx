@@ -1,3 +1,6 @@
+import { PageTitle, SiteContainer } from "@/components/site/page-primitives";
+import { site } from "@/lib/site";
+
 const P1 =
   "We are a full service Oriental medicine clinic located in the Oak Hill region of Southwest Austin.  We offer acupuncture, acupressure, tuina (asian bodywork), cupping therapy, herbal medicine, guasha, nutritional support, taichi and qigong. Treating a wide range of both acute and chronic conditions, our natural focus is on pain management, sports medicine, auto-immune disease and facial rejuvenation.";
 
@@ -20,39 +23,46 @@ const AboutUs06 = () => {
   return (
     <div className="w-full bg-white">
       <section className="bg-white">
-        <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-16">
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-charcoal sm:text-5xl md:text-6xl !m-0 text-balance">
-            About Us
-          </h1>
-          <p className="mt-6 max-w-3xl text-lg font-semibold leading-snug text-charcoal md:text-xl !m-0">
-            <em>
-              <strong>What is Sì Shòu Acupuncture and Wellness?</strong>
-            </em>
+        <div className="site-container site-section--compact">
+          <PageTitle>About Us</PageTitle>
+          <p className="site-lead !m-0">
+            <strong>What is Sì Shòu Acupuncture and Wellness?</strong>
           </p>
         </div>
       </section>
 
-      <section className="w-full max-w-full overflow-x-clip bg-olive py-12 text-white md:py-20 lg:py-24">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+      <section className="site-band w-full max-w-full overflow-x-clip bg-olive text-white">
+        <SiteContainer className="flex flex-col gap-6 md:gap-8">
           <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
             {P1}
           </p>
           <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg !m-0">{P2}</p>
-        </div>
+        </SiteContainer>
       </section>
 
-      <section className="bg-white py-12 md:py-20 lg:py-24">
-        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-16">
-          <p className="max-w-3xl text-lg font-semibold leading-snug text-charcoal md:text-xl !m-0">
-            <em>
-              <strong>
-                Sì Shòu :  The 4 Guardians guarding the 4 compass directions
-              </strong>
-            </em>
-          </p>
-          <p className="mt-6 max-w-3xl text-base leading-relaxed text-body md:text-lg !m-0">{P3}</p>
+      <section className="site-band bg-white">
+        <SiteContainer className="flex flex-col gap-12">
+          <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-16">
+            <div className="relative mx-auto w-full max-w-sm lg:max-w-none">
+              <img
+                src="/media/wp-content/uploads/2017/01/chinese-herbs.jpg"
+                alt="Traditional Chinese herbs arranged for wellness care"
+                width={1024}
+                height={664}
+                className="block aspect-[3/2] h-auto w-full rounded-3xl object-cover shadow-[0_24px_60px_-24px_rgb(56_69_47/0.4)]"
+              />
+            </div>
+            <div className="flex min-w-0 flex-col gap-6">
+              <p className="site-lead !m-0">
+                <strong>
+                  Sì Shòu :  The 4 Guardians guarding the 4 compass directions
+                </strong>
+              </p>
+              <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg !m-0">{P3}</p>
+            </div>
+          </div>
 
-          <div className="mt-10 overflow-x-auto rounded-xl border border-charcoal/10">
+          <div className="overflow-x-auto rounded-xl border border-charcoal/10">
             <table className="w-full min-w-[28rem] border-collapse text-left text-sm text-charcoal">
               <thead>
                 <tr className="border-b border-charcoal/10 bg-charcoal/[0.03]">
@@ -78,7 +88,7 @@ const AboutUs06 = () => {
               </tbody>
             </table>
           </div>
-        </div>
+        </SiteContainer>
       </section>
     </div>
   );

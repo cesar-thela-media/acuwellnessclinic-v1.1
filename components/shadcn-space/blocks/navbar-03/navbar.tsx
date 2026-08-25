@@ -28,6 +28,36 @@ import {
 import { nav, site } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
+const FacebookIcon = ({ size = 15 }: { size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953h-1.514c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+  </svg>
+);
+
+const InstagramIcon = ({ size = 15 }: { size?: number }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+  >
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
+
 const Navbar = () => {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -42,104 +72,102 @@ const Navbar = () => {
 
   const overHero = pathname === "/" && !scrolled;
 
-  const trigger = overHero
-    ? "text-white hover:bg-white/15"
-    : "text-forest/75 hover:bg-forest/5 hover:text-forest";
+  const itemBase =
+    "inline-flex h-10 items-center whitespace-nowrap rounded-full px-2.5 py-0 font-heading text-sm font-semibold tracking-tight outline-none transition-colors xl:px-3.5";
 
-  const linkCls = overHero
-    ? "text-white hover:bg-white/15"
-    : "text-forest/70 hover:bg-forest/5 hover:text-forest";
+  const trigger = cn(
+    itemBase,
+    "!bg-transparent [&_svg]:top-0",
+    overHero
+      ? "!text-white hover:bg-white/15 hover:!text-white data-[state=open]:bg-white/10 data-[state=open]:!text-white data-[state=open]:hover:bg-white/15 data-[state=open]:hover:!text-white focus:bg-white/10 focus:!text-white focus-visible:ring-white/40 [&>svg]:!text-white"
+      : "text-forest/85 hover:bg-forest/5 hover:text-forest data-[state=open]:bg-forest/5 data-[state=open]:hover:bg-forest/10 data-[state=open]:hover:text-forest focus:bg-forest/5 focus-visible:ring-forest/30 [&>svg]:text-forest/70",
+  );
+
+  const linkCls = cn(
+    itemBase,
+    overHero
+      ? "!text-white hover:bg-white/15 hover:!text-white focus:!text-white"
+      : "text-forest/85 hover:bg-forest/5 hover:text-forest",
+  );
 
   return (
     <header
       className={cn(
-        pathname === "/" ? "fixed inset-x-0 top-0" : "sticky top-0",
+        pathname === "/" ? "home-header fixed inset-x-0 top-0" : "sticky top-0",
         "z-50 w-full transition-all duration-300",
         overHero
-          ? "bg-gradient-to-b from-forest/80 via-forest/40 to-transparent"
+          ? "bg-transparent"
           : "border-b border-forest/10 bg-cream/95 backdrop-blur-md",
       )}
     >
-      <div
-        className={cn(
-          "hidden bg-charcoal/95 text-white transition-all duration-300 lg:block",
-          scrolled ? "max-h-10 py-2.5" : "max-h-0 py-0 overflow-hidden",
-        )}
+      <nav
+        aria-label="Utility navigation"
+        className="hidden bg-olive text-forest lg:block"
       >
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-6 sm:px-10 lg:px-16">
+        <div className="mx-auto flex min-h-11 w-full max-w-7xl items-center justify-between gap-x-8 px-6 sm:px-10 lg:px-8">
           <a
             href={`tel:${site.phoneTel}`}
-            className="font-heading text-sm font-semibold tracking-wide"
+            aria-label={`Call ${site.name} at ${site.phoneDisplay}`}
+            className="inline-flex min-h-8 items-center rounded-full px-2 font-heading text-sm font-semibold tracking-wide no-underline transition-colors hover:bg-forest/10"
           >
             {site.phoneDisplay}
           </a>
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-2.5">
             <a
               href={site.social.facebook}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-white/85 transition-colors hover:text-white"
+              aria-label="Visit us on Facebook (opens in a new tab)"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-full no-underline transition-colors hover:bg-forest/10"
             >
-              Facebook
+              <FacebookIcon />
             </a>
             <a
               href={site.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm text-white/85 transition-colors hover:text-white"
+              aria-label="Visit us on Instagram (opens in a new tab)"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-full no-underline transition-colors hover:bg-forest/10"
             >
-              Instagram
-            </a>
-            <a
-              href={site.booking.header}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full bg-olive px-4 py-1.5 text-sm font-semibold text-forest transition-colors hover:bg-white"
-            >
-              Schedule An Appointment
+              <InstagramIcon />
             </a>
           </div>
         </div>
-      </div>
+      </nav>
 
-      <nav className="mx-auto flex h-16 w-full max-w-7xl min-w-0 items-center justify-between gap-4 px-6 sm:px-10 sm:h-[4.5rem] lg:px-16">
-        <Link href="/" className="flex shrink-0 items-center gap-3">
+      <nav className="mx-auto grid h-16 w-full max-w-7xl min-w-0 grid-cols-[4rem_minmax(0,1fr)_auto] items-center gap-3 px-6 sm:h-[4.5rem] sm:grid-cols-[4.5rem_minmax(0,1fr)_auto] sm:px-10 lg:px-8">
+        <Link
+          href="/"
+          className="flex h-9 w-12 shrink-0 items-center sm:h-11 sm:w-14"
+        >
           <img
             src={site.media.logo}
             alt={site.name}
-            width={439}
-            height={512}
-            className={cn(
-              "w-auto object-contain",
-              overHero ? "h-5 brightness-0 invert sm:h-6" : "h-6",
-            )}
+            width={300}
+            height={300}
+            className="block h-full w-auto max-w-[12rem] object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]"
           />
         </Link>
 
-        <NavigationMenu className="hidden max-w-none flex-1 lg:flex">
-          <NavigationMenuList className="flex flex-nowrap items-center gap-1 xl:gap-2">
+        <NavigationMenu className="hidden min-w-0 max-w-none justify-center lg:flex" viewport={false}>
+          <NavigationMenuList className="flex flex-nowrap items-center justify-center gap-0.5 xl:gap-1.5">
             {nav.map((item) => (
               <NavigationMenuItem key={item.label}>
                 {"children" in item && item.children ? (
                   <NavigationMenuTrigger
                     className={cn(
-                      "group inline-flex h-10 items-center gap-1.5 rounded-full px-3.5 font-heading text-sm font-semibold tracking-tight outline-none transition-colors xl:px-4",
+                      "inline-flex h-10 items-center justify-center whitespace-nowrap rounded-full px-2.5 py-0 font-heading text-sm font-semibold leading-none tracking-tight outline-none transition-colors xl:px-3.5",
                       trigger,
                     )}
                   >
                     {item.label}
-                    <ChevronDown
-                      size={14}
-                      aria-hidden="true"
-                      className="opacity-60 transition-transform duration-200 group-data-[state=open]:rotate-180"
-                    />
                   </NavigationMenuTrigger>
                 ) : (
                   <NavigationMenuLink asChild>
                     <Link
                       href={item.href}
                       className={cn(
-                        "inline-flex h-10 items-center rounded-full px-3.5 font-heading text-sm font-semibold tracking-tight transition-colors xl:px-4",
+                        "inline-flex h-10 items-center justify-center whitespace-nowrap rounded-full px-2.5 py-0 font-heading text-sm font-semibold leading-none tracking-tight transition-colors xl:px-3.5",
                         linkCls,
                       )}
                     >
@@ -148,8 +176,8 @@ const Navbar = () => {
                   </NavigationMenuLink>
                 )}
                 {"children" in item && item.children && (
-                  <NavigationMenuContent>
-                    <div className="w-56 rounded-2xl border border-forest/10 bg-white p-2 shadow-[0_20px_50px_-20px_rgba(44,58,40,0.35)]">
+                  <NavigationMenuContent className="z-50">
+                    <div className="w-56 rounded-2xl bg-white p-2 shadow-[0_20px_50px_-20px_rgba(56,69,47,0.4)]">
                       {item.children.map((child) => (
                         <NavigationMenuLink key={child.label} asChild>
                           <Link
@@ -168,21 +196,12 @@ const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="hidden shrink-0 items-center gap-3 lg:flex">
-          <a
-            href={`tel:${site.phoneTel}`}
-            className={cn(
-              "font-heading text-sm font-semibold tracking-wide transition-colors",
-              overHero ? "text-white/85 hover:text-white" : "text-forest hover:text-forest/70",
-            )}
-          >
-            {site.phoneDisplay}
-          </a>
+        <div className="hidden shrink-0 items-center gap-2.5 lg:flex">
           <a
             href={site.booking.header}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-10 items-center rounded-full bg-olive px-5 font-heading text-sm font-semibold text-forest transition-colors hover:bg-forest hover:text-white"
+            className="inline-flex h-10 items-center whitespace-nowrap rounded-full bg-olive px-4 font-heading text-sm font-semibold !text-white transition-colors hover:bg-forest hover:!text-white"
           >
             Schedule An Appointment
           </a>
@@ -283,7 +302,7 @@ const Navbar = () => {
                 href={site.booking.header}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex h-11 items-center justify-center rounded-full bg-olive px-6 font-heading text-sm font-semibold text-forest transition-colors hover:bg-forest hover:text-white"
+                className="inline-flex h-11 items-center justify-center rounded-full bg-olive px-6 font-heading text-sm font-semibold !text-white transition-colors hover:bg-forest hover:!text-white"
               >
                 Schedule An Appointment
               </a>

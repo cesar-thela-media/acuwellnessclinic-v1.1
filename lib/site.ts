@@ -51,7 +51,8 @@ export const site = {
     portal: "https://www.optimantra.com/optimus/om/patient/login",
   },
   media: {
-    logo: "/media/wp-content/uploads/2019/02/logo.png",
+    logo: "/media/wp-content/uploads/2019/02/Artboard-1@sishou-cropped.png",
+    logoCircle: "/media/wp-content/uploads/2019/02/logo.png",
     hero: "/media/wp-content/uploads/2017/01/chinese-herbs.jpg",
     neuropathy: "/media/wp-content/uploads/2017/08/Foot-soak.jpg",
     privacyPdf:
@@ -67,7 +68,6 @@ export const site = {
 } as const;
 
 export const nav = [
-  { label: "Home", href: "/" },
   {
     label: "About",
     href: "/about-us",

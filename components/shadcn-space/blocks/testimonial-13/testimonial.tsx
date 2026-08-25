@@ -1,3 +1,4 @@
+import { PageTitle } from "@/components/site/page-primitives";
 import { site } from "@/lib/site";
 
 const testimonials = [
@@ -40,7 +41,7 @@ const testimonials = [
   {
     title: "Acupuncture for equestrians",
     quotes: [
-      "As a competitive equestrian, it is vital that my body is in prime condition. For years, I had an uncomfortable—and often painful—tightness in my leg that negatively impacted my riding ability. Riding was not the only area affected by what turned out to be an overly tight piriformis muscle—my foot had rotated outwards noticeably due to this. Once I told Kate about this, she treated it with acupuncture. After one treatment, my foot was completely straight again. Since then, the pain has not returned, and I have",
+      "As a competitive equestrian, it is vital that my body is in prime condition. For years, I had an uncomfortable, and often painful, tightness in my leg that negatively impacted my riding ability. Riding was not the only area affected by what turned out to be an overly tight piriformis muscle, my foot had rotated outwards noticeably due to this. Once I told Kate about this, she treated it with acupuncture. After one treatment, my foot was completely straight again. Since then, the pain has not returned, and I have",
       "seen Kate periodically to check on it. Anytime I need acupuncture or cupping, I do not hesitate to contact Kate.",
     ],
     attribution: ["Competitive Equestrian - Austin"],
@@ -92,25 +93,27 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <div className="w-full bg-white">
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-12 px-4 py-16 sm:px-6 md:gap-16 md:py-24 lg:px-16">
-        <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-          <h1 className="text-4xl font-bold tracking-tight text-charcoal sm:text-5xl md:text-6xl !m-0 text-balance">
-            Testimonials
-          </h1>
+      <div className="site-container site-section--compact flex flex-col gap-10 md:gap-12">
+        <div className="flex flex-col items-center gap-5 text-center">
+          <PageTitle>Testimonials</PageTitle>
           <a
             href={site.social.reviews}
             target="_self"
-            className="inline-flex h-11 w-fit items-center rounded-lg bg-olive px-5 text-sm font-medium text-white transition-colors hover:bg-olive/90"
+            className="site-button site-button--primary text-white"
           >
             Leave A Review
           </a>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
-          {testimonials.map((item) => (
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {testimonials.map((item, index) => (
             <article
               key={item.title}
-              className="flex flex-col gap-4 rounded-xl border border-charcoal/10 bg-white p-6 shadow-sm md:p-8"
+              className="site-card group relative flex flex-col gap-4 overflow-hidden p-6 transition-transform duration-300 hover:-translate-y-1 md:p-7"
             >
+              <div className="absolute inset-x-0 top-0 h-1 bg-olive" aria-hidden="true" />
+              <div className="flex items-start justify-end gap-4">
+                <span className="text-2xl leading-none text-olive/60" aria-hidden="true">“</span>
+              </div>
               <h2 className="text-lg font-bold tracking-tight text-charcoal md:text-xl !m-0">
                 {item.title}
               </h2>

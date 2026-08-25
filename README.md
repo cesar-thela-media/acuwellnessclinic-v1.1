@@ -1,20 +1,20 @@
 # Si Shou Acupuncture and Wellness, PLLC
 
-Content-complete Next.js migration of [acuwellnessclinic.com](https://acuwellnessclinic.com/). Visual redesign is deferred until localhost copy is confirmed.
+Content-complete Next.js migration and branded redesign of [acuwellnessclinic.com](https://acuwellnessclinic.com/). Live sitemap copy parity is verified locally.
 
 ## Stack
 
 | Layer | Choice |
 |-------|--------|
-| Framework | Next.js 15 App Router + React 19 + TypeScript |
-| Styling | Tailwind CSS v4 (`@theme`). No dark mode. Brand tokens recorded, not themed yet. |
-| Motion | GSAP + `@gsap/react` (wired only) |
-| Blocks | Shadcn Space Pro registry configured. Decorative blocks not pulled yet. |
-| Observability | `@sentry/nextjs` (placeholder env only) |
-| Build | Bun 1.3.4 (Docker image). Local Bun 1.3.x is fine. |
-| Runtime | Node 20. Reserve entry: `node server.js` |
+| Framework | Next.js 16 App Router + React 19 + TypeScript |
+| Styling | Tailwind CSS v4 (`@theme`) with AcuWellness brand tokens |
+| Motion | GSAP + `@gsap/react` with reduced-motion handling |
+| Blocks | Shadcn Space-compatible components and local shadcn primitives |
+| Observability | `@sentry/nextjs`, credential-ready and disabled without DSN |
+| Build | Bun stable 1.x in Docker and Bun local builds |
+| Runtime | Node 20 container runtime; `node server.js` |
 | Primary deploy | Vercel |
-| Reserve | Multi-stage `Dockerfile` + `railway.json` (not deployed) |
+| Reserve | Multi-stage `Dockerfile` + `railway.json` |
 
 ## Local run
 
@@ -59,8 +59,8 @@ See `.env.example`. Never commit `.env`.
 
 ## Vercel vs reserve
 
-- **Vercel:** default Next output. This is the intended host.
-- **Docker / Railway:** `Dockerfile` builds with Bun 1.3.4 and runs `node server.js` on Node 20. `railway.json` is reserved, not deployed.
+- **Vercel:** default Next output with the current stable Next.js release. This is the intended host.
+- **Docker / Railway:** `Dockerfile` builds with Bun stable 1.x and runs `node server.js` on Node 20. `railway.json` configures the `/api/health` health check.
 
 ## Cutover notes (not implemented here)
 

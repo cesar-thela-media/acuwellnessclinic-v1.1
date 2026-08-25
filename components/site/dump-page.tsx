@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import { PageTitle, SiteContainer } from "@/components/site/page-primitives";
 import { WpBody } from "@/components/site/wp-body";
 import { gsap, useGSAP } from "@/lib/gsap";
 import { cn } from "@/lib/utils";
@@ -17,10 +18,10 @@ function isArchive(path: string, html: string) {
 
 function localizeMedia(html: string) {
   return html
-    .replace(/(src|href)="wp-content\//gi, '$1="/media/wp-content/')
-    .replace(/(src|href)="\/wp-content\//gi, '$1="/media/wp-content/')
-    .replace(/url\(wp-content\//gi, "url(/media/wp-content/")
-    .replace(/url\(\/wp-content\//gi, "url(/media/wp-content/");
+    .replace(/(src|href)=(['"])https?:\/\/acuwellnessclinic\.com\/wp-content\//gi, '$1=$2/media/wp-content/')
+    .replace(/(src|href)=(['"])\/??wp-content\//gi, '$1=$2/media/wp-content/')
+    .replace(/url\((['"]?)https?:\/\/acuwellnessclinic\.com\/wp-content\//gi, "url($1/media/wp-content/")
+    .replace(/url\((['"]?)\/?wp-content\//gi, "url($1/media/wp-content/");
 }
 
 function revealFeaturedImages(html: string) {
@@ -44,6 +45,22 @@ function displayTitle(title: string, path: string) {
     .join(" ");
 }
 
+function articleTitle(title: string, html: string, path: string) {
+  const heading = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1];
+  if (heading) {
+    return heading.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  }
+  return displayTitle(title, path);
+}
+
+function articleHero(html: string) {
+  const style = html.match(/<section\b[^>]*style=["']([^"']*background-image:[^"']*)["']/i)?.[1];
+  if (!style) return null;
+  const match = style.match(/url\(([^)]+)\)/i);
+  if (!match) return null;
+  return match[1].replace(/["']/g, "");
+}
+
 export function DumpPage({
   title,
   html,
@@ -55,8 +72,10 @@ export function DumpPage({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const archive = isArchive(path, html);
+  const hero = !archive ? articleHero(html) : null;
   const showTitle = !hasHeading(html);
   const body = revealFeaturedImages(localizeMedia(html));
+  const titleText = articleTitle(title, html, path);
 
   useGSAP(
     () => {
@@ -74,18 +93,27 @@ export function DumpPage({
 
   return (
     <div ref={ref} className="w-full bg-white">
-      {showTitle ? (
-        <div
-          className={cn(
-            "mx-auto w-full px-6 pt-20 sm:px-10 sm:pt-28",
-            archive ? "max-w-6xl lg:px-12" : "max-w-3xl lg:px-0",
-          )}
-        >
-          <h1 className="dump-line font-heading text-2xl font-semibold tracking-[0.18em] text-charcoal sm:text-3xl">
-            {displayTitle(title, path)}
-          </h1>
-        </div>
-      ) : null}
+      {archive ? (
+        showTitle ? (
+          <SiteContainer className="site-title-block site-container--wide">
+            <PageTitle className="dump-line">{titleText}</PageTitle>
+          </SiteContainer>
+        ) : null
+      ) : (
+        <header className={cn("dump-article-header", hero && "dump-article-header--hero")}>
+          {hero ? (
+            <div
+              className="dump-article-hero"
+              style={{ backgroundImage: `linear-gradient(rgb(56 69 47 / 0.68), rgb(56 69 47 / 0.68)), url(${hero})` }}
+              aria-hidden="true"
+            />
+          ) : null}
+          <SiteContainer className="relative z-10 site-container--reading">
+            <p className="dump-article-kicker dump-line">Si Shou Acupuncture and Wellness</p>
+            <PageTitle className="dump-line">{titleText}</PageTitle>
+          </SiteContainer>
+        </header>
+      )}
       <div
         className={cn(
           "dump-line prose-wp",

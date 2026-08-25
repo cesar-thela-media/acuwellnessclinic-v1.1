@@ -1,12 +1,12 @@
-# Multi-stage: Bun 1.3.4 build → Node 20 run (node server.js)
+# Multi-stage: Bun build → Node 20 run (node server.js)
 # syntax=docker/dockerfile:1
 
-FROM oven/bun:1.3.4 AS deps
+FROM oven/bun:1 AS deps
 WORKDIR /app
 COPY package.json bun.lock* package-lock.json* ./
 RUN bun install --frozen-lockfile || bun install
 
-FROM oven/bun:1.3.4 AS builder
+FROM oven/bun:1 AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .

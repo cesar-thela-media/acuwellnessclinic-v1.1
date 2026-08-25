@@ -1,13 +1,13 @@
+import { PageTitle } from "@/components/site/page-primitives";
+
 const EMBED =
   "https://www.google.com/maps/embed/v1/place?key=REMOVED_GOOGLE_MAPS_KEY&q=si+shou+acupuncture&zoom=14";
 
 export default function MapBand() {
   return (
     <div className="w-full bg-white">
-      <div className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-4 py-16 sm:px-6 md:gap-12 md:py-24 lg:px-16">
-        <h1 className="text-4xl font-bold tracking-tight text-charcoal sm:text-5xl md:text-6xl !m-0 text-balance">
-          Map & Directions
-        </h1>
+      <div className="site-container site-section flex flex-col gap-10 md:gap-12">
+        <PageTitle>Map & Directions</PageTitle>
         <p className="max-w-xl text-base leading-relaxed text-body md:text-lg !m-0">
           Sì Shòu Acupuncture and Wellness, PLLC
           <br />

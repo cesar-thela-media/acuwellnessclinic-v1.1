@@ -1,3 +1,5 @@
+import { PageTitle } from "@/components/site/page-primitives";
+
 const PORTAL = "https://www.optimantra.com/optimus/om/patient/login";
 const QUOTE = "\"A journey of a thousand miles begins with a single step.\"";
 const ATTR = "– Lao-tzu";
@@ -22,16 +24,14 @@ export function FirstVisit() {
   return (
     <div className="w-full bg-white">
       <section className="bg-white">
-        <div className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 md:py-24 lg:px-16">
-          <h1 className="max-w-4xl text-4xl font-bold tracking-tight text-charcoal sm:text-5xl md:text-6xl !m-0 text-balance">
-            First Visit
-          </h1>
+        <div className="site-container site-section--compact">
+          <PageTitle>First Visit</PageTitle>
         </div>
       </section>
 
-      <section className="bg-white pb-12 md:pb-20 lg:pb-24">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
-          <blockquote className="max-w-3xl rounded-xl border border-charcoal/10 bg-charcoal/[0.03] p-6 shadow-sm md:p-8">
+      <section className="site-band bg-white">
+        <div className="site-container flex flex-col gap-6 md:gap-8">
+          <blockquote className="site-card site-card--soft max-w-3xl p-6 md:p-8">
             <p className="text-xl font-semibold leading-snug tracking-tight text-charcoal md:text-2xl !m-0">
               {QUOTE}
             </p>
@@ -43,8 +43,8 @@ export function FirstVisit() {
         </div>
       </section>
 
-      <section className="w-full max-w-full overflow-x-clip bg-olive py-12 text-white md:py-20 lg:py-24">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+      <section className="site-band w-full max-w-full overflow-x-clip bg-olive text-white">
+        <div className="site-container flex flex-col gap-6 md:gap-8">
           <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl !m-0 text-balance">
             Your treatment plan
           </h2>
@@ -59,8 +59,8 @@ export function FirstVisit() {
         </div>
       </section>
 
-      <section className="bg-white py-12 md:py-20 lg:py-24">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+      <section className="site-band bg-white">
+        <div className="site-container flex flex-col gap-6 md:gap-8">
           <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-charcoal sm:text-4xl !m-0 text-balance">
             Getting the most out of treatment
           </h2>
@@ -85,8 +85,8 @@ export function FirstVisit() {
         </div>
       </section>
 
-      <section className="w-full max-w-full overflow-x-clip bg-olive py-12 text-white md:py-20 lg:py-24">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+      <section className="site-band w-full max-w-full overflow-x-clip bg-olive text-white">
+        <div className="site-container flex flex-col gap-6 md:gap-8">
           <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl !m-0 text-balance">
             How treatment works
           </h2>
@@ -99,8 +99,8 @@ export function FirstVisit() {
         </div>
       </section>
 
-      <section className="bg-white py-12 md:py-20 lg:py-24">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+      <section className="site-band bg-white">
+        <div className="site-container flex flex-col gap-6 md:gap-8">
           <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-charcoal sm:text-4xl !m-0 text-balance">
             Your role in the healing process
           </h2>
@@ -109,8 +109,8 @@ export function FirstVisit() {
         </div>
       </section>
 
-      <section className="w-full max-w-full overflow-x-clip bg-olive py-12 text-white md:py-20 lg:py-24">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 sm:px-6 md:gap-8 lg:px-16">
+      <section className="site-band w-full max-w-full overflow-x-clip bg-olive text-white">
+        <div className="site-container flex flex-col gap-6 md:gap-8">
           <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl !m-0 text-balance">
             Acupuncture is not an instant fix
           </h2>

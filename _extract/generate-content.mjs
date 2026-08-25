@@ -99,8 +99,7 @@ function rewriteHtml(html) {
     .replace(/srcset="\/wp-content\//g, 'srcset="https://acuwellnessclinic.com/wp-content/')
     .replace(/url\(\/wp-content\//g, "url(https://acuwellnessclinic.com/wp-content/")
     .replace(/href="\/wp-content\//g, 'href="https://acuwellnessclinic.com/wp-content/')
-    .replace(/href="\/packages-and-new-patient-portal\/?"/g, 'href="/clinic-forms"')
-    .replace(/href="\/schedule\/?"/g, 'href="/schedule"');
+    .replace(/href="\/packages-and-new-patient-portal\/?"/g, 'href="/clinic-forms"');
 }
 
 const stefPatterns = [
@@ -160,14 +159,6 @@ function folderFor(type) {
 }
 
 const REDIRECTS = {
-  "/schedule": {
-    dest: "https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=WWUvSUxvR2NwdzlOYTBOUjdpdFR1dz09&lid=WkxqU1Z6MlROZDIxbTlndjBRVUNYUT09",
-    note: "leftover AcuSimple iframe → header Optimantra booking URL",
-  },
-  "/packages-and-new-patient-portal": {
-    dest: "/clinic-forms",
-    note: "June 2020 stale → clinic forms",
-  },
   "/modern-research": {
     dest: "/resources/more-research",
     note: "nav Modern Research & Acupuncture is 404",
@@ -248,13 +239,8 @@ function buildDoc(rec, html) {
       `ACUPUNCTURE IN SOUTH AUSTIN (OAK HILL), TX</h1><p><img src="https://acuwellnessclinic.com/wp-content/uploads/2016/12/RUNNING.jpg" alt="" /></p>`,
     );
   }
-  const metaTitle = applyStef(meta.title || rec.liveTitle || rec.restTitle || "", rec.path, stefLog);
-  const metaDescription = applyStef(
-    meta.description || rec.liveDescription || rec.restDescription || "",
-    rec.path,
-    stefLog,
-  );
-  body = applyStef(body, rec.path, stefLog);
+  const metaTitle = meta.title || rec.liveTitle || rec.restTitle || "";
+  const metaDescription = meta.description || rec.liveDescription || rec.restDescription || "";
   const heading = h1From(body, decode(rec.restTitle || "") || rec.path);
   const image =
     firstImage(html || "") ||
@@ -270,7 +256,7 @@ function buildDoc(rec, html) {
     canonicalPath: rec.path === "/" ? "/" : rec.path,
     date: rec.restDate || "",
     modified: rec.restModified || "",
-    excerpt: applyStef(rewriteHtml(rec.restExcerpt || ""), rec.path, stefLog),
+    excerpt: rewriteHtml(rec.restExcerpt || ""),
     image,
     html: body,
     categories: rec.restCategories || [],
@@ -283,7 +269,7 @@ function buildDoc(rec, html) {
   };
 }
 
-const skipPort = new Set([...Object.keys(REDIRECTS), ...KEEP_404]);
+const skipPort = new Set([...Object.keys(REDIRECTS), ...KEEP_404, "/schedule", "/packages-and-new-patient-portal"]);
 
 for (const rec of byPath.values()) {
   const p = rec.path;

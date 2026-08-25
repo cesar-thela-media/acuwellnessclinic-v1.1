@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Geist, Indie_Flower, Manrope } from "next/font/google";
+import { Fraunces, Manrope } from "next/font/google";
 import { Footer } from "@/components/site/footer";
 import { GsapRoot } from "@/components/site/gsap-root";
 import { Header } from "@/components/site/header";
@@ -8,23 +8,10 @@ import { NeuropathyPopup } from "@/components/site/neuropathy-popup";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const sans = Geist({
-  subsets: ["latin"],
-  variable: "--font-geist",
-  display: "swap",
-});
-
 const heading = Manrope({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-manrope",
-  display: "swap",
-});
-
-const hero = Indie_Flower({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-indie-flower",
   display: "swap",
 });
 
@@ -47,14 +34,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-US" className={`${sans.variable} ${heading.variable} ${hero.variable} ${display.variable}`}>
+    <html lang="en-US" className={`${heading.variable} ${display.variable}`}>
       <body className="font-sans">
         <GsapRoot>
           <Header />
           <main>{children}</main>
           <Footer />
-          <NewsletterPopup />
-          <NeuropathyPopup />
+          {/* Popups disabled 2026-08-22 (owner decision: annoying on localhost). Re-enable before launch (Phase 3). */}
+          {/* <NewsletterPopup /> */}
+          {/* <NeuropathyPopup /> */}
         </GsapRoot>
       </body>
     </html>

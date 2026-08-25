@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import { PageTitle, SiteContainer } from "@/components/site/page-primitives";
 import { gsap, useGSAP } from "@/lib/gsap";
 import { cn } from "@/lib/utils";
 
@@ -33,17 +34,15 @@ export function InnerShell({
 
   return (
     <div ref={ref} className="w-full bg-white">
-      <div
+      <SiteContainer
         className={cn(
-          "mx-auto flex w-full flex-col gap-10 px-6 py-20 sm:px-10 sm:py-28",
-          wide ? "max-w-5xl lg:px-12" : "max-w-3xl lg:px-0",
+          "site-section--compact flex flex-col gap-10",
+          wide ? "site-container--wide" : "site-container--reading",
         )}
       >
-        <h1 className="inner-line font-heading text-2xl font-semibold tracking-[0.18em] text-charcoal sm:text-3xl">
-          {title}
-        </h1>
+        <PageTitle className="inner-line">{title}</PageTitle>
         <div className="inner-line">{children}</div>
-      </div>
+      </SiteContainer>
     </div>
   );
 }

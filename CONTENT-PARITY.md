@@ -216,7 +216,7 @@ Source of truth: live WordPress at https://acuwellnessclinic.com/ (sitemaps, WP 
 | https://acuwellnessclinic.com/physical-aspects-of-the-heart/ | /physical-aspects-of-the-heart | post | ported |
 | https://acuwellnessclinic.com/physical-aspects-related-to-the-lungs/ | /physical-aspects-related-to-the-lungs | post | ported |
 | https://acuwellnessclinic.com/positive-side-effects-of-acupuncture/ | /positive-side-effects-of-acupuncture | post | ported |
-| https://acuwellnessclinic.com/privacy-policy/ | /privacy-policy | unknown | 301 → /media/wp-content/uploads/2011/10/SSAW-Privacy-Policy-Jan-2017.pdf |
+| https://acuwellnessclinic.com/privacy-policy/ | /privacy-policy | unknown | 301 → https://acuwellnessclinic.com/wp-content/uploads/2011/10/SSAW-Privacy-Policy-Jan-2017.pdf |
 | https://acuwellnessclinic.com/resources/ | /resources | page | ported |
 | https://acuwellnessclinic.com/resources/facial-rejuvenation/ | /resources/facial-rejuvenation | page | ported |
 | https://acuwellnessclinic.com/resources/more-research/ | /resources/more-research | page | ported |
@@ -473,5 +473,3 @@ Source of truth: live WordPress at https://acuwellnessclinic.com/ (sitemaps, WP 
 - acuwellnessclinic.net → acuwellnessclinic.com
 
 These belong at the host / DNS layer. This repo does not own those domains.
-
-Core-route re-diff (14 URLs): see PARITY-DIFF.md. No missing copy, images, CTAs, or form fields after Stef→Kate.

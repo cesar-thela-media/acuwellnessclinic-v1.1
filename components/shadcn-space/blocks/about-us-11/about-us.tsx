@@ -1,21 +1,139 @@
+"use client";
+
+import { useCallback, useEffect, useRef, useState } from "react";
+import { Play, Volume2, VolumeX } from "lucide-react";
 import { site } from "@/lib/site";
 
+function videoEmbedUrl() {
+  const base = site.media.youtubeHome.split("?")[0];
+  const params = new URLSearchParams({
+    autoplay: "0",
+    mute: "1",
+    controls: "0",
+    rel: "0",
+    playsinline: "1",
+    modestbranding: "1",
+    iv_load_policy: "3",
+    enablejsapi: "1",
+  });
+  return `${base}?${params.toString()}`;
+}
+
 export default function AboutUs() {
+  const frameRef = useRef<HTMLDivElement>(null);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const [playing, setPlaying] = useState(false);
+  const [muted, setMuted] = useState(true);
+  const [interacted, setInteracted] = useState(false);
+
+  const post = useCallback((func: string) => {
+    iframeRef.current?.contentWindow?.postMessage(
+      JSON.stringify({ event: "command", func, args: [] }),
+      "*",
+    );
+  }, []);
+
+  useEffect(() => {
+    const el = frameRef.current;
+    if (!el) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduce) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        if (!entry) return;
+        const box = entry.boundingClientRect;
+        const inView =
+          entry.isIntersecting &&
+          box.top < window.innerHeight * 0.6 &&
+          box.bottom > window.innerHeight * 0.25;
+        if (inView) post("playVideo");
+        else post("pauseVideo");
+      },
+      { threshold: [0, 0.25, 0.5, 1] },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [post]);
+
+  const toggle = () => {
+    setInteracted(true);
+    setPlaying((p) => {
+      post(p ? "pauseVideo" : "playVideo");
+      return !p;
+    });
+  };
+
+  const toggleMute = () => {
+    setInteracted(true);
+    setMuted((m) => {
+      post(m ? "unMute" : "mute");
+      return !m;
+    });
+  };
+
   return (
-    <section className="w-full bg-white">
-      <div className="mx-auto w-full max-w-7xl px-6 py-20 sm:px-10 md:py-24 lg:px-16 lg:py-28">
-        <div className="mx-auto mb-10 max-w-2xl text-center">
-          <p className="font-display text-lg italic text-olive !m-0">01</p>
-          <h2 className="mt-2 font-display text-3xl leading-[1.12] tracking-[-0.01em] text-forest sm:text-4xl !m-0">
-            Welcome to Si Shou
-          </h2>
-        </div>
+    <section className="home-video-section w-full bg-white">
+      <div className="site-container site-section--compact flex flex-col gap-8">
+        <h2 className="home-section-title text-center font-display text-3xl leading-[1.12] tracking-[-0.01em] text-forest sm:text-4xl !m-0">
+          Welcome to Si Shou
+        </h2>
         <div
-          className="relative overflow-hidden rounded-3xl bg-forest shadow-[0_24px_60px_-24px_rgba(44,58,40,0.4)] [&_iframe]:absolute [&_iframe]:inset-0 [&_iframe]:h-full [&_iframe]:w-full [&_iframe]:border-0"
-          dangerouslySetInnerHTML={{
-            __html: `<div class="aspect-video w-full"><iframe src="${site.media.youtubeHome}" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>`,
+          ref={frameRef}
+          className="home-video-frame group relative aspect-video w-full overflow-hidden rounded-3xl bg-forest shadow-[0_24px_60px_-24px_rgb(56_69_47/0.45)]"
+          onMouseEnter={() => {
+            if (muted && !interacted) {
+              post("unMute");
+              setMuted(false);
+            }
           }}
-        />
+          onMouseLeave={() => {
+            if (!muted) {
+              post("mute");
+              setMuted(true);
+            }
+          }}
+        >
+          <iframe
+            ref={iframeRef}
+            src={videoEmbedUrl()}
+            title="Welcome to Si Shou"
+            className="h-full w-full border-0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowFullScreen
+          />
+          {!playing && (
+            <button
+              type="button"
+              onClick={toggle}
+              aria-label="Play video"
+              className="absolute inset-0 z-10 flex items-center justify-center bg-forest/40 transition-opacity hover:bg-forest/50"
+            >
+              <span className="flex h-16 w-16 items-center justify-center rounded-full bg-white/95 text-forest shadow-lg transition-transform group-hover:scale-105">
+                <Play size={26} className="ml-0.5" aria-hidden="true" />
+              </span>
+            </button>
+          )}
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 flex items-center justify-between p-4">
+            <span className="rounded-full bg-charcoal/70 px-3 py-1.5 font-heading text-[11px] font-semibold tracking-wide text-white backdrop-blur-sm">
+              {muted
+                ? "Muted. Hover to unmute"
+                : "Playing with sound"}
+            </span>
+            <button
+              type="button"
+              onClick={toggleMute}
+              aria-label={muted ? "Unmute video" : "Mute video"}
+              className="pointer-events-auto flex h-9 w-9 items-center justify-center rounded-full bg-charcoal/70 text-white backdrop-blur-sm transition-colors hover:bg-charcoal"
+            >
+              {muted ? (
+                <VolumeX size={16} aria-hidden="true" />
+              ) : (
+                <Volume2 size={16} aria-hidden="true" />
+              )}
+            </button>
+          </div>
+        </div>
       </div>
     </section>
   );

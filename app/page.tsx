@@ -16,7 +16,7 @@ export default function HomePage() {
   const doc = getDoc("/");
   if (!doc) notFound();
   return (
-    <article>
+    <article className="home-page">
       <JsonLd canonicalPath={doc.canonicalPath} metaTitle={doc.metaTitle} metaDescription={doc.metaDescription} />
       <Hero29 />
       <GetStarted />
