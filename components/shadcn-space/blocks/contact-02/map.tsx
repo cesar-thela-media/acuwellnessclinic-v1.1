@@ -1,7 +1,9 @@
 import { PageTitle } from "@/components/site/page-primitives";
 
-const EMBED =
-  "https://www.google.com/maps/embed/v1/place?key=REMOVED_GOOGLE_MAPS_KEY&q=si+shou+acupuncture&zoom=14";
+const MAPS_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+const EMBED = MAPS_KEY
+  ? `https://www.google.com/maps/embed/v1/place?key=${MAPS_KEY}&q=si+shou+acupuncture&zoom=14`
+  : "https://www.google.com/maps?q=Si+Shou+Acupuncture+and+Wellness,+Austin,+TX&output=embed";
 
 export default function MapBand() {
   return (
