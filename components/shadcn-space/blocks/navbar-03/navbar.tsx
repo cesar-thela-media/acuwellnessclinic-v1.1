@@ -60,8 +60,9 @@ const InstagramIcon = ({ size = 15 }: { size?: number }) => (
 
 type NavItem = (typeof nav)[number];
 type NavItemWithChildren = Extract<NavItem, { children: readonly unknown[] }>;
+type NavChild = { readonly label: string; readonly href: string };
 
-function linkColumns<T>(items: readonly T[]) {
+function linkColumns(items: readonly NavChild[]) {
   const colCount = items.length >= 6 ? 3 : items.length >= 3 ? 2 : 1;
   const perCol = Math.ceil(items.length / colCount);
   return Array.from({ length: colCount }, (_, index) =>
