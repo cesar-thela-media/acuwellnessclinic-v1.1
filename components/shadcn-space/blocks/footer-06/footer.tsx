@@ -18,7 +18,7 @@ const InstagramIcon = () => (
 
 const Footer = () => {
   return (
-    <footer className="site-footer w-full overflow-x-clip bg-olive text-forest">
+    <footer className="site-footer w-full overflow-x-clip bg-olive text-white">
       <div className="site-container site-footer-inner py-12 md:py-16">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {/* Column 1: Brand & Direct Contact */}
@@ -32,15 +32,15 @@ const Footer = () => {
                 className="site-footer-logo block h-14 w-auto max-w-[13rem] object-contain"
               />
             </Link>
-            <p className="font-heading text-xs uppercase tracking-[0.16em] text-forest/65 !m-0">
+            <p className="font-heading text-xs uppercase tracking-[0.16em] text-white/65 !m-0">
               {site.tagline}
             </p>
             <div className="flex flex-col gap-2 pt-1">
               <a
                 href={`tel:${site.phoneTel}`}
-                className="inline-flex items-center gap-2.5 font-display text-xl text-forest hover:text-forest transition-colors"
+                className="inline-flex items-center gap-2.5 font-display text-xl text-white hover:text-white transition-colors"
               >
-                <Phone size={18} className="text-forest shrink-0" aria-hidden="true" />
+                <Phone size={18} className="text-white shrink-0" aria-hidden="true" />
                 <span>{site.phoneDisplay}</span>
               </a>
             </div>
@@ -51,7 +51,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit us on Facebook (opens in a new tab)"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-forest/10 text-forest/85 transition-colors hover:bg-olive hover:text-forest"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-forest/10 text-white/85 transition-colors hover:bg-olive hover:text-white"
               >
                 <FacebookIcon />
               </a>
@@ -60,7 +60,7 @@ const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit us on Instagram (opens in a new tab)"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-forest/10 text-forest/85 transition-colors hover:bg-olive hover:text-forest"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-forest/10 text-white/85 transition-colors hover:bg-olive hover:text-white"
               >
                 <InstagramIcon />
               </a>
@@ -70,8 +70,8 @@ const Footer = () => {
           {/* Column 2: Booking */}
           <div className="flex min-w-0 flex-col gap-4">
             <div className="flex items-center gap-2 border-b border-forest/15 pb-2">
-              <Calendar size={15} className="text-forest shrink-0" aria-hidden="true" />
-              <h3 className="font-heading text-xs font-semibold tracking-[0.16em] text-forest uppercase !m-0">
+              <Calendar size={15} className="text-white shrink-0" aria-hidden="true" />
+              <h3 className="font-heading text-xs font-semibold tracking-[0.16em] text-white uppercase !m-0">
                 Booking
               </h3>
             </div>
@@ -80,7 +80,7 @@ const Footer = () => {
                 href={site.booking.footer}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="site-footer-link inline-flex items-center justify-between rounded-xl border border-forest/15 bg-forest/5 px-3.5 py-2.5 font-heading text-sm font-medium text-forest/90 hover:border-olive hover:bg-olive hover:text-forest transition-all duration-200"
+                className="site-footer-link inline-flex items-center justify-between rounded-xl border border-forest/15 bg-forest/5 px-3.5 py-2.5 font-heading text-sm font-medium text-white/90 hover:border-olive hover:bg-olive hover:text-white transition-all duration-200"
               >
                 <span>Schedule with Kate</span>
                 <ExternalLink size={14} className="opacity-60" />
@@ -89,7 +89,7 @@ const Footer = () => {
                 href={site.booking.footer}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="site-footer-link inline-flex items-center justify-between rounded-xl border border-forest/15 bg-forest/5 px-3.5 py-2.5 font-heading text-sm font-medium text-forest/90 hover:border-olive hover:bg-olive hover:text-forest transition-all duration-200"
+                className="site-footer-link inline-flex items-center justify-between rounded-xl border border-forest/15 bg-forest/5 px-3.5 py-2.5 font-heading text-sm font-medium text-white/90 hover:border-olive hover:bg-olive hover:text-white transition-all duration-200"
               >
                 <span>Schedule with Aaron</span>
                 <ExternalLink size={14} className="opacity-60" />
@@ -100,16 +100,16 @@ const Footer = () => {
           {/* Column 3: Hours */}
           <div className="flex min-w-0 flex-col gap-4">
             <div className="flex items-center gap-2 border-b border-forest/15 pb-2">
-              <Clock size={15} className="text-forest shrink-0" aria-hidden="true" />
-              <h3 className="font-heading text-xs font-semibold tracking-[0.16em] text-forest uppercase !m-0">
+              <Clock size={15} className="text-white shrink-0" aria-hidden="true" />
+              <h3 className="font-heading text-xs font-semibold tracking-[0.16em] text-white uppercase !m-0">
                 Hours
               </h3>
             </div>
-            <ul className="flex flex-col gap-1.5 font-heading text-sm leading-relaxed text-forest/85 !m-0 !list-none !p-0">
+            <ul className="flex flex-col gap-1.5 font-heading text-sm leading-relaxed text-white/85 !m-0 !list-none !p-0">
               {site.hours.map((row) => (
                 <li key={row.day} className="flex items-baseline justify-between border-b border-forest/10 pb-1 last:border-0">
-                  <span className="w-10 shrink-0 font-semibold text-forest/90">{row.day}:</span>
-                  <span className="text-forest/75 text-right">{row.hours}</span>
+                  <span className="w-10 shrink-0 font-semibold text-white/90">{row.day}:</span>
+                  <span className="text-white/75 text-right">{row.hours}</span>
                 </li>
               ))}
             </ul>
@@ -118,20 +118,20 @@ const Footer = () => {
           {/* Column 4: Visit & Location */}
           <div className="flex min-w-0 flex-col gap-4">
             <div className="flex items-center gap-2 border-b border-forest/15 pb-2">
-              <MapPin size={15} className="text-forest shrink-0" aria-hidden="true" />
-              <h3 className="font-heading text-xs font-semibold tracking-[0.16em] text-forest uppercase !m-0">
+              <MapPin size={15} className="text-white shrink-0" aria-hidden="true" />
+              <h3 className="font-heading text-xs font-semibold tracking-[0.16em] text-white uppercase !m-0">
                 Visit
               </h3>
             </div>
-            <div className="flex flex-col gap-1 font-heading text-sm leading-relaxed text-forest/85">
-              <p className="!m-0 font-semibold text-forest">{site.address.line1}</p>
-              <p className="!m-0 text-forest/80">{site.address.line2}</p>
-              <p className="!m-0 text-forest/80">{site.address.line3}</p>
+            <div className="flex flex-col gap-1 font-heading text-sm leading-relaxed text-white/85">
+              <p className="!m-0 font-semibold text-white">{site.address.line1}</p>
+              <p className="!m-0 text-white/80">{site.address.line2}</p>
+              <p className="!m-0 text-white/80">{site.address.line3}</p>
             </div>
             <div className="pt-2">
               <Link
                 href="/contact/map-directions"
-                className="inline-flex items-center gap-1.5 text-xs font-heading font-medium text-forest hover:text-forest transition-colors"
+                className="inline-flex items-center gap-1.5 text-xs font-heading font-medium text-white hover:text-white transition-colors"
               >
                 <span>Map &amp; Directions</span>
                 <span aria-hidden="true">&rarr;</span>
@@ -142,22 +142,22 @@ const Footer = () => {
 
         {/* Bottom copyright & attribution */}
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-forest/15 pt-6 sm:flex-row">
-          <p className="font-heading text-xs tracking-wide text-forest/65 !m-0 text-center sm:text-left">
+          <p className="font-heading text-xs tracking-wide text-white/65 !m-0 text-center sm:text-left">
             &copy; {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
-          <div className="flex items-center gap-6 text-xs text-forest/65 font-heading">
+          <div className="flex items-center gap-6 text-xs text-white/65 font-heading">
             <a
               href={site.media.privacyPdf}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-forest transition-colors"
+              className="hover:text-white transition-colors"
             >
               Privacy Policy
             </a>
-            <Link href="/clinic-forms" className="hover:text-forest transition-colors">
+            <Link href="/clinic-forms" className="hover:text-white transition-colors">
               Clinic Forms
             </Link>
-            <Link href="/contact" className="hover:text-forest transition-colors">
+            <Link href="/contact" className="hover:text-white transition-colors">
               Contact
             </Link>
           </div>

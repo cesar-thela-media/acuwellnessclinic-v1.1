@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { PageTitle } from "@/components/site/page-primitives";
+import { PageHero } from "@/components/site/page-primitives";
 import { getDoc } from "@/lib/content";
+import { cn } from "@/lib/utils";
 
 const INTRO =
   "Below is a list of conditions that we can effectively treat. Click each topic to read more.";
@@ -77,34 +78,50 @@ const items = [
 export function WhatWeTreat() {
   return (
     <div className="w-full bg-white">
-      <div className="site-container site-section flex flex-col gap-10 md:gap-12">
-        <PageTitle>What We Treat</PageTitle>
-        <p className="site-body-copy whitespace-pre-wrap text-body !m-0">
-          {INTRO}
-        </p>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          {items.map((item) => (
-            <article
-              key={item.href}
-              className="site-card group flex min-w-0 flex-col gap-4 p-5 md:p-6"
+      <PageHero
+        title="What We Treat"
+        image="/media/wp-content/uploads/2019/08/pain.jpg"
+      />
+
+      <section className="bg-cream">
+        <div className="site-container site-section">
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
+            {INTRO}
+          </p>
+        </div>
+      </section>
+
+      {items.map((item, index) => (
+        <section key={item.href} className={index % 2 === 0 ? "bg-white" : "bg-cream"}>
+          <article className="site-container site-section grid grid-cols-1 items-start gap-8 md:gap-12 lg:grid-cols-[minmax(0,24rem)_1fr] lg:gap-16">
+            <div
+              className={cn(
+                "overflow-hidden rounded-3xl bg-olive/10",
+                index % 2 === 1 && "lg:order-2",
+              )}
             >
-              <Link href={item.href} className="relative block overflow-hidden rounded-xl">
-                <div className="aspect-[4/3] w-full overflow-hidden bg-olive/20">
-                  <img
-                    src={item.image}
-                    alt=""
-                    className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
+              <Link href={item.href} className="block">
+                <img
+                  src={item.image}
+                  alt=""
+                  className="aspect-[4/3] !h-full w-full object-cover object-center"
+                />
               </Link>
+            </div>
+            <div
+              className={cn(
+                "flex min-w-0 flex-col items-start gap-5",
+                index % 2 === 1 && "lg:order-1",
+              )}
+            >
               <Link
                 href={item.href}
-                className="text-lg font-semibold leading-snug tracking-tight text-charcoal"
+                className="font-heading text-xl font-semibold tracking-tight text-forest sm:text-2xl !m-0"
               >
                 {item.title}
               </Link>
               <div
-                className="min-w-0 text-sm leading-relaxed text-body [&_h2]:mt-3 [&_h2]:text-base [&_h2]:font-semibold [&_h3]:mt-3 [&_h3]:text-base [&_h3]:font-semibold [&_li]:my-1 [&_p]:m-0 [&_ul]:my-2 [&_ul]:list-disc [&_ul]:pl-5"
+                className="min-w-0 text-base leading-relaxed text-body [&_h2]:mt-3 [&_h2]:text-lg [&_h2]:font-semibold [&_h3]:mt-3 [&_h3]:text-base [&_h3]:font-semibold [&_li]:my-1 [&_p]:m-0 [&_ul]:my-2 [&_ul]:list-disc [&_ul]:pl-5"
                 dangerouslySetInnerHTML={{
                   __html: contentInner(getDoc(item.href)?.html ?? ""),
                 }}
@@ -112,10 +129,10 @@ export function WhatWeTreat() {
               <Link href={item.href} className="text-sm font-medium text-olive hover:text-olive/80">
                 Read More
               </Link>
-            </article>
-          ))}
-        </div>
-      </div>
+            </div>
+          </article>
+        </section>
+      ))}
     </div>
   );
 }

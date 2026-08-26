@@ -1,5 +1,5 @@
 import { CalendarDays } from "lucide-react";
-import { PageTitle } from "@/components/site/page-primitives";
+import { PageHero } from "@/components/site/page-primitives";
 import { site } from "@/lib/site";
 
 const CALENDAR_SRC =
@@ -8,10 +8,14 @@ const CALENDAR_SRC =
 export default function UpcomingEvents() {
   return (
     <div className="w-full bg-white">
-      <div className="site-container site-section--compact">
-        <PageTitle className="text-center">Upcoming Events</PageTitle>
-        <div className="mt-10 grid grid-cols-1 items-stretch gap-8 lg:grid-cols-[minmax(0,1.7fr)_minmax(16rem,0.7fr)] lg:gap-10">
-          <div className="overflow-hidden rounded-2xl border border-forest/10 bg-white shadow-[0_20px_50px_-30px_rgb(56_69_47/0.5)]">
+      <PageHero
+        title="Upcoming Events"
+        image="/media/wp-content/uploads/2018/06/summer-meditation.jpg"
+      />
+
+      <section className="bg-white">
+        <div className="site-container site-section grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(16rem,18rem)] lg:gap-14">
+          <div className="overflow-hidden rounded-3xl bg-olive/10">
             <iframe
               title="Si Shou upcoming events calendar"
               src={CALENDAR_SRC}
@@ -21,13 +25,13 @@ export default function UpcomingEvents() {
               className="block h-[min(70vh,600px)] min-h-[30rem] w-full border-0"
             />
           </div>
-          <aside className="flex min-h-64 flex-col items-center justify-center gap-6 rounded-2xl bg-cream p-7 text-center lg:min-h-0 lg:p-10">
+          <aside className="flex flex-col items-start gap-6">
             <img
               src={site.media.logo}
               alt="Si Shou Acupuncture and Wellness"
               width={300}
               height={300}
-              className="h-40 w-40 rounded-full object-contain"
+              className="h-40 w-40 object-contain"
             />
             <div className="flex items-center gap-2 font-heading text-xs font-semibold uppercase tracking-[0.16em] text-olive">
               <CalendarDays size={16} aria-hidden="true" />
@@ -35,7 +39,7 @@ export default function UpcomingEvents() {
             </div>
           </aside>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

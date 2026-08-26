@@ -74,13 +74,14 @@ export default function AboutUs() {
 
   return (
     <section className="home-video-section w-full bg-white">
-      <div className="site-container site-section--compact flex flex-col gap-8">
+      <div className="site-container py-5 md:py-6">
         <h2 className="home-section-title text-center font-display text-3xl leading-[1.12] tracking-[-0.01em] text-forest sm:text-4xl !m-0">
           Welcome to Si Shou
         </h2>
-        <div
-          ref={frameRef}
-          className="home-video-frame group relative aspect-video w-full overflow-hidden rounded-3xl bg-forest shadow-[0_24px_60px_-24px_rgb(56_69_47/0.45)]"
+      </div>
+      <div
+        ref={frameRef}
+        className="home-video-frame group relative aspect-video w-full overflow-hidden bg-forest"
           onMouseEnter={() => {
             if (muted && !interacted) {
               post("unMute");
@@ -133,7 +134,6 @@ export default function AboutUs() {
               )}
             </button>
           </div>
-        </div>
       </div>
     </section>
   );

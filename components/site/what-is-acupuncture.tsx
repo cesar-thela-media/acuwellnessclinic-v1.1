@@ -1,4 +1,4 @@
-import { PageTitle, SectionHeading } from "@/components/site/page-primitives";
+import { PageHero, SectionHeading } from "@/components/site/page-primitives";
 
 const P1 = "Acupuncture is the insertion of very thin, filiform needles into specific points on the body to relieve pain or treat disease.  In the US, acupuncture is the most well-known modality of traditional Chinese medicine.  Here it is most often used to treat pain, however acupuncture promotes healing reactions in the body.  It is a complete medical system capable of treating many conditions beyond pain. It enhances recuperative power and immunity, supporting physical and emotional health, and improving overall function and well-being. It is a safe and effective way to treat a wide variety of medical problems and is extremely complementary to allopathic medicine.";
 const P2 = "As a whole, Chinese medicine looks at illness holistically and often sees patterns in a way which is very different from allopathic medicine. Western medicine typically views an illness as it relates to a particular system and often does not link symptoms across systems together. Chinese medicine looks for the relationships between the patient's signs and symptoms and treats the body in a holistic fashion.";
@@ -13,62 +13,55 @@ const CALL_2 = "Acupuncture and Chinese medicine are safe, effective and drug-fr
 export function WhatIsAcupuncture() {
   return (
     <div className="w-full bg-white">
-      <section className="bg-white">
-        <div className="site-container site-section--compact">
-          <PageTitle>What Is Acupuncture?</PageTitle>
-        </div>
-      </section>
+      <PageHero
+        title="What Is Acupuncture?"
+        image="/media/wp-content/uploads/2017/10/Blogimg-Positive-Effects-of-Acupuncture.jpg"
+      />
 
-      <section className="site-band bg-white">
-        <div className="site-container flex flex-col gap-6 md:gap-8">
-          <div className="max-w-3xl">
+      <section className="bg-white">
+        <div className="site-container site-section grid grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
+          <div className="flex min-w-0 flex-col gap-6">
+            <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">{P1}</p>
+            <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">{P2}</p>
+          </div>
+          <div className="overflow-hidden rounded-3xl bg-olive/10">
             <img
               src="/media/wp-content/uploads/2011/07/color-meridians.jpg"
-              alt=""
-              width={181}
-              height={186}
-              className="mb-4 mr-6 rounded-xl sm:float-left"
+              alt="Colorful acupuncture meridian illustration"
+              className="aspect-[4/3] !h-full w-full object-cover"
             />
-            <p className="text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{P1}</p>
           </div>
-          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{P2}</p>
         </div>
       </section>
 
-      <section className="site-band w-full max-w-full overflow-x-clip bg-olive text-white">
-        <div className="site-container flex flex-col gap-6 md:gap-8">
-          <SectionHeading className="site-heading-2--inverse">
-            What is Qi?
-          </SectionHeading>
-          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+      <section className="bg-cream">
+        <div className="site-container site-section flex flex-col gap-6">
+          <SectionHeading>What is Qi?</SectionHeading>
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
             {P_QI}
           </p>
         </div>
       </section>
 
-      <section className="site-band bg-white">
-        <div className="site-container flex flex-col gap-6 md:gap-8">
-          <SectionHeading>
-            How does Qi move?
-          </SectionHeading>
-          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{P_MOVE_1}</p>
-          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{P_MOVE_2}</p>
-          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{P_MOVE_3}</p>
-          <p className="site-card max-w-3xl p-6 text-lg font-semibold leading-snug text-charcoal md:p-8 md:text-xl !m-0">
+      <section className="bg-white">
+        <div className="site-container site-section flex flex-col gap-6">
+          <SectionHeading>How does Qi move?</SectionHeading>
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">{P_MOVE_1}</p>
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">{P_MOVE_2}</p>
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">{P_MOVE_3}</p>
+          <p className="max-w-3xl text-lg font-semibold leading-snug text-forest md:text-xl !m-0">
             {CALL_1}
           </p>
         </div>
       </section>
 
-      <section className="site-band w-full max-w-full overflow-x-clip bg-olive text-white">
-        <div className="site-container flex flex-col gap-6 md:gap-8">
-          <SectionHeading className="site-heading-2--inverse">
-            How does Acupuncture Work?
-          </SectionHeading>
-          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+      <section className="bg-cream">
+        <div className="site-container site-section flex flex-col gap-6">
+          <SectionHeading>How does Acupuncture Work?</SectionHeading>
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
             {P_WORK}
           </p>
-          <p className="site-card site-card--forest max-w-3xl p-6 text-lg font-semibold leading-snug text-white md:p-8 md:text-xl !m-0">
+          <p className="max-w-3xl text-lg font-semibold leading-snug text-forest md:text-xl !m-0">
             {CALL_2}
           </p>
         </div>

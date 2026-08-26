@@ -1,14 +1,11 @@
 "use client";
 
 import { useRef } from "react";
-import { PageTitle, SiteContainer } from "@/components/site/page-primitives";
+import { PageHero } from "@/components/site/page-primitives";
 import { WpBody } from "@/components/site/wp-body";
+import { campaignHero } from "@/lib/campaign";
 import { gsap, useGSAP } from "@/lib/gsap";
 import { cn } from "@/lib/utils";
-
-function hasHeading(html: string) {
-  return /<h1\b/i.test(html);
-}
 
 function isArchive(path: string, html: string) {
   if (/^\/(category|tag)(\/|$)/.test(path)) return true;
@@ -53,14 +50,6 @@ function articleTitle(title: string, html: string, path: string) {
   return displayTitle(title, path);
 }
 
-function articleHero(html: string) {
-  const style = html.match(/<section\b[^>]*style=["']([^"']*background-image:[^"']*)["']/i)?.[1];
-  if (!style) return null;
-  const match = style.match(/url\(([^)]+)\)/i);
-  if (!match) return null;
-  return match[1].replace(/["']/g, "");
-}
-
 export function DumpPage({
   title,
   html,
@@ -72,8 +61,6 @@ export function DumpPage({
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const archive = isArchive(path, html);
-  const hero = !archive ? articleHero(html) : null;
-  const showTitle = !hasHeading(html);
   const body = revealFeaturedImages(localizeMedia(html));
   const titleText = articleTitle(title, html, path);
 
@@ -93,27 +80,9 @@ export function DumpPage({
 
   return (
     <div ref={ref} className="w-full bg-white">
-      {archive ? (
-        showTitle ? (
-          <SiteContainer className="site-title-block site-container--wide">
-            <PageTitle className="dump-line">{titleText}</PageTitle>
-          </SiteContainer>
-        ) : null
-      ) : (
-        <header className={cn("dump-article-header", hero && "dump-article-header--hero")}>
-          {hero ? (
-            <div
-              className="dump-article-hero"
-              style={{ backgroundImage: `linear-gradient(rgb(56 69 47 / 0.68), rgb(56 69 47 / 0.68)), url(${hero})` }}
-              aria-hidden="true"
-            />
-          ) : null}
-          <SiteContainer className="relative z-10 site-container--reading">
-            <p className="dump-article-kicker dump-line">Si Shou Acupuncture and Wellness</p>
-            <PageTitle className="dump-line">{titleText}</PageTitle>
-          </SiteContainer>
-        </header>
-      )}
+      <div className="dump-line">
+        <PageHero title={titleText} image={campaignHero(path, html)} />
+      </div>
       <div
         className={cn(
           "dump-line prose-wp",

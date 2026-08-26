@@ -56,6 +56,16 @@ const nextConfig: NextConfig = {
           "/media/wp-content/uploads/2011/10/SSAW-Privacy-Policy-Jan-2017.pdf",
         permanent: true,
       },
+      {
+        source: "/packages-and-new-patient-portal",
+        destination: "/clinic-forms",
+        permanent: true,
+      },
+      {
+        source: "/packages-and-new-patient-portal/",
+        destination: "/clinic-forms",
+        permanent: true,
+      },
     ];
   },
 };

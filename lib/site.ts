@@ -52,6 +52,7 @@ export const site = {
   },
   media: {
     logo: "/media/wp-content/uploads/2019/02/Artboard-1@sishou-cropped.png",
+    logoOnDark: "/media/wp-content/uploads/2019/02/Artboard-1@sishou-cropped-white.png",
     logoCircle: "/media/wp-content/uploads/2019/02/logo.png",
     hero: "/media/wp-content/uploads/2017/01/chinese-herbs.jpg",
     neuropathy: "/media/wp-content/uploads/2017/08/Foot-soak.jpg",
@@ -71,6 +72,11 @@ export const nav = [
   {
     label: "About",
     href: "/about-us",
+    featured: {
+      title: "View All About Pages",
+      image: "/media/wp-content/uploads/2019/05/couple.jpg",
+      alt: "Si Shou acupuncture practitioner",
+    },
     children: [
       { label: "About Us", href: "/about-us" },
       { label: "Our Team", href: "/our-team" },
@@ -83,6 +89,11 @@ export const nav = [
   {
     label: "About Acupuncture",
     href: "/what-is-acupuncture",
+    featured: {
+      title: "View All About Acupuncture",
+      image: "/media/wp-content/uploads/2018/03/pexels-photo-413707.jpeg",
+      alt: "Acupuncture meridian illustration",
+    },
     children: [
       { label: "What Is Acupuncture?", href: "/what-is-acupuncture" },
       { label: "What We Treat", href: "/what-is-acupuncture/what-we-treat" },
@@ -94,6 +105,11 @@ export const nav = [
   {
     label: "Resources",
     href: "/resources",
+    featured: {
+      title: "View All Resources",
+      image: "/media/wp-content/uploads/2018/06/blog_watermelon.jpg",
+      alt: "Facial acupuncture treatment",
+    },
     children: [
       { label: "Facial Rejuvenation", href: "/resources/facial-rejuvenation" },
       { label: "More Research", href: "/resources/more-research" },
@@ -104,6 +120,11 @@ export const nav = [
   {
     label: "Contact",
     href: "/contact",
+    featured: {
+      title: "View All Contact Options",
+      image: "/media/wp-content/uploads/2017/12/pexels-photo-237180.jpg",
+      alt: "Chinese herbs and wellness tools",
+    },
     children: [
       { label: "Contact Form", href: "/contact" },
       { label: "Map & Directions", href: "/contact/map-directions" },

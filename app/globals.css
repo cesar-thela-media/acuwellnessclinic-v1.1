@@ -838,6 +838,19 @@ img {
   background: rgb(255 255 255 / 0.15);
 }
 
+header [data-slot="navigation-menu-content"] {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 0.5rem;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
 .home-page .home-section-label {
   display: block;
   font-size: var(--home-section-label-size);
@@ -873,7 +886,7 @@ img {
 .home-hero-content {
   min-height: max(34rem, 100svh);
   gap: clamp(1.5rem, 3vw, 2rem);
-  padding-block: clamp(8rem, 15vh, 10rem) clamp(4rem, 10vh, 7rem);
+  padding-block: clamp(6.5rem, 12vh, 8.5rem) clamp(4rem, 10vh, 7rem);
 }
 
 .home-hero-eyebrow {

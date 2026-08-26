@@ -1,5 +1,7 @@
-import { DumpPage } from "@/components/site/dump-page";
+import { CampaignArticle } from "@/components/site/campaign-article";
+import { CampaignBlog } from "@/components/site/campaign-blog";
 import { getAllDocs, getDoc } from "@/lib/content";
+import { isArchivePath } from "@/lib/campaign";
 import { JsonLd, pageMetadata } from "@/lib/seo";
 import { notFound } from "next/navigation";
 
@@ -57,7 +59,11 @@ export default async function CatchAllPage({ params }: Props) {
   return (
     <article>
       <JsonLd canonicalPath={doc.canonicalPath} metaTitle={doc.metaTitle} metaDescription={doc.metaDescription} />
-      <DumpPage title={doc.title} html={doc.html} path={doc.path} />
+      {isArchivePath(doc.path, doc.html) ? (
+        <CampaignBlog title={doc.title} html={doc.html} path={doc.path} />
+      ) : (
+        <CampaignArticle title={doc.title} html={doc.html} path={doc.path} />
+      )}
     </article>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
@@ -58,19 +58,77 @@ const InstagramIcon = ({ size = 15 }: { size?: number }) => (
   </svg>
 );
 
+type NavItem = (typeof nav)[number];
+type NavItemWithChildren = Extract<NavItem, { children: readonly unknown[] }>;
+
+function linkColumns<T>(items: readonly T[]) {
+  const colCount = items.length >= 6 ? 3 : items.length >= 3 ? 2 : 1;
+  const perCol = Math.ceil(items.length / colCount);
+  return Array.from({ length: colCount }, (_, index) =>
+    items.slice(index * perCol, (index + 1) * perCol),
+  ).filter((column) => column.length > 0);
+}
+
+const MegaMenuPanel = ({ item }: { item: NavItemWithChildren }) => {
+  const columns = linkColumns(item.children);
+
+  return (
+    <div className="overflow-hidden rounded-2xl bg-white shadow-[0_24px_60px_-24px_rgba(56,69,47,0.45)]">
+      <div
+        className={cn(
+          "grid gap-8 p-7 sm:p-8",
+          columns.length === 1 && "md:grid-cols-[minmax(0,1fr)_18rem]",
+          columns.length === 2 && "md:grid-cols-[repeat(2,minmax(0,1fr))_20rem]",
+          columns.length >= 3 && "md:grid-cols-[repeat(3,minmax(0,1fr))_20rem]",
+        )}
+      >
+        {columns.map((column, index) => (
+          <ul key={index} className="flex min-w-0 flex-col gap-1">
+            {column.map((child) => (
+              <li key={child.href}>
+                <NavigationMenuLink asChild>
+                  <Link
+                    href={child.href}
+                    className="block rounded-lg px-1 py-2.5 font-heading text-[15px] font-medium text-forest/85 transition-colors hover:bg-transparent hover:text-forest"
+                  >
+                    {child.label}
+                  </Link>
+                </NavigationMenuLink>
+              </li>
+            ))}
+          </ul>
+        ))}
+
+        <NavigationMenuLink asChild>
+          <Link
+            href={item.href}
+            className="flex min-h-56 flex-col rounded-2xl bg-[#f3f1ec] p-5 transition-colors hover:bg-[#efece6]"
+          >
+            <span className="font-heading text-[11px] font-semibold tracking-[0.14em] text-forest/45 uppercase">
+              More
+            </span>
+            <span className="mt-1 font-heading text-xl font-semibold leading-snug tracking-tight text-forest">
+              {item.featured.title}
+            </span>
+            <div className="mt-auto aspect-[16/10] overflow-hidden rounded-xl bg-olive/15">
+              <img
+                src={item.featured.image}
+                alt={item.featured.alt}
+                className="!h-full w-full object-cover"
+              />
+            </div>
+          </Link>
+        </NavigationMenuLink>
+      </div>
+    </div>
+  );
+};
+
 const Navbar = () => {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
-
-  const overHero = pathname === "/" && !scrolled;
+  const isHome = pathname === "/";
+  const overHero = isHome;
 
   const itemBase =
     "inline-flex h-10 items-center whitespace-nowrap rounded-full px-2.5 py-0 font-heading text-sm font-semibold tracking-tight outline-none transition-colors xl:px-3.5";
@@ -93,13 +151,14 @@ const Navbar = () => {
   return (
     <header
       className={cn(
-        pathname === "/" ? "home-header fixed inset-x-0 top-0" : "sticky top-0",
+        isHome ? "home-header absolute inset-x-0 top-0" : "sticky top-0",
         "z-50 w-full transition-all duration-300",
         overHero
           ? "bg-transparent"
           : "border-b border-forest/10 bg-cream/95 backdrop-blur-md",
       )}
     >
+      {!isHome && (
       <nav
         aria-label="Utility navigation"
         className="hidden bg-olive text-forest lg:block"
@@ -134,14 +193,15 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      )}
 
-      <nav className="mx-auto grid h-16 w-full max-w-7xl min-w-0 grid-cols-[4rem_minmax(0,1fr)_auto] items-center gap-3 px-6 sm:h-[4.5rem] sm:grid-cols-[4.5rem_minmax(0,1fr)_auto] sm:px-10 lg:px-8">
+      <nav className="relative mx-auto grid h-16 w-full max-w-7xl min-w-0 grid-cols-[4rem_minmax(0,1fr)_auto] items-center gap-3 px-6 sm:h-[4.5rem] sm:grid-cols-[4.5rem_minmax(0,1fr)_auto] sm:px-10 lg:px-8">
         <Link
           href="/"
           className="flex h-9 w-12 shrink-0 items-center sm:h-11 sm:w-14"
         >
           <img
-            src={site.media.logo}
+            src={overHero ? site.media.logoOnDark : site.media.logo}
             alt={site.name}
             width={300}
             height={300}
@@ -149,10 +209,13 @@ const Navbar = () => {
           />
         </Link>
 
-        <NavigationMenu className="hidden min-w-0 max-w-none justify-center lg:flex" viewport={false}>
+        <NavigationMenu
+          className="hidden min-w-0 max-w-none justify-center !static lg:flex"
+          viewport={false}
+        >
           <NavigationMenuList className="flex flex-nowrap items-center justify-center gap-0.5 xl:gap-1.5">
             {nav.map((item) => (
-              <NavigationMenuItem key={item.label}>
+              <NavigationMenuItem key={item.label} className="static">
                 {"children" in item && item.children ? (
                   <NavigationMenuTrigger
                     className={cn(
@@ -176,19 +239,8 @@ const Navbar = () => {
                   </NavigationMenuLink>
                 )}
                 {"children" in item && item.children && (
-                  <NavigationMenuContent className="z-50">
-                    <div className="w-56 rounded-2xl bg-white p-2 shadow-[0_20px_50px_-20px_rgba(56,69,47,0.4)]">
-                      {item.children.map((child) => (
-                        <NavigationMenuLink key={child.label} asChild>
-                          <Link
-                            href={child.href}
-                            className="block rounded-xl px-3 py-2 font-heading text-sm font-medium text-forest/75 transition-colors hover:bg-forest/5 hover:text-forest"
-                          >
-                            {child.label}
-                          </Link>
-                        </NavigationMenuLink>
-                      ))}
-                    </div>
+                  <NavigationMenuContent className="left-0 right-0 z-50 mt-2 w-full !overflow-visible !border-0 !bg-transparent p-0 !shadow-none md:w-full">
+                    <MegaMenuPanel item={item} />
                   </NavigationMenuContent>
                 )}
               </NavigationMenuItem>

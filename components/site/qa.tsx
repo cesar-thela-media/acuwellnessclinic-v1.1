@@ -1,4 +1,4 @@
-import { PageTitle } from "@/components/site/page-primitives";
+import { PageHero } from "@/components/site/page-primitives";
 import { WpBody } from "@/components/site/wp-body";
 
 const INTRO =
@@ -12,27 +12,31 @@ export type QAItem = {
 export function QA({ items }: { items: QAItem[] }) {
   return (
     <div className="w-full bg-white">
-      <div className="site-container site-section flex flex-col gap-10 md:gap-12">
-        <PageTitle>Q & A</PageTitle>
-        <p className="site-body-copy whitespace-pre-wrap text-body !m-0">
-          {INTRO}
-        </p>
-        <div className="flex flex-col gap-6">
-          {items.map((item) => (
-            <section
-              key={item.title}
-              className="site-card flex flex-col gap-4 overflow-x-auto p-6 md:p-8"
-            >
-              <h2 className="text-xl font-bold tracking-tight text-charcoal sm:text-2xl !m-0">
-                {item.title}
-              </h2>
-              <div className="prose-wp-read site-reading-measure max-w-none !pb-0 text-base leading-relaxed text-body md:text-lg [&_.ct-inner-content]:!max-w-none [&_.ct-inner-content]:!px-0 [&_.prose-wp]:!max-w-none [&_.prose-wp]:!p-0">
-                <WpBody html={item.html} />
-              </div>
-            </section>
-          ))}
+      <PageHero
+        title="Q & A"
+        image="/media/wp-content/uploads/2016/11/Blog-img-Five-Ways-to-Alleviate-Insomnia_640.jpg"
+      />
+
+      <section className="bg-cream">
+        <div className="site-container site-section">
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
+            {INTRO}
+          </p>
         </div>
-      </div>
+      </section>
+
+      {items.map((item, index) => (
+        <section key={item.title} className={index % 2 === 0 ? "bg-white" : "bg-cream"}>
+          <article className="site-container site-section grid grid-cols-1 items-start gap-6 lg:grid-cols-[minmax(0,18rem)_1fr] lg:gap-14">
+            <h2 className="font-heading text-xl font-semibold tracking-tight text-forest sm:text-2xl !m-0">
+              {item.title}
+            </h2>
+            <div className="prose-wp-read site-reading-measure min-w-0 max-w-none !pb-0 text-base leading-relaxed text-body md:text-lg [&_.ct-inner-content]:!max-w-none [&_.ct-inner-content]:!px-0 [&_.prose-wp]:!max-w-none [&_.prose-wp]:!p-0">
+              <WpBody html={item.html} />
+            </div>
+          </article>
+        </section>
+      ))}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { PageTitle } from "@/components/site/page-primitives";
 import { site } from "@/lib/site";
 import { ArrowUpRight } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 const BOOK = site.booking.header;
 
@@ -36,26 +37,48 @@ const members = [
 const Experts = () => {
   return (
     <div className="w-full bg-white">
-      <div className="site-container site-section--compact flex flex-col gap-12 md:gap-16">
-        <PageTitle className="text-center">Our Team</PageTitle>
-        {members.map((member) => (
-          <article
-            key={member.name}
-            className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,360px)_1fr] lg:gap-14"
-          >
-            <div className="lg:sticky lg:top-24">
-              <div className="relative overflow-hidden">
-                <img
-                  src={member.image}
-                  srcSet={member.srcSet}
-                  sizes={member.sizes}
-                  alt={member.name}
-                  className="aspect-square w-full object-cover object-center"
-                />
-              </div>
+      <section className="relative isolate overflow-hidden bg-forest">
+        <img
+          src="/media/wp-content/uploads/2017/09/china-2263731_1280.jpg"
+          alt=""
+          className="absolute inset-0 !h-full w-full object-cover object-top"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 bg-gradient-to-r from-forest/88 via-forest/70 to-forest/45"
+        />
+        <div className="site-container relative flex min-h-[22rem] flex-col justify-end py-14 md:min-h-[26rem] md:py-16">
+          <PageTitle className="text-white">Our Team</PageTitle>
+        </div>
+      </section>
+
+      {members.map((member, index) => (
+        <section
+          key={member.name}
+          className={index % 2 === 0 ? "bg-white" : "bg-cream"}
+        >
+          <article className="site-container site-section grid grid-cols-1 items-start gap-8 md:gap-12 lg:grid-cols-[minmax(0,22rem)_1fr] lg:gap-16">
+            <div
+              className={cn(
+                "overflow-hidden rounded-3xl bg-olive/10",
+                index % 2 === 1 && "lg:order-2",
+              )}
+            >
+              <img
+                src={member.image}
+                srcSet={member.srcSet}
+                sizes={member.sizes}
+                alt={member.name}
+                className="aspect-[4/5] w-full object-cover object-center"
+              />
             </div>
-            <div className="flex min-w-0 flex-col items-start gap-5">
-              <h2 className="bio_head text-xl font-bold tracking-tight text-charcoal sm:text-2xl !m-0">
+            <div
+              className={cn(
+                "flex min-w-0 flex-col items-start gap-5",
+                index % 2 === 1 && "lg:order-1",
+              )}
+            >
+              <h2 className="bio_head font-heading text-xl font-semibold tracking-tight text-forest sm:text-2xl !m-0">
                 {member.name}
               </h2>
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body !m-0">
@@ -72,8 +95,8 @@ const Experts = () => {
               </a>
             </div>
           </article>
-        ))}
-      </div>
+        </section>
+      ))}
     </div>
   );
 };

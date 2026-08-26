@@ -1,4 +1,4 @@
-import { PageTitle } from "@/components/site/page-primitives";
+import { PageHero } from "@/components/site/page-primitives";
 import { site } from "@/lib/site";
 
 const HEADING = "Kate's  and Aaron's New Patients:";
@@ -8,15 +8,16 @@ const BODY =
 export default function ClinicForms() {
   return (
     <div className="w-full bg-white">
-      <div className="site-container site-section flex flex-col gap-8 md:gap-10">
-        <PageTitle>Clinic Forms</PageTitle>
-        <p className="site-lead whitespace-pre-wrap !m-0">
-          {HEADING}
-        </p>
-        <p className="site-body-copy whitespace-pre-wrap text-body !m-0">
-          {BODY}
-        </p>
-        <div className="site-card max-w-2xl p-6 md:p-8">
+      <PageHero title="Clinic Forms" image="/media/wp-content/uploads/2018/01/BlogImg1.jpg" />
+
+      <section className="bg-cream">
+        <div className="site-container site-section flex max-w-3xl flex-col gap-6">
+          <p className="text-lg font-semibold leading-snug text-forest md:text-xl !m-0">
+            {HEADING}
+          </p>
+          <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
+            {BODY}
+          </p>
           <p className="text-base leading-relaxed text-body !m-0">
             Click{" "}
             <a
@@ -27,7 +28,7 @@ export default function ClinicForms() {
             </a>
             .
           </p>
-          <p className="mt-4 text-base leading-relaxed text-body !m-0">
+          <p className="text-base leading-relaxed text-body !m-0">
             <a
               href={site.media.privacyPdf}
               className="font-medium text-olive underline underline-offset-2"
@@ -38,7 +39,7 @@ export default function ClinicForms() {
             </a>
           </p>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

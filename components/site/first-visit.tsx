@@ -1,4 +1,4 @@
-import { PageTitle } from "@/components/site/page-primitives";
+import { PageHero } from "@/components/site/page-primitives";
 
 const PORTAL = "https://www.optimantra.com/optimus/om/patient/login";
 const QUOTE = "\"A journey of a thousand miles begins with a single step.\"";
@@ -23,35 +23,34 @@ const MOST_ITEMS = ["Please show up on time", "Click here for the patient portal
 export function FirstVisit() {
   return (
     <div className="w-full bg-white">
-      <section className="bg-white">
-        <div className="site-container site-section--compact">
-          <PageTitle>First Visit</PageTitle>
-        </div>
-      </section>
+      <PageHero
+        title="First Visit"
+        image="/media/wp-content/uploads/2017/08/hands-2568594_1280.jpg"
+      />
 
-      <section className="site-band bg-white">
-        <div className="site-container flex flex-col gap-6 md:gap-8">
-          <blockquote className="site-card site-card--soft max-w-3xl p-6 md:p-8">
-            <p className="text-xl font-semibold leading-snug tracking-tight text-charcoal md:text-2xl !m-0">
+      <section className="bg-cream">
+        <div className="site-container site-section flex flex-col gap-6">
+          <blockquote className="max-w-3xl">
+            <p className="font-display text-2xl leading-snug text-forest md:text-3xl !m-0">
               {QUOTE}
             </p>
-            <p className="mt-4 text-sm font-medium text-body !m-0">{ATTR}</p>
+            <p className="mt-4 text-sm font-medium text-forest !m-0">{ATTR}</p>
           </blockquote>
-          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{OPEN_1}</p>
-          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{OPEN_2}</p>
-          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{OPEN_3}</p>
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">{OPEN_1}</p>
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">{OPEN_2}</p>
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">{OPEN_3}</p>
         </div>
       </section>
 
-      <section className="site-band w-full max-w-full overflow-x-clip bg-olive text-white">
-        <div className="site-container flex flex-col gap-6 md:gap-8">
-          <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl !m-0 text-balance">
+      <section className="bg-white">
+        <div className="site-container site-section flex flex-col gap-6">
+          <h2 className="font-heading text-2xl font-semibold tracking-tight text-forest md:text-3xl !m-0">
             Your treatment plan
           </h2>
-          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
             {PLAN_P}
           </p>
-          <ul className="max-w-3xl list-disc space-y-2 pl-6 text-base leading-relaxed text-white/90 md:text-lg">
+          <ul className="max-w-3xl list-disc space-y-2 pl-6 text-base leading-relaxed text-body md:text-lg">
             {PLAN_ITEMS.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -59,12 +58,12 @@ export function FirstVisit() {
         </div>
       </section>
 
-      <section className="site-band bg-white">
-        <div className="site-container flex flex-col gap-6 md:gap-8">
-          <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-charcoal sm:text-4xl !m-0 text-balance">
+      <section className="bg-cream">
+        <div className="site-container site-section flex flex-col gap-6">
+          <h2 className="font-heading text-2xl font-semibold tracking-tight text-forest md:text-3xl !m-0">
             Getting the most out of treatment
           </h2>
-          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{MOST_P}</p>
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">{MOST_P}</p>
           <ul className="max-w-3xl list-disc space-y-2 pl-6 text-base leading-relaxed text-body md:text-lg">
             {MOST_ITEMS.map((item) =>
               item === "Click here for the patient portal" ? (
@@ -85,42 +84,42 @@ export function FirstVisit() {
         </div>
       </section>
 
-      <section className="site-band w-full max-w-full overflow-x-clip bg-olive text-white">
-        <div className="site-container flex flex-col gap-6 md:gap-8">
-          <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl !m-0 text-balance">
+      <section className="bg-white">
+        <div className="site-container site-section flex flex-col gap-6">
+          <h2 className="font-heading text-2xl font-semibold tracking-tight text-forest md:text-3xl !m-0">
             How treatment works
           </h2>
-          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
             {WORK_1}
           </p>
-          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
             {WORK_2}
           </p>
         </div>
       </section>
 
-      <section className="site-band bg-white">
-        <div className="site-container flex flex-col gap-6 md:gap-8">
-          <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-charcoal sm:text-4xl !m-0 text-balance">
+      <section className="bg-cream">
+        <div className="site-container site-section flex flex-col gap-6">
+          <h2 className="font-heading text-2xl font-semibold tracking-tight text-forest md:text-3xl !m-0">
             Your role in the healing process
           </h2>
-          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{ROLE_1}</p>
-          <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg whitespace-pre-wrap !m-0">{ROLE_2}</p>
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">{ROLE_1}</p>
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">{ROLE_2}</p>
         </div>
       </section>
 
-      <section className="site-band w-full max-w-full overflow-x-clip bg-olive text-white">
-        <div className="site-container flex flex-col gap-6 md:gap-8">
-          <h2 className="max-w-4xl text-3xl font-bold tracking-tight text-white sm:text-4xl !m-0 text-balance">
+      <section className="bg-white">
+        <div className="site-container site-section flex flex-col gap-6">
+          <h2 className="font-heading text-2xl font-semibold tracking-tight text-forest md:text-3xl !m-0">
             Acupuncture is not an instant fix
           </h2>
-          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
             {FIX_1}
           </p>
-          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
             {FIX_2}
           </p>
-          <p className="max-w-3xl text-base leading-relaxed text-white/90 md:text-lg whitespace-pre-wrap !m-0">
+          <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
             {FIX_3}
           </p>
         </div>
