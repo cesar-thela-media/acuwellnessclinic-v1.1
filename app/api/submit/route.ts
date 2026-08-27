@@ -36,7 +36,12 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Request is too large" }, { status: 413 });
     }
 
-    const json = await req.json();
+    let json: unknown;
+    try {
+      json = await req.json();
+    } catch {
+      return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
+    }
     const parsed = submitBodySchema.safeParse(json);
     if (!parsed.success) {
       return NextResponse.json(

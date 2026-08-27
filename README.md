@@ -6,15 +6,14 @@ Content-complete Next.js migration and branded redesign of [acuwellnessclinic.co
 
 | Layer | Choice |
 |-------|--------|
-| Framework | Next.js 16 App Router + React 19 + TypeScript |
+| Framework | Next.js 15 App Router + React 19 + TypeScript |
 | Styling | Tailwind CSS v4 (`@theme`) with AcuWellness brand tokens |
 | Motion | GSAP + `@gsap/react` with reduced-motion handling |
 | Blocks | Shadcn Space-compatible components and local shadcn primitives |
 | Observability | `@sentry/nextjs`, credential-ready and disabled without DSN |
-| Build | Bun stable 1.x in Docker and Bun local builds |
+| Build | Bun 1.3.4 in Docker and Bun local builds |
 | Runtime | Node 20 container runtime; `node server.js` |
-| Primary deploy | Vercel |
-| Reserve | Multi-stage `Dockerfile` + `railway.json` |
+| Deploy | Vercel (Next.js) or Railway via multi-stage `Dockerfile` + `railway.json` |
 
 ## Local run
 
@@ -57,10 +56,21 @@ See `.env.example`. Never commit `.env`.
 - `GET /api/health` → `{ "ok": true }`
 - `POST /api/submit` → JSON `{ type, payload }` forwarded to the matching `WEBHOOK_URL_*`
 
-## Vercel vs reserve
+## Deploy
 
-- **Vercel:** default Next output with the current stable Next.js release. This is the intended host.
-- **Docker / Railway:** `Dockerfile` builds with Bun stable 1.x and runs `node server.js` on Node 20. `railway.json` configures the `/api/health` health check.
+### Vercel (recommended for this Next app)
+
+1. Import the repo in Vercel (Framework Preset: **Next.js** — see `vercel.json`).
+2. Set env vars from `.env.example` (`NEXT_PUBLIC_SITE_URL`, optional webhooks / Sentry / Maps).
+3. Build command: `bun run build` (or default `next build`). Output is standard Next (no `standalone` on Vercel).
+4. Install command: `bun install` (project `packageManager` is Bun 1.3.4).
+
+Verified locally with `bun run build` (455 static routes).
+
+### Railway
+
+- `Dockerfile` builds with Bun 1.3.4 and runs `node server.js` on Node 20. `railway.json` configures the `/api/health` health check.
+- Custom `server.js` owns legacy 301s because Next's `permanent` redirects return 308.
 
 ## Cutover notes (not implemented here)
 

@@ -22,7 +22,7 @@ const TEXT_SELECTOR = [
 
 function collectText(root: HTMLElement) {
   const nodes = Array.from(root.querySelectorAll<HTMLElement>(TEXT_SELECTOR)).filter((el) => {
-    if (el.closest("header, footer, nav, [role='dialog']")) return false;
+    if (el.closest("header, nav, [role='dialog']")) return false;
     if (el.closest(".home-hero, .home-cta, .hero-enter, .cta-line, .inner-line, .dump-line")) {
       return false;
     }

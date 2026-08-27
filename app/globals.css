@@ -58,12 +58,13 @@
   --site-section-y-compact: clamp(3rem, 5vw, 5rem);
   --site-content-gap: clamp(1.5rem, 3vw, 2.5rem);
   --site-grid-gap: clamp(1.25rem, 2.5vw, 2rem);
-  --site-radius-card: 1rem;
-  --site-radius-control: 0.75rem;
+  --site-radius-card: 14px;
+  --site-radius-control: 14px;
   --site-radius-pill: 999px;
-  --site-border: rgb(51 51 51 / 0.14);
-  --site-shadow-card: 0 1.25rem 3rem -2rem rgb(56 69 47 / 0.28);
-  --site-shadow-hover: 0 1.5rem 3.5rem -2rem rgb(56 69 47 / 0.38);
+  --site-border: rgb(56 69 47 / 0.18);
+  --site-bezel-width: 1px;
+  --site-shadow-card: none;
+  --site-shadow-hover: none;
 }
 
 *,
@@ -74,15 +75,25 @@
 
 html {
   color-scheme: light only;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
+  max-width: 100%;
+  overflow-x: clip;
   background: #fff;
   color: var(--site-body);
   font-family: var(--font-sans);
+  font-style: normal;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
+}
+
+em,
+i,
+cite {
+  font-style: normal;
 }
 
 main,
@@ -128,6 +139,7 @@ img {
   max-width: var(--site-content-max);
   margin-inline: auto;
   padding-inline: var(--site-gutter);
+  min-width: 0;
 }
 
 .site-container--wide {
@@ -144,20 +156,21 @@ img {
 
 .site-title {
   margin: 0;
-  max-width: 50rem;
+  max-width: min(50rem, 100%);
   color: var(--site-charcoal);
-  font-family: var(--font-heading);
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 4rem);
   font-weight: 600;
   line-height: 1.08;
   letter-spacing: -0.035em;
+  overflow-wrap: break-word;
   text-wrap: balance;
 }
 
 .site-heading-2 {
   margin: 0;
   color: var(--site-charcoal);
-  font-family: var(--font-heading);
+  font-family: var(--font-display);
   font-size: clamp(1.5rem, 2.5vw, 2.25rem);
   font-weight: 600;
   line-height: 1.12;
@@ -180,10 +193,11 @@ img {
 
 .site-body-copy {
   width: 100%;
-  max-width: var(--site-reading-max);
+  max-width: min(var(--site-reading-max), 100%);
   font-size: clamp(1rem, 1.15vw, 1.125rem);
   line-height: 1.75;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .site-body-copy--inverse {
@@ -221,8 +235,8 @@ img {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border: 1px solid transparent;
-  border-radius: var(--site-radius-pill);
+  border: var(--site-bezel-width) solid var(--site-border);
+  border-radius: var(--site-radius-control);
   padding: 0.625rem 1.25rem;
   font-family: var(--font-heading);
   font-size: 0.875rem;
@@ -239,6 +253,7 @@ img {
 }
 
 .site-button--primary {
+  border-color: rgb(56 69 47 / 0.45);
   background: var(--site-olive);
   color: #fff !important;
 }
@@ -250,6 +265,7 @@ img {
 }
 
 .site-button--secondary {
+  border-color: rgb(56 69 47 / 0.55);
   background: var(--site-forest);
   color: #fff;
 }
@@ -291,11 +307,18 @@ img {
 }
 
 /* Shared card language. The modifier classes are intentionally opt-in. */
+.site-media {
+  overflow: hidden;
+  border: var(--site-bezel-width) solid var(--site-border);
+  border-radius: var(--site-radius-card);
+  background: var(--site-cream);
+}
+
 .site-card {
-  border: 1px solid var(--site-border);
+  border: var(--site-bezel-width) solid var(--site-border);
   border-radius: var(--site-radius-card);
   background: #fff;
-  box-shadow: var(--site-shadow-card);
+  box-shadow: none;
 }
 
 .site-card:hover {
@@ -386,10 +409,10 @@ img {
 .prose-wp-archive .oxy-post {
   min-width: 0;
   overflow: hidden;
-  border: 1px solid var(--site-border);
+  border: var(--site-bezel-width) solid var(--site-border);
   border-radius: var(--site-radius-card);
   background: #fff;
-  box-shadow: var(--site-shadow-card);
+  box-shadow: none;
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
@@ -456,6 +479,7 @@ img {
 }
 
 .prose-wp-archive .widget_categories {
+  border: var(--site-bezel-width) solid var(--site-border);
   border-radius: var(--site-radius-card);
   background: var(--site-cream);
   padding: 1.25rem;
@@ -551,7 +575,7 @@ img {
 .prose-wp-read blockquote {
   margin: 2rem 0;
   border-left: 0.25rem solid var(--site-olive);
-  border-radius: 0 var(--site-radius-card) var(--site-radius-card) 0;
+  border-radius: 0;
   background: var(--site-cream);
   padding: 1.25rem 1.5rem;
   color: var(--site-forest);
@@ -568,12 +592,13 @@ img {
 .prose-wp-read > .prose-wp img {
   display: block;
   margin-inline: auto;
+  border: var(--site-bezel-width) solid var(--site-border);
   border-radius: var(--site-radius-card);
 }
 
 .prose-wp-read table {
   overflow: hidden;
-  border: 1px solid var(--site-border);
+  border: var(--site-bezel-width) solid var(--site-border);
   border-radius: var(--site-radius-card);
   background: #fff;
 }
@@ -771,7 +796,9 @@ img {
 }
 
 .site-footer {
-  color: #fff;
+  color: var(--site-body);
+  background: #fff;
+  border-top: 1px solid var(--site-border);
 }
 
 .site-footer-inner {
@@ -796,13 +823,13 @@ img {
 
 .site-footer-link {
   width: fit-content;
-  color: rgb(255 255 255 / 0.85);
+  color: var(--site-forest);
   line-height: 1.5;
   text-decoration: none;
 }
 
 .site-footer-link:hover {
-  color: #fff;
+  color: var(--site-olive);
 }
 
 .site-footer :where(a, button):focus-visible {
@@ -827,8 +854,7 @@ img {
   --home-section-label-size: 1.125rem;
 }
 
-/* Navigation menu primitives carry an opaque default background. Keep the
-   homepage menu transparent while it sits over the hero image. */
+/* Homepage header: keep primary nav transparent over the hero. */
 .home-header [data-slot="navigation-menu-trigger"] {
   background: transparent;
 }
@@ -836,6 +862,46 @@ img {
 .home-header [data-slot="navigation-menu-trigger"]:hover,
 .home-header [data-slot="navigation-menu-trigger"][data-state="open"] {
   background: rgb(255 255 255 / 0.15);
+}
+
+/* 3-zone header: logo | centered links | CTA. Locked in CSS so
+   NavigationMenu defaults (relative/flex-1/max-w-max) cannot collapse
+   the links against the logo again. */
+header nav[aria-label="Primary"] {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) !important;
+  align-items: center;
+  column-gap: 1.5rem;
+}
+
+header nav[aria-label="Primary"] > div:first-child {
+  grid-column: 1;
+  justify-self: start;
+}
+
+header nav[aria-label="Primary"] > .primary-nav-links {
+  grid-column: 2;
+  justify-self: center;
+}
+
+header nav[aria-label="Primary"] > div:last-child {
+  grid-column: 3;
+  justify-self: end;
+}
+
+.primary-nav-links {
+  position: static !important;
+  display: none !important;
+  width: auto !important;
+  max-width: none !important;
+  flex: 0 0 auto !important;
+  justify-content: center !important;
+}
+
+@media (width >= 80rem) {
+  .primary-nav-links {
+    display: flex !important;
+  }
 }
 
 header [data-slot="navigation-menu-content"] {
@@ -859,7 +925,9 @@ header [data-slot="navigation-menu-content"] {
 }
 
 .home-page .home-section-title {
-  text-wrap: balance;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 
 .home-page .home-section-copy {
@@ -874,12 +942,31 @@ header [data-slot="navigation-menu-content"] {
   background-size: cover;
 }
 
+.home-hero-video {
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Cover-crop + scale so YouTube chrome / captions / end-cards stay off-canvas */
+.home-hero-video iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100%;
+  min-width: 177.78vh;
+  border: 0;
+  transform: translate(-50%, -50%) scale(1.55);
+  transform-origin: center center;
+}
+
 .home-hero-overlay {
   background: linear-gradient(
     180deg,
-    rgb(56 69 47 / 0.62) 0%,
-    rgb(56 69 47 / 0.42) 45%,
-    rgb(56 69 47 / 0.68) 100%
+    rgb(56 69 47 / 0.72) 0%,
+    rgb(56 69 47 / 0.52) 45%,
+    rgb(56 69 47 / 0.78) 100%
   );
 }
 
@@ -895,7 +982,10 @@ header [data-slot="navigation-menu-content"] {
 
 .home-hero-title {
   width: 100%;
-  text-wrap: balance;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+  white-space: normal;
 }
 
 .home-cta {
@@ -905,6 +995,8 @@ header [data-slot="navigation-menu-content"] {
 
 .home-video-frame {
   aspect-ratio: 16 / 9;
+  border: var(--site-bezel-width) solid var(--site-border);
+  border-radius: var(--site-radius-card);
 }
 
 .home-article-grid {
@@ -917,36 +1009,49 @@ header [data-slot="navigation-menu-content"] {
 
 @media (max-width: 639px) {
   .home-hero {
+    min-height: auto;
     background-position: 72% center;
   }
 
   .home-hero-overlay {
     background: linear-gradient(
       180deg,
-      rgb(56 69 47 / 0.66) 0%,
-      rgb(56 69 47 / 0.5) 50%,
-      rgb(56 69 47 / 0.7) 100%
+      rgb(56 69 47 / 0.74) 0%,
+      rgb(56 69 47 / 0.58) 50%,
+      rgb(56 69 47 / 0.8) 100%
     );
   }
 
   .home-hero-content {
-    gap: 1.5rem;
-    padding-block: 7.5rem 4rem;
+    min-height: auto;
+    gap: 1.25rem;
+    padding-block: 6.25rem 3rem;
   }
 
   .home-hero-eyebrow {
-    max-width: min(100%, 22rem);
+    max-width: 100%;
+    justify-content: center;
     padding-inline: 0.75rem;
-    font-size: 0.625rem;
-    letter-spacing: 0.14em;
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    text-wrap: pretty;
+    white-space: normal;
   }
 
   .home-hero-title {
-    max-width: 20rem;
+    max-width: 100%;
+    font-size: 1.65rem !important;
+    line-height: 1.12;
+    white-space: normal !important;
   }
 
-  .home-video-frame {
-    border-radius: 1.25rem;
+  .home-page .home-section-title {
+    font-size: 1.65rem !important;
+    white-space: normal !important;
+  }
+
+  .site-container {
+    padding-inline: 1.25rem;
   }
 }
 
@@ -958,9 +1063,9 @@ header [data-slot="navigation-menu-content"] {
   .home-hero-overlay {
     background: linear-gradient(
       180deg,
-      rgb(56 69 47 / 0.62) 0%,
-      rgb(56 69 47 / 0.44) 50%,
-      rgb(56 69 47 / 0.68) 100%
+      rgb(56 69 47 / 0.72) 0%,
+      rgb(56 69 47 / 0.54) 50%,
+      rgb(56 69 47 / 0.78) 100%
     );
   }
 }
@@ -973,5 +1078,9 @@ header [data-slot="navigation-menu-content"] {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+
+  .home-hero-video {
+    display: none !important;
   }
 }

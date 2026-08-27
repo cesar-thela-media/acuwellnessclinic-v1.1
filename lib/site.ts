@@ -53,7 +53,7 @@ export const site = {
   media: {
     logo: "/media/wp-content/uploads/2019/02/Artboard-1@sishou-cropped.png",
     logoOnDark: "/media/wp-content/uploads/2019/02/Artboard-1@sishou-cropped-white.png",
-    logoCircle: "/media/wp-content/uploads/2019/02/logo.png",
+    logoCircle: "/media/wp-content/uploads/2019/02/Artboard-1@sishou-1024x1024.png",
     hero: "/media/wp-content/uploads/2017/01/chinese-herbs.jpg",
     neuropathy: "/media/wp-content/uploads/2017/08/Foot-soak.jpg",
     privacyPdf:

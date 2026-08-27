@@ -2,8 +2,7 @@ import type { NextConfig } from "next";
 import { withSentryConfig } from "@sentry/nextjs";
 
 /**
- * Vercel: default Next output (no standalone).
- * Docker / Railway reserve: standalone for slim runtime + server.js.
+ * Railway uses standalone output for the slim Node 20 server.js runtime.
  */
 const isVercel = process.env.VERCEL === "1";
 const useStandalone =
@@ -25,48 +24,6 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "acuwellnessclinic.com" },
       { protocol: "https", hostname: "www.acuwellnessclinic.com" },
     ],
-  },
-  async redirects() {
-    return [
-      {
-        source: "/modern-research",
-        destination: "/resources/more-research",
-        permanent: true,
-      },
-      {
-        source: "/modern-research/",
-        destination: "/resources/more-research",
-        permanent: true,
-      },
-      {
-        source: "/",
-        has: [{ type: "query", key: "page_id", value: "17" }],
-        destination: "/resources/more-research",
-        permanent: true,
-      },
-      {
-        source: "/privacy-policy",
-        destination:
-          "/media/wp-content/uploads/2011/10/SSAW-Privacy-Policy-Jan-2017.pdf",
-        permanent: true,
-      },
-      {
-        source: "/privacy-policy/",
-        destination:
-          "/media/wp-content/uploads/2011/10/SSAW-Privacy-Policy-Jan-2017.pdf",
-        permanent: true,
-      },
-      {
-        source: "/packages-and-new-patient-portal",
-        destination: "/clinic-forms",
-        permanent: true,
-      },
-      {
-        source: "/packages-and-new-patient-portal/",
-        destination: "/clinic-forms",
-        permanent: true,
-      },
-    ];
   },
 };
 

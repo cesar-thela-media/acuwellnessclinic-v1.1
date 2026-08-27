@@ -74,7 +74,7 @@ const MegaMenuPanel = ({ item }: { item: NavItemWithChildren }) => {
   const columns = linkColumns(item.children);
 
   return (
-    <div className="overflow-hidden rounded-2xl bg-white shadow-[0_24px_60px_-24px_rgba(56,69,47,0.45)]">
+    <div className="overflow-hidden rounded-[14px] bg-white shadow-lg">
       <div
         className={cn(
           "grid gap-8 p-7 sm:p-8",
@@ -90,7 +90,7 @@ const MegaMenuPanel = ({ item }: { item: NavItemWithChildren }) => {
                 <NavigationMenuLink asChild>
                   <Link
                     href={child.href}
-                    className="block rounded-lg px-1 py-2.5 font-heading text-[15px] font-medium text-forest/85 transition-colors hover:bg-transparent hover:text-forest"
+                    className="block !bg-transparent px-1 py-2.5 font-heading text-[15px] font-medium text-forest/85 transition-colors hover:!bg-transparent hover:text-forest focus:!bg-transparent"
                   >
                     {child.label}
                   </Link>
@@ -103,7 +103,7 @@ const MegaMenuPanel = ({ item }: { item: NavItemWithChildren }) => {
         <NavigationMenuLink asChild>
           <Link
             href={item.href}
-            className="flex min-h-56 flex-col rounded-2xl bg-[#f3f1ec] p-5 transition-colors hover:bg-[#efece6]"
+            className="flex min-h-56 flex-col !bg-transparent p-0 transition-colors hover:!bg-transparent focus:!bg-transparent"
           >
             <span className="font-heading text-[11px] font-semibold tracking-[0.14em] text-forest/45 uppercase">
               More
@@ -111,7 +111,7 @@ const MegaMenuPanel = ({ item }: { item: NavItemWithChildren }) => {
             <span className="mt-1 font-heading text-xl font-semibold leading-snug tracking-tight text-forest">
               {item.featured.title}
             </span>
-            <div className="mt-auto aspect-[16/10] overflow-hidden rounded-xl bg-olive/15">
+            <div className="site-media mt-auto aspect-[16/10] overflow-hidden rounded-[10px] bg-olive/15">
               <img
                 src={item.featured.image}
                 alt={item.featured.alt}
@@ -196,25 +196,27 @@ const Navbar = () => {
       </nav>
       )}
 
-      <nav className="relative mx-auto grid h-16 w-full max-w-7xl min-w-0 grid-cols-[4rem_minmax(0,1fr)_auto] items-center gap-3 px-6 sm:h-[4.5rem] sm:grid-cols-[4.5rem_minmax(0,1fr)_auto] sm:px-10 lg:px-8">
-        <Link
-          href="/"
-          className="flex h-9 w-12 shrink-0 items-center sm:h-11 sm:w-14"
-        >
-          <img
-            src={overHero ? site.media.logoOnDark : site.media.logo}
-            alt={site.name}
-            width={300}
-            height={300}
-            className="block h-full w-auto max-w-[12rem] object-contain drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]"
-          />
-        </Link>
+      <nav
+        aria-label="Primary"
+        className="relative mx-auto h-14 w-full max-w-7xl min-w-0 px-4 sm:h-[4.5rem] sm:px-10 lg:px-8"
+      >
+        <div className="flex items-center justify-start">
+          <Link
+            href="/"
+            className="relative z-20 flex h-14 shrink-0 items-center"
+          >
+            <img
+              src={site.media.logo}
+              alt={site.name}
+              width={120}
+              height={140}
+              className="block !h-14 !w-auto max-h-14 object-contain object-left"
+            />
+          </Link>
+        </div>
 
-        <NavigationMenu
-          className="hidden min-w-0 max-w-none justify-center !static lg:flex"
-          viewport={false}
-        >
-          <NavigationMenuList className="flex flex-nowrap items-center justify-center gap-0.5 xl:gap-1.5">
+        <NavigationMenu className="primary-nav-links" viewport={false}>
+          <NavigationMenuList className="flex flex-nowrap items-center justify-center gap-1 xl:gap-2">
             {nav.map((item) => (
               <NavigationMenuItem key={item.label} className="static">
                 {"children" in item && item.children ? (
@@ -249,119 +251,123 @@ const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="hidden shrink-0 items-center gap-2.5 lg:flex">
+        <div className="flex items-center justify-end gap-2.5">
           <a
             href={site.booking.header}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex h-10 items-center whitespace-nowrap rounded-full bg-olive px-4 font-heading text-sm font-semibold !text-white transition-colors hover:bg-forest hover:!text-white"
+            className={cn(
+              "hidden h-10 items-center whitespace-nowrap rounded-[14px] border bg-olive px-4 font-heading text-sm font-semibold !text-white transition-colors hover:bg-forest hover:!text-white xl:inline-flex",
+              overHero ? "border-white/70" : "border-forest/20",
+            )}
           >
             Schedule An Appointment
           </a>
-        </div>
-
-        <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger asChild>
-            <button
-              className={cn(
-                "inline-flex h-10 w-10 items-center justify-center rounded-full transition-colors lg:hidden",
-                overHero ? "text-white hover:bg-white/10" : "text-forest hover:bg-forest/5",
-              )}
-              aria-label="Menu"
-            >
-              {open ? <X size={20} /> : <Menu size={20} />}
-            </button>
-          </SheetTrigger>
-          <SheetContent side="right" className="w-[min(24rem,90vw)] bg-cream">
-            <SheetHeader>
-              <SheetTitle className="font-heading text-forest">{site.name}</SheetTitle>
-            </SheetHeader>
-            <nav className="mt-6 flex flex-col gap-1">
-              {nav.map((item) =>
-                "children" in item && item.children ? (
-                  <Collapsible key={item.label}>
-                    <div className="flex items-center">
-                      <SheetClose asChild>
-                        <Link
-                          href={item.href}
-                          className="flex-1 rounded-xl px-3 py-3 font-heading text-base font-semibold text-forest transition-colors hover:bg-forest/5"
-                        >
-                          {item.label}
-                        </Link>
-                      </SheetClose>
-                      <CollapsibleTrigger
-                        asChild
-                        className="flex h-9 w-9 items-center justify-center rounded-lg text-forest/60 transition-colors hover:bg-forest/5"
-                        aria-label={`Toggle ${item.label}`}
-                      >
-                        <ChevronDown size={16} />
-                      </CollapsibleTrigger>
-                    </div>
-                    <CollapsibleContent className="ml-3 flex flex-col gap-0.5 border-l border-forest/15 pl-4">
-                      {item.children.map((child) => (
-                        <SheetClose asChild key={child.label}>
+          <Sheet open={open} onOpenChange={setOpen}>
+            <SheetTrigger asChild>
+              <button
+                className={cn(
+                  "inline-flex h-11 w-11 items-center justify-center rounded-[14px] border transition-colors xl:hidden",
+                  overHero
+                    ? "border-white/40 text-white hover:bg-white/10"
+                    : "border-forest/15 text-forest hover:bg-forest/5",
+                )}
+                aria-label="Menu"
+              >
+                {open ? <X size={20} /> : <Menu size={20} />}
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-[min(24rem,90vw)] bg-cream">
+              <SheetHeader>
+                <SheetTitle className="font-heading text-forest">{site.name}</SheetTitle>
+              </SheetHeader>
+              <nav className="mt-6 flex flex-col gap-1">
+                {nav.map((item) =>
+                  "children" in item && item.children ? (
+                    <Collapsible key={item.label}>
+                      <div className="flex items-center">
+                        <SheetClose asChild>
                           <Link
-                            href={child.href}
-                            className="rounded-lg px-3 py-2 text-sm font-medium text-forest/75 transition-colors hover:bg-forest/5 hover:text-forest"
+                            href={item.href}
+                            className="flex-1 rounded-xl px-3 py-3 font-heading text-base font-semibold text-forest transition-colors hover:bg-forest/5"
                           >
-                            {child.label}
+                            {item.label}
                           </Link>
                         </SheetClose>
-                      ))}
-                    </CollapsibleContent>
-                  </Collapsible>
-                ) : (
-                  <SheetClose asChild key={item.label}>
-                    <Link
-                      href={item.href}
-                      className="rounded-xl px-3 py-3 font-heading text-base font-semibold text-forest transition-colors hover:bg-forest/5"
+                        <CollapsibleTrigger
+                          asChild
+                          className="flex h-9 w-9 items-center justify-center rounded-lg text-forest/60 transition-colors hover:bg-forest/5"
+                          aria-label={`Toggle ${item.label}`}
+                        >
+                          <ChevronDown size={16} />
+                        </CollapsibleTrigger>
+                      </div>
+                      <CollapsibleContent className="ml-3 flex flex-col gap-0.5 border-l border-forest/15 pl-4">
+                        {item.children.map((child) => (
+                          <SheetClose asChild key={child.label}>
+                            <Link
+                              href={child.href}
+                              className="rounded-lg px-3 py-2 text-sm font-medium text-forest/75 transition-colors hover:bg-forest/5 hover:text-forest"
+                            >
+                              {child.label}
+                            </Link>
+                          </SheetClose>
+                        ))}
+                      </CollapsibleContent>
+                    </Collapsible>
+                  ) : (
+                    <SheetClose asChild key={item.label}>
+                      <Link
+                        href={item.href}
+                        className="rounded-xl px-3 py-3 font-heading text-base font-semibold text-forest transition-colors hover:bg-forest/5"
+                      >
+                        {item.label}
+                      </Link>
+                    </SheetClose>
+                  ),
+                )}
+              </nav>
+              <div className="mt-8 flex flex-col gap-4 border-t border-forest/15 pt-6">
+                <a
+                  href={`tel:${site.phoneTel}`}
+                  className="font-heading text-base font-semibold text-forest"
+                >
+                  {site.phoneDisplay}
+                </a>
+                <div className="flex items-center gap-5">
+                  <SheetClose asChild>
+                    <a
+                      href={site.social.facebook}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-medium text-forest/75 hover:text-forest"
                     >
-                      {item.label}
-                    </Link>
+                      Facebook
+                    </a>
                   </SheetClose>
-                ),
-              )}
-            </nav>
-            <div className="mt-8 flex flex-col gap-4 border-t border-forest/15 pt-6">
-              <a
-                href={`tel:${site.phoneTel}`}
-                className="font-heading text-base font-semibold text-forest"
-              >
-                {site.phoneDisplay}
-              </a>
-              <div className="flex items-center gap-5">
-                <SheetClose asChild>
-                  <a
-                    href={site.social.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-medium text-forest/75 hover:text-forest"
-                  >
-                    Facebook
-                  </a>
-                </SheetClose>
-                <SheetClose asChild>
-                  <a
-                    href={site.social.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sm font-medium text-forest/75 hover:text-forest"
-                  >
-                    Instagram
-                  </a>
-                </SheetClose>
+                  <SheetClose asChild>
+                    <a
+                      href={site.social.instagram}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-medium text-forest/75 hover:text-forest"
+                    >
+                      Instagram
+                    </a>
+                  </SheetClose>
+                </div>
+                <a
+                  href={site.booking.header}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex h-11 items-center justify-center rounded-[14px] border border-forest/20 bg-olive px-6 font-heading text-sm font-semibold !text-white transition-colors hover:bg-forest hover:!text-white"
+                >
+                  Schedule An Appointment
+                </a>
               </div>
-              <a
-                href={site.booking.header}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex h-11 items-center justify-center rounded-full bg-olive px-6 font-heading text-sm font-semibold !text-white transition-colors hover:bg-forest hover:!text-white"
-              >
-                Schedule An Appointment
-              </a>
-            </div>
-          </SheetContent>
-        </Sheet>
+            </SheetContent>
+          </Sheet>
+        </div>
       </nav>
     </header>
   );

@@ -1,5 +1,6 @@
 import { CampaignArticle } from "@/components/site/campaign-article";
 import { CampaignBlog } from "@/components/site/campaign-blog";
+import { ConditionArticle } from "@/components/site/condition-article";
 import { getAllDocs, getDoc } from "@/lib/content";
 import { isArchivePath } from "@/lib/campaign";
 import { JsonLd, pageMetadata } from "@/lib/seo";
@@ -19,6 +20,23 @@ const DESIGNED = new Set([
   "/what-is-acupuncture/what-we-treat",
   "/what-is-acupuncture/first-visit",
   "/what-is-acupuncture/q-a",
+  "/resources",
+  "/resources/facial-rejuvenation",
+  "/resources/more-research",
+  "/resources/one-pagers",
+  "/resources/videos",
+  "/resources/smoking-cessation",
+  "/chinese-herbal-medicine",
+  "/schedule",
+  "/what-is-cupping-therapy",
+  "/what-is-electro-acupuncture",
+  "/what-is-guasha",
+  "/what-is-moxabustion",
+  "/what-is-nutritional-therapy",
+  "/what-is-taichi-and-qigong",
+  "/what-is-tuina",
+  "/cancellations-late-arrivals",
+  "/health-well-news",
 ]);
 
 export function generateStaticParams() {
@@ -61,6 +79,13 @@ export default async function CatchAllPage({ params }: Props) {
       <JsonLd canonicalPath={doc.canonicalPath} metaTitle={doc.metaTitle} metaDescription={doc.metaDescription} />
       {isArchivePath(doc.path, doc.html) ? (
         <CampaignBlog title={doc.title} html={doc.html} path={doc.path} />
+      ) : doc.path.startsWith("/apw_wwt/") ? (
+        <ConditionArticle
+          title={doc.title}
+          html={doc.html}
+          path={doc.path}
+          image={doc.image || undefined}
+        />
       ) : (
         <CampaignArticle title={doc.title} html={doc.html} path={doc.path} />
       )}

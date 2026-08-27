@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Manrope } from "next/font/google";
 import { Footer } from "@/components/site/footer";
 import { GsapRoot } from "@/components/site/gsap-root";
@@ -21,6 +21,12 @@ const display = Fraunces({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
@@ -29,7 +35,7 @@ export const metadata: Metadata = {
   },
   description: site.tagline,
   robots: { index: true, follow: true },
-  icons: { icon: "/icon.png" },
+  icons: { icon: site.media.logoCircle },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

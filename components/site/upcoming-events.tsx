@@ -1,5 +1,5 @@
 import { CalendarDays } from "lucide-react";
-import { PageHero } from "@/components/site/page-primitives";
+import { PageTitle } from "@/components/site/page-primitives";
 import { site } from "@/lib/site";
 
 const CALENDAR_SRC =
@@ -8,36 +8,37 @@ const CALENDAR_SRC =
 export default function UpcomingEvents() {
   return (
     <div className="w-full bg-white">
-      <PageHero
-        title="Upcoming Events"
-        image="/media/wp-content/uploads/2018/06/summer-meditation.jpg"
-      />
-
       <section className="bg-white">
-        <div className="site-container site-section grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(16rem,18rem)] lg:gap-14">
-          <div className="overflow-hidden rounded-3xl bg-olive/10">
-            <iframe
-              title="Si Shou upcoming events calendar"
-              src={CALENDAR_SRC}
-              width="800"
-              height="600"
-              loading="lazy"
-              className="block h-[min(70vh,600px)] min-h-[30rem] w-full border-0"
-            />
-          </div>
-          <aside className="flex flex-col items-start gap-6">
-            <img
-              src={site.media.logo}
-              alt="Si Shou Acupuncture and Wellness"
-              width={300}
-              height={300}
-              className="h-40 w-40 object-contain"
-            />
-            <div className="flex items-center gap-2 font-heading text-xs font-semibold uppercase tracking-[0.16em] text-olive">
+        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
+          <div className="flex flex-col items-center gap-3 text-center">
+            <PageTitle>Upcoming Events</PageTitle>
+            <div className="inline-flex items-center gap-2 font-heading text-xs font-semibold uppercase tracking-[0.16em] text-olive">
               <CalendarDays size={16} aria-hidden="true" />
               <span>Upcoming Events</span>
             </div>
-          </aside>
+          </div>
+
+          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1fr)_12.5rem] lg:gap-12">
+            <div className="site-media overflow-hidden">
+              <iframe
+                title="Si Shou upcoming events calendar"
+                src={CALENDAR_SRC}
+                width="800"
+                height="600"
+                loading="lazy"
+                className="block h-[min(70vh,600px)] min-h-[30rem] w-full border-0"
+              />
+            </div>
+            <aside className="flex flex-col items-center gap-4 lg:items-start">
+              <img
+                src={site.media.logo}
+                alt="Si Shou Acupuncture and Wellness"
+                width={2362}
+                height={2362}
+                className="h-auto w-[12.5rem] max-w-full object-contain"
+              />
+            </aside>
+          </div>
         </div>
       </section>
     </div>

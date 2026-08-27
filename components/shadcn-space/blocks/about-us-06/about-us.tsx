@@ -26,94 +26,82 @@ const COLS = ["Guardian", "Direction", "Season", "Color", "5 Element"] as const;
 const AboutUs06 = () => {
   return (
     <div className="w-full bg-white">
-      <section className="relative isolate overflow-hidden bg-forest">
-        <img
-          src="/media/wp-content/uploads/2018/09/reishi-mushroom-tcm.jpg"
-          alt=""
-          className="absolute inset-0 !h-full w-full object-cover object-center"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-r from-forest/90 via-forest/72 to-forest/55"
-        />
-        <div className="site-container relative flex min-h-[22rem] flex-col justify-end gap-4 py-14 md:min-h-[26rem] md:py-16">
-          <PageTitle className="text-white">About Us</PageTitle>
-          <p className="max-w-2xl text-lg leading-snug text-white/90 md:text-xl !m-0">
-            <em>
-              <strong>{QUESTION}</strong>
-            </em>
-          </p>
-        </div>
-      </section>
-
       <section className="bg-white">
-        <div className="site-container site-section grid grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
-          <div className="flex min-w-0 flex-col gap-6">
-            <p className="site-body-copy text-body whitespace-pre-wrap !m-0">{P1}</p>
-            <p className="site-body-copy text-body !m-0">{P2}</p>
-          </div>
-          <div className="overflow-hidden rounded-3xl bg-olive/10">
-            <img
-              src="/media/wp-content/uploads/2017/09/pexels-photo-157310.jpeg"
-              alt="Colorful acupuncture meridian illustration"
-              className="aspect-[4/3] !h-full w-full object-cover"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-cream">
         <div className="site-container site-section flex flex-col gap-10 md:gap-12">
-          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,12rem)_1fr] lg:gap-12">
-            <img
-              src="/media/wp-content/uploads/2019/02/Artboard-1@sishou.png"
-              alt="Sì Shòu emblem"
-              width={300}
-              height={300}
-              className="mx-auto h-28 w-auto object-contain lg:h-32"
-            />
-            <div className="flex min-w-0 flex-col gap-5">
-              <h2 className="site-heading-2 text-forest">
-                <em>
-                  <strong>{GUARDIANS_HEADING}</strong>
-                </em>
-              </h2>
-              <p className="site-body-copy text-body !m-0">{P3}</p>
+          <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
+            <PageTitle>About Us</PageTitle>
+            <p className="text-lg leading-snug text-forest md:text-xl !m-0">
+              <strong>{QUESTION}</strong>
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
+            <div className="flex min-w-0 flex-col gap-6 lg:py-2">
+              <p className="site-body-copy text-body whitespace-pre-wrap !m-0">{P1}</p>
+              <p className="site-body-copy text-body !m-0">{P2}</p>
+            </div>
+            <div className="site-media w-full">
+              <img
+                src="/media/wp-content/uploads/2017/09/pexels-photo-157310.jpeg"
+                alt="Colorful acupuncture meridian illustration"
+                width={1280}
+                height={720}
+                className="aspect-[4/3] w-full object-cover object-center"
+              />
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-            {GUARDIANS.map((row) => (
-              <article key={row.guardian} className="site-card flex flex-col gap-4 p-6 md:p-7">
-                <div>
+          <article className="site-card flex flex-col gap-8 p-6 md:gap-10 md:p-8">
+            <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[12.5rem_1fr] lg:gap-12">
+              <img
+                src="/media/wp-content/uploads/2019/02/Artboard-1@sishou.png"
+                alt="Sì Shòu emblem"
+                width={2362}
+                height={2362}
+                className="mx-auto block h-auto w-[12.5rem] max-w-full"
+              />
+              <div className="flex min-w-0 flex-col gap-5">
+                <h2 className="site-heading-2 text-forest">
+                  <strong>{GUARDIANS_HEADING}</strong>
+                </h2>
+                <p className="site-body-copy text-body !m-0">{P3}</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+              {GUARDIANS.map((row) => (
+                <div
+                  key={row.guardian}
+                  className="rounded-[14px] border border-forest/10 bg-cream/50 p-5 md:p-6"
+                >
                   <p className="font-heading text-[11px] font-semibold tracking-[0.14em] text-olive uppercase !m-0">
                     {COLS[0]}
                   </p>
                   <h3 className="mt-1 font-heading text-xl font-semibold tracking-tight text-forest !m-0">
                     {row.guardian}
                   </h3>
+                  <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
+                    <div>
+                      <dt className="font-heading font-semibold text-forest/70">{COLS[1]}</dt>
+                      <dd className="mt-0.5 text-body">{row.direction}</dd>
+                    </div>
+                    <div>
+                      <dt className="font-heading font-semibold text-forest/70">{COLS[2]}</dt>
+                      <dd className="mt-0.5 text-body">{row.season}</dd>
+                    </div>
+                    <div>
+                      <dt className="font-heading font-semibold text-forest/70">{COLS[3]}</dt>
+                      <dd className="mt-0.5 text-body">{row.color}</dd>
+                    </div>
+                    <div>
+                      <dt className="font-heading font-semibold text-forest/70">{COLS[4]}</dt>
+                      <dd className="mt-0.5 text-body">{row.element}</dd>
+                    </div>
+                  </dl>
                 </div>
-                <dl className="grid grid-cols-2 gap-x-4 gap-y-3 text-sm">
-                  <div>
-                    <dt className="font-heading font-semibold text-forest/70">{COLS[1]}</dt>
-                    <dd className="mt-0.5 text-body">{row.direction}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-heading font-semibold text-forest/70">{COLS[2]}</dt>
-                    <dd className="mt-0.5 text-body">{row.season}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-heading font-semibold text-forest/70">{COLS[3]}</dt>
-                    <dd className="mt-0.5 text-body">{row.color}</dd>
-                  </div>
-                  <div>
-                    <dt className="font-heading font-semibold text-forest/70">{COLS[4]}</dt>
-                    <dd className="mt-0.5 text-body">{row.element}</dd>
-                  </div>
-                </dl>
-              </article>
-            ))}
-          </div>
+              ))}
+            </div>
+          </article>
         </div>
       </section>
     </div>

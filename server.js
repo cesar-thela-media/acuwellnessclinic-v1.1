@@ -8,6 +8,16 @@ const { createServer } = require("http");
 const { parse } = require("url");
 const next = require("next");
 
+const LEGACY_REDIRECTS = new Map([
+  ["/modern-research", "/resources/more-research/"],
+  ["/privacy-policy", "/media/wp-content/uploads/2011/10/SSAW-Privacy-Policy-Jan-2017.pdf"],
+  ["/packages-and-new-patient-portal", "/clinic-forms/"],
+  [
+    "/schedule",
+    "https://www.optimantra.com/optimus/patient/patientaccess/servicesall?pid=WWUvSUxvR2NwdzlOYTBOUjdpdFR1dz09&lid=WkxqU1Z6MlROZDIxbTlndjBRVUNYUT09",
+  ],
+]);
+
 const dev = process.env.NODE_ENV !== "production";
 const hostname = process.env.HOSTNAME || "0.0.0.0";
 const port = parseInt(process.env.PORT || "3000", 10);
@@ -22,6 +32,18 @@ app
       try {
         const parsedUrl = parse(req.url || "/", true);
         const pathname = (parsedUrl.pathname || "").replace(/\/$/, "") || "/";
+        const legacyDestination =
+          pathname === "/" && parsedUrl.query.page_id === "17"
+            ? "/resources/more-research/"
+            : LEGACY_REDIRECTS.get(pathname);
+        if (legacyDestination) {
+          res.writeHead(301, {
+            location: legacyDestination,
+            "cache-control": "public, max-age=31536000, immutable",
+          });
+          res.end();
+          return;
+        }
         if (pathname === "/api/health") {
           res.writeHead(200, {
             "content-type": "application/json; charset=utf-8",

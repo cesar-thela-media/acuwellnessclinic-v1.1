@@ -19,7 +19,43 @@ export type ContentDoc = {
   schemaTypes: string[];
 };
 
-const docs = all as ContentDoc[];
+export function replaceLegacyProviderNames(value: string) {
+  const urls: string[] = [];
+  let out = value.replace(
+    /https?:\/\/[^\s"'<>]+|\/(?:media\/)?wp-content\/[^\s"'<>]+/g,
+    (url) => {
+      urls.push(url);
+      return `__CONTENT_URL_${urls.length - 1}__`;
+    },
+  );
+  out = out
+    .replace(/Dr\.?\s*Stefanie Dwyer/gi, "Kate Gannon")
+    .replace(/Stefanie Dwyer/gi, "Kate Gannon")
+    .replace(/Dr\.?\s*Stefanie's/gi, "Kate's")
+    .replace(/Dr\.?\s*Stefanie/gi, "Kate")
+    .replace(/Stefanie's/gi, "Kate's")
+    .replace(/\bStef's\b/gi, "Kate's")
+    .replace(/\bStefanie\b/gi, "Kate")
+    .replace(/\bStef\b/gi, "Kate");
+  return out.replace(/__CONTENT_URL_(\d+)__/g, (_, index) => urls[Number(index)]);
+}
+
+const docs = (all as ContentDoc[]).map((doc) => {
+  const replaceOwnerCopy = (value: string) =>
+    replaceLegacyProviderNames(value).replace(
+      /Schedule Appointment with Becky/gi,
+      "Schedule Appointment with Aaron",
+    );
+
+  return {
+    ...doc,
+    title: replaceOwnerCopy(doc.title),
+    metaTitle: replaceOwnerCopy(doc.metaTitle),
+    metaDescription: replaceOwnerCopy(doc.metaDescription),
+    excerpt: replaceOwnerCopy(doc.excerpt),
+    html: replaceOwnerCopy(doc.html),
+  };
+});
 
 function pathKeys(path: string): string[] {
   const keys = new Set<string>([path]);

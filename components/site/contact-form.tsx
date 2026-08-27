@@ -54,26 +54,26 @@ export function ContactForm() {
           <Label htmlFor="firstName" className="text-sm font-medium text-charcoal">
             First Name
           </Label>
-          <Input id="firstName" name="firstName" required className="h-11 rounded-lg" />
+          <Input id="firstName" name="firstName" required className="h-11 rounded-[14px] border border-forest/20" />
         </div>
         <div className="flex flex-col gap-2">
           <Label htmlFor="lastName" className="text-sm font-medium text-charcoal">
             Last Name
           </Label>
-          <Input id="lastName" name="lastName" required className="h-11 rounded-lg" />
+          <Input id="lastName" name="lastName" required className="h-11 rounded-[14px] border border-forest/20" />
         </div>
       </div>
       <div className="flex flex-col gap-2">
         <Label htmlFor="email" className="text-sm font-medium text-charcoal">
           Email
         </Label>
-        <Input id="email" name="email" type="email" required className="h-11 rounded-lg" />
+        <Input id="email" name="email" type="email" required className="h-11 rounded-[14px] border border-forest/20" />
       </div>
       <div className="flex flex-col gap-2">
         <Label htmlFor="phone" className="text-sm font-medium text-charcoal">
           Phone/Mobile
         </Label>
-        <Input id="phone" name="phone" type="tel" required className="h-11 rounded-lg" />
+        <Input id="phone" name="phone" type="tel" required className="h-11 rounded-[14px] border border-forest/20" />
       </div>
       <div className="flex flex-col gap-2">
         <Label htmlFor="subject" className="text-sm font-medium text-charcoal">
@@ -84,7 +84,7 @@ export function ContactForm() {
           name="subject"
           required
           defaultValue=""
-          className="h-11 rounded-lg border border-input bg-transparent px-3 text-sm text-charcoal"
+          className="h-11 rounded-[14px] border border-forest/20 bg-transparent px-3 text-sm text-charcoal"
         >
           <option value="" disabled>
             - Select -
@@ -100,12 +100,12 @@ export function ContactForm() {
         <Label htmlFor="message" className="text-sm font-medium text-charcoal">
           Your Message
         </Label>
-        <Textarea id="message" name="message" required rows={6} className="rounded-lg" />
+        <Textarea id="message" name="message" required rows={6} className="rounded-[14px] border border-forest/20" />
       </div>
       <Button
         type="submit"
         disabled={status === "sending"}
-        className="h-11 w-fit rounded-lg bg-olive font-medium text-white hover:bg-olive/90"
+        className="h-11 w-fit rounded-[14px] border border-forest/20 bg-olive font-medium text-white hover:bg-forest"
       >
         Submit Form
       </Button>

@@ -1,18 +1,42 @@
 import { site } from "@/lib/site";
 import type { ContentDoc } from "@/lib/content";
 
+function cleanText(value: string) {
+  return value
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'")
+    .replace(/&hellip;/g, "…")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function descriptionFor(doc: ContentDoc) {
+  return doc.metaDescription || cleanText(doc.excerpt) || site.tagline;
+}
+
+function localImage(value: string) {
+  return value.replace(
+    /^https?:\/\/(?:www\.)?acuwellnessclinic\.com\/wp-content\//i,
+    "/media/wp-content/",
+  );
+}
+
 export function pageMetadata(doc: ContentDoc) {
   const path = doc.canonicalPath === "/" ? "/" : `${doc.canonicalPath}/`;
   const url = `${site.url}${path === "/" ? "/" : path}`;
-  const image = doc.image || site.media.logo;
+  const image = localImage(doc.image || site.media.logo);
+  const description = descriptionFor(doc);
   return {
     title: { absolute: doc.metaTitle || site.titleHome },
-    description: doc.metaDescription || undefined,
+    description,
     alternates: { canonical: url },
     robots: { index: true, follow: true },
     openGraph: {
       title: doc.metaTitle || site.titleHome,
-      description: doc.metaDescription || site.tagline,
+      description,
       url,
       siteName: site.name,
       locale: "en_US",
@@ -33,6 +57,7 @@ export function JsonLd({
 }) {
   const path = canonicalPath === "/" ? "/" : `${canonicalPath}/`;
   const url = `${site.url}${path === "/" ? "/" : path}`;
+  const description = cleanText(metaDescription) || site.tagline;
   const crumbs = [{ name: "Home", item: `${site.url}/` }];
   if (canonicalPath !== "/") {
     const parts = canonicalPath.split("/").filter(Boolean);
@@ -49,7 +74,7 @@ export function JsonLd({
       "@id": `${url}#webpage`,
       url,
       name: metaTitle,
-      description: metaDescription,
+      description,
       isPartOf: { "@id": `${site.url}/#website` },
       inLanguage: site.inLanguage,
       breadcrumb: { "@id": `${url}#breadcrumb` },
@@ -78,7 +103,7 @@ export function JsonLd({
       name: site.legalName,
       url: `${site.url}/`,
       telephone: site.phoneDisplay,
-      image: site.media.logo,
+      image: `${site.url}${site.media.logo}`,
       address: {
         "@type": "PostalAddress",
         streetAddress: site.address.street,

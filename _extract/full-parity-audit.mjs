@@ -54,6 +54,19 @@ const DESIGNED = new Set([
   "/what-is-acupuncture/q-a",
 ]);
 
+const LEGACY_REDIRECT_PATHS = new Set([
+  "/modern-research",
+  "/packages-and-new-patient-portal",
+  "/privacy-policy",
+  "/schedule",
+]);
+
+const SHARED_CHROME_COPY = new Set([
+  "Visit our Facebook",
+  "Visit our Instagram",
+  "Schedule An Appointment",
+]);
+
 const stefPatterns = [
   [/Dr\.?\s*Stefanie Dwyer/gi, "Kate Gannon"],
   [/Stefanie Dwyer/g, "Kate Gannon"],
@@ -100,6 +113,9 @@ function decode(s) {
     .replace(/&amp;/g, "&")
     .replace(/&#038;/g, "&")
     .replace(/&nbsp;/g, " ")
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&#039;/g, "'")
     .replace(/&#8217;/g, "'")
     .replace(/&#8216;/g, "'")
     .replace(/&#8220;/g, '"')
@@ -109,6 +125,7 @@ function decode(s) {
     .replace(/&raquo;/g, "»")
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
+    .replace(/&hellip;/g, "…")
     .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
     .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCharCode(parseInt(n, 16)));
 }
@@ -124,6 +141,10 @@ function toPath(url) {
   } catch {
     return null;
   }
+}
+
+function normalizeRoute(route) {
+  return route.replace(/%ef%bb%bf/gi, "").replace(/\uFEFF/g, "");
 }
 
 function locsFromXml(xml) {
@@ -212,12 +233,28 @@ function visibleText(html) {
   return text;
 }
 
-function sentences(text) {
-  return text
-    .split(/(?<=[.!?])\s+(?=[A-Z“"'])|(?<=:)\s+(?=[A-Z])/)
-    .map((s) => s.trim())
-    .filter((s) => s.length >= 32)
-    .filter((s) => !IGNORE_PHRASE.some((re) => re.test(s)));
+function visibleBlocks(html) {
+  let body = extractBody(html);
+  body = body
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<noscript[\s\S]*?<\/noscript>/gi, " ");
+  const blocks = [];
+  for (const match of body.matchAll(
+    /<(h[1-6]|p|li|td|th|blockquote|figcaption|button|a)\b[^>]*>([\s\S]*?)<\/\1>/gi,
+  )) {
+    const text = decode(
+      applyStef(match[2].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()),
+    );
+    if (
+      text.length >= 20 &&
+      !SHARED_CHROME_COPY.has(text) &&
+      !IGNORE_PHRASE.some((re) => re.test(text))
+    ) {
+      blocks.push(text);
+    }
+  }
+  return [...new Set(blocks)];
 }
 
 function headings(html) {
@@ -236,7 +273,7 @@ function ctas(html) {
   for (const m of body.matchAll(/<(?:a|button)[^>]*>([\s\S]*?)<\/(?:a|button)>/gi)) {
     const t = decode(applyStef(m[1].replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()));
     if (/schedule|book|portal|consultation|submit|click here|download|learn more|read more|contact/i.test(t) && t.length < 90) {
-      labels.push(t);
+      if (!SHARED_CHROME_COPY.has(t)) labels.push(t);
     }
   }
   return [...new Set(labels)];
@@ -265,6 +302,7 @@ async function pool(items, n, fn) {
 }
 
 function classifyPath(p) {
+  if (LEGACY_REDIRECT_PATHS.has(p)) return "redirect";
   if (DESIGNED.has(p) || UI_PATHS.includes(p)) return "ui";
   if (p.startsWith("/apw_")) return "cpt";
   if (p.startsWith("/category/")) return "category";
@@ -274,7 +312,7 @@ function classifyPath(p) {
 }
 
 const docs = JSON.parse(fs.readFileSync(path.join(ROOT, "content/all.json"), "utf8"));
-const localKnown = new Set(docs.map((d) => d.path));
+const localKnown = new Set(docs.map((d) => normalizeRoute(d.path)));
 
 console.log("fetching live sitemaps…");
 const indexXml = (await fetchText(`${LIVE}/sitemap_index.xml`)).html;
@@ -332,7 +370,9 @@ console.log({
 
 const missingOnLocalSitemap = [...liveSitemapPaths].filter((p) => !localSitemapPaths.has(p) && !localKnown.has(p));
 const extraOnLocalSitemap = [...localSitemapPaths].filter((p) => !liveSitemapPaths.has(p));
-const missingOnLocalContent = [...liveSitemapPaths].filter((p) => !localKnown.has(p));
+const missingOnLocalContent = [...liveSitemapPaths].filter(
+  (p) => !localKnown.has(normalizeRoute(p)) && !LEGACY_REDIRECT_PATHS.has(normalizeRoute(p)),
+);
 
 const results = await pool(paths, 5, async (route) => {
   const liveUrl = route === "/" ? `${LIVE}/` : `${LIVE}${route}/`;
@@ -351,10 +391,13 @@ const results = await pool(paths, 5, async (route) => {
 
   const liveText = visibleText(live.html || "");
   const localText = visibleText(local.html || "");
-  const liveSent = sentences(liveText);
-  const missingSentences = liveSent.filter((s) => !fuzzyHas(localText, s)).slice(0, 12);
-  const extraSentences = sentences(localText)
-    .filter((s) => !fuzzyHas(liveText, s) && !/kate gannon|tx acu license/i.test(s))
+  const liveBlocks = visibleBlocks(live.html || "");
+  const localBlocks = visibleBlocks(local.html || "");
+  const missingSentences = liveBlocks
+    .filter((block) => !fuzzyHas(localText, block))
+    .slice(0, 12);
+  const extraSentences = localBlocks
+    .filter((block) => !fuzzyHas(liveText, block) && !/kate gannon|tx acu license/i.test(block))
     .slice(0, 8);
 
   const liveHeads = headings(live.html || "");
@@ -367,6 +410,7 @@ const results = await pool(paths, 5, async (route) => {
 
   const kind = classifyPath(route);
   const ok =
+    kind === "redirect" ||
     (live.status === 200 && local.status === 200 && missingSentences.length === 0 && missingHeadings.length === 0 && missingCtas.length === 0) ||
     (live.status >= 300 && live.status < 400);
 
@@ -378,6 +422,8 @@ const results = await pool(paths, 5, async (route) => {
     localStatus: local.status,
     liveLen: liveText.length,
     localLen: localText.length,
+    liveBlockCount: liveBlocks.length,
+    localBlockCount: localBlocks.length,
     missingSentences,
     extraSentences: kind === "ui" ? extraSentences : extraSentences.slice(0, 3),
     missingHeadings,

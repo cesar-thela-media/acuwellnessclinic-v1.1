@@ -3,74 +3,100 @@
     "route": "/",
     "liveStatus": 200,
     "localStatus": 200,
-    "missingSentences": [],
+    "missingSentences": [
+      "DO THE THINGS THAT MAKE YOU HAPPY ACUPUNCTURE IN SOUTH AUSTIN (OAK HILL), TX Are you ready to feel better?",
+      "Whether you're dealing with a significant health issue, not feeling your best, or want to feel even better, we can help.",
+      "Schedule My Consultation \"Health is the greatest gift, contentment the greatest wealth, faithfulness the best relationship.\"  ~Buddha RECENT ARTICLES June 2, 2022 Eye Disorders There are hundreds of different eye diseases that lead to vision loss."
+    ],
     "missingImages": [],
     "missingCtas": [],
     "missingFields": [
+      "First Name",
+      "Last Name",
+      "Email address:",
       "Leave this field empty if you're human:"
     ],
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 15,
-    "localSentenceCount": 20
+    "localSentenceCount": 16
   },
   {
     "route": "/about-us",
     "liveStatus": 200,
     "localStatus": 200,
-    "missingSentences": [],
+    "missingSentences": [
+      "Guardian Direction Season Color 5 Element Tortoise North Winter Black Water White Tiger West Fall White Metal Red Bird/ Phoenix South Summer Red Fire Dragon East Spring Blue/Green Wood <section"
+    ],
     "missingImages": [],
     "missingCtas": [],
     "missingFields": [],
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 9,
-    "localSentenceCount": 14
+    "localSentenceCount": 9
   },
   {
     "route": "/our-team",
     "liveStatus": 200,
     "localStatus": 200,
-    "missingSentences": [],
+    "missingSentences": [
+      "Our Team Kate Gannon Schedule Appointment With Kate Like many, Kate came to acupuncture after a host of health issues her allopathic doctors could not resolve.",
+      "TX Acu License# AC02276 Megan McFarland, L.Ac., M.Ac.",
+      "O.M. (NCCAOM)® Schedule Appointment With Megan Hi, I'm Megan McFarland, LAc., M.Ac.",
+      "OM (NCCAOM) Schedule Appointment With Aaron My name is Aaron Occhino."
+    ],
     "missingImages": [],
     "missingCtas": [],
     "missingFields": [],
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 35,
-    "localSentenceCount": 41
+    "localSentenceCount": 36
   },
   {
     "route": "/testimonials",
     "liveStatus": 200,
     "localStatus": 200,
-    "missingSentences": [],
+    "missingSentences": [
+      "\"This was the best massage I've ever had.",
+      "I've never met anyone this knowledgeable!!",
+      "You're amazing.\" - CJ Improved quality of life Gary was diagnosed with Parkinson’s Disease 14 years ago.",
+      "She's very intuitive and knowledgeable about the human body.",
+      "She's very organized, reliable, and just a genuinely caring person!",
+      "The clinic itself is very clean, spacious, and they've created a very warm and comfortable environment. -Alexa C, Austin TX Acupuncture for equestrians As a competitive equestrian, it is vital that my body is in prime condition.",
+      "For years, I had an uncomfortable—and often painful—tightness in my leg that negatively impacted my riding ability.",
+      "I'm already looking forward to my appointment next week!"
+    ],
     "missingImages": [],
     "missingCtas": [],
     "missingFields": [],
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 78,
-    "localSentenceCount": 84
+    "localSentenceCount": 78
   },
   {
     "route": "/clinic-forms",
     "liveStatus": 200,
     "localStatus": 200,
-    "missingSentences": [],
+    "missingSentences": [
+      "Clinic Forms Kate's and Aaron's New Patients: Each patient has access to their own patient portal."
+    ],
     "missingImages": [],
     "missingCtas": [],
     "missingFields": [],
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 4,
-    "localSentenceCount": 10
+    "localSentenceCount": 5
   },
   {
     "route": "/contact",
     "liveStatus": 200,
     "localStatus": 200,
     "missingSentences": [
+      "Contact Schedule Appointment With Kate Schedule Appointment With Aaron If you prefer to send us a message, please complete the form below and we will get back to you within 24 hours.",
       "Contact Form Demo First Name Last Name Email Phone/Mobile Subject - Select - General Appointment Request Testimonial Submission Question Comment Your Message Submit Form Disclaimer: Please refrain from submitting any individually identifiable health information through this form."
     ],
     "missingImages": [],
@@ -79,7 +105,7 @@
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 5,
-    "localSentenceCount": 10
+    "localSentenceCount": 5
   },
   {
     "route": "/contact/map-directions",
@@ -92,39 +118,50 @@
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 0,
-    "localSentenceCount": 6
+    "localSentenceCount": 1
   },
   {
     "route": "/what-is-acupuncture",
     "liveStatus": 200,
     "localStatus": 200,
-    "missingSentences": [],
+    "missingSentences": [
+      "Chinese medicine looks for the relationships between the patient's signs and symptoms and treats the body in a holistic fashion.",
+      "Qi (pronounced \"chee\") is the energy, or life force, involved in every aspect of the body.",
+      "For the most part, it is common knowledge that our body's function off of energy being transmitted.",
+      "A person's health is influenced by the quality, quantity and balance of Qi.",
+      "A change or blockage in the flow of Qi can be detrimental to a person's health, limiting vital nourishment to the body, organs and glands.",
+      "Blockage of the flow of Qi can be detrimental to a person's health and leads to various signs and symptoms or health concerns."
+    ],
     "missingImages": [],
     "missingCtas": [],
     "missingFields": [],
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 34,
-    "localSentenceCount": 39
+    "localSentenceCount": 35
   },
   {
     "route": "/what-is-acupuncture/first-visit",
     "liveStatus": 200,
     "localStatus": 200,
-    "missingSentences": [],
+    "missingSentences": [
+      "First Visit \"A journey of a thousand miles begins with a single step.\" – Lao-tzu Initial visits generally last from 30 to 90 minutes.",
+      "Unfortunately there is no magic point to \"fix it\" though we all wish for a magic weight loss point. 🙂 In order for you to get the results you want, it will be important for you to take a role in your health as well."
+    ],
     "missingImages": [],
     "missingCtas": [],
     "missingFields": [],
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 22,
-    "localSentenceCount": 27
+    "localSentenceCount": 23
   },
   {
     "route": "/treatment-modalities",
     "liveStatus": 200,
     "localStatus": 200,
     "missingSentences": [
+      "Modality Description Acupuncture Click here for details about Acupuncture.",
       "Tuina (Asian Bodywork) Click here for details about Tuina. <section"
     ],
     "missingImages": [],
@@ -133,7 +170,7 @@
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 15,
-    "localSentenceCount": 20
+    "localSentenceCount": 16
   },
   {
     "route": "/cancellations-late-arrivals",
@@ -146,7 +183,7 @@
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 15,
-    "localSentenceCount": 20
+    "localSentenceCount": 16
   },
   {
     "route": "/does-acupuncture-hurt",
@@ -159,7 +196,7 @@
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 11,
-    "localSentenceCount": 16
+    "localSentenceCount": 12
   },
   {
     "route": "/apw_wwt/pain",
@@ -172,19 +209,23 @@
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 27,
-    "localSentenceCount": 32
+    "localSentenceCount": 27
   },
   {
     "route": "/apw_qa/does-it-hurt",
     "liveStatus": 200,
     "localStatus": 200,
-    "missingSentences": [],
+    "missingSentences": [
+      "I am not going to lie to you...We are putting a very fine needle through your skin and frankly our X-Ray vision is terrible.",
+      "It should be very comfortable once the needles are in place.",
+      "If it is not, simply let us know so we can modify the positioning of the needles. <section"
+    ],
     "missingImages": [],
     "missingCtas": [],
     "missingFields": [],
     "missingDisclaimer": false,
     "missingSubmit": false,
     "liveSentenceCount": 3,
-    "localSentenceCount": 8
+    "localSentenceCount": 1
   }
 ]

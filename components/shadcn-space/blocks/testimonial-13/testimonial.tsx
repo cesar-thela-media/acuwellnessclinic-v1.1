@@ -1,6 +1,5 @@
 import { PageTitle } from "@/components/site/page-primitives";
 import { site } from "@/lib/site";
-import { cn } from "@/lib/utils";
 
 const testimonials = [
   {
@@ -91,118 +90,46 @@ const testimonials = [
   },
 ] as const;
 
-const photos: Record<(typeof testimonials)[number]["title"], { src: string; alt: string }> = {
-  "Best Massage Ever!": {
-    src: "/media/wp-content/uploads/2017/07/yoga-1284657_640.jpg",
-    alt: "Yoga practice suggesting restored movement",
-  },
-  "Improved quality of life": {
-    src: "/media/wp-content/uploads/2017/02/older_couple_032017.jpg",
-    alt: "Couple walking together outdoors",
-  },
-  "Threw my back out!": {
-    src: "/media/wp-content/uploads/2017/11/PPL_018.jpg",
-    alt: "Treatment table prepared for bodywork",
-  },
-  "Avoided Surgery!": {
-    src: "/media/wp-content/uploads/2018/05/runners-635906_1920.jpg",
-    alt: "Runners on an outdoor path",
-  },
-  "Colleen is wonderful!": {
-    src: "/media/wp-content/uploads/2018/05/wall-2794567_1280.jpg",
-    alt: "Calm textured wall in a treatment space",
-  },
-  "Acupuncture for equestrians": {
-    src: "/media/wp-content/uploads/2016/12/RUNNING.jpg",
-    alt: "Runner on a wooded path",
-  },
-  "Mei Zen Cosmetic Acupuncture System": {
-    src: "/media/wp-content/uploads/2018/06/healthy-skin-acupuncture.jpg",
-    alt: "Portrait suggesting natural skin vitality",
-  },
-  "Chronic Back & Nerve Pain": {
-    src: "/media/wp-content/uploads/2019/08/448f0c6d-9a8a-49fc-acb1-98b890c02878-1.jpg",
-    alt: "Spine illustration for nerve and back care",
-  },
-  "Terrible Knee Pain": {
-    src: "/media/wp-content/uploads/2018/12/exercise-acupuncture.jpg",
-    alt: "Movement and exercise after treatment",
-  },
-  "Fixed my knee pain! no surgery needed now.": {
-    src: "/media/wp-content/uploads/2018/12/weather-pain-acupuncture.jpg",
-    alt: "Outdoor activity in cooler weather",
-  },
-  "I am feeling so much better....": {
-    src: "/media/wp-content/uploads/2017/07/singing-bowl-2358464_640.jpg",
-    alt: "Singing bowl in a calm treatment setting",
-  },
-  "I Love Acupuncture!!!": {
-    src: "/media/wp-content/uploads/2018/03/pexels-photo-72161.jpeg",
-    alt: "Hands resting in a calm treatment setting",
-  },
-};
-
 export default function Testimonial() {
   return (
     <div className="w-full bg-white">
-      <section className="relative isolate overflow-hidden bg-forest">
-        <img
-          src="/media/wp-content/uploads/2018/12/try-acupuncture-winter.jpg"
-          alt=""
-          className="absolute inset-0 !h-full w-full object-cover object-center"
-        />
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 bg-gradient-to-r from-forest/90 via-forest/72 to-forest/50"
-        />
-        <div className="site-container relative flex min-h-[22rem] flex-col justify-end gap-6 py-14 md:min-h-[26rem] md:py-16">
-          <PageTitle className="!text-white">Testimonials</PageTitle>
-          <a
-            href={site.social.reviews}
-            target="_self"
-            className="site-button site-button--primary w-fit text-white"
-          >
-            Leave A Review
-          </a>
-        </div>
-      </section>
+      <section className="bg-white">
+        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
+          <div className="flex flex-col items-center gap-5 text-center">
+            <PageTitle>Testimonials</PageTitle>
+            <a
+              href={site.social.reviews}
+              target="_self"
+              className="site-button site-button--primary"
+            >
+              Leave A Review
+            </a>
+          </div>
 
-      {testimonials.map((item, index) => {
-        const photo = photos[item.title];
-        return (
-          <section key={item.title} className={index % 2 === 0 ? "bg-white" : "bg-cream"}>
-            <article className="site-container site-section grid grid-cols-1 items-start gap-8 md:gap-12 lg:grid-cols-[minmax(0,24rem)_1fr] lg:gap-16">
-              <div
-                className={cn(
-                  "overflow-hidden rounded-3xl bg-olive/10",
-                  index % 2 === 1 && "lg:order-2",
-                )}
+          <div className="columns-1 gap-5 sm:columns-2 sm:gap-6 xl:columns-3">
+            {testimonials.map((item) => (
+              <article
+                key={item.title}
+                className="site-card mb-5 break-inside-avoid p-5 sm:mb-6 sm:p-6"
               >
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  className="aspect-[4/3] !h-full w-full object-cover object-center"
-                />
-              </div>
-              <div
-                className={cn(
-                  "flex min-w-0 flex-col items-start gap-5",
-                  index % 2 === 1 && "lg:order-1",
-                )}
-              >
-                <h2 className="font-heading text-xl font-semibold tracking-tight text-forest sm:text-2xl !m-0">
+                <div className="mb-4 font-display text-4xl leading-none text-olive/80" aria-hidden="true">
+                  “
+                </div>
+                <h2 className="font-heading text-lg font-semibold tracking-tight text-forest sm:text-xl !m-0">
                   {item.title}
                 </h2>
-                {item.quotes.map((quote) => (
-                  <blockquote
-                    key={quote.slice(0, 48)}
-                    className="whitespace-pre-wrap text-base leading-relaxed text-body !m-0"
-                  >
-                    {quote}
-                  </blockquote>
-                ))}
+                <div className="mt-3 flex flex-col gap-3">
+                  {item.quotes.map((quote) => (
+                    <blockquote
+                      key={quote.slice(0, 48)}
+                      className="whitespace-pre-wrap text-sm leading-relaxed text-body !m-0 sm:text-[0.9375rem]"
+                    >
+                      {quote}
+                    </blockquote>
+                  ))}
+                </div>
                 {item.attribution.length > 0 ? (
-                  <p className="text-sm font-medium leading-6 text-forest !m-0">
+                  <p className="mt-4 border-t border-forest/10 pt-3 font-heading text-sm font-semibold text-forest !m-0">
                     {item.attribution.map((line) => (
                       <span key={line} className="block">
                         {line}
@@ -210,11 +137,11 @@ export default function Testimonial() {
                     ))}
                   </p>
                 ) : null}
-              </div>
-            </article>
-          </section>
-        );
-      })}
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

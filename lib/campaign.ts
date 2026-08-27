@@ -90,6 +90,23 @@ export function localizeHtml(html: string): string {
     .replace(/src=(['"])\/\/www\.youtube/gi, "src=$1https://www.youtube");
 }
 
+/** Keep all words; drop empty WP spacer nodes and a duplicate page H1. */
+export function cleanStockHtml(html: string, pageTitle?: string): string {
+  let out = html
+    .replace(/<p[^>]*>\s*(?:&nbsp;|\u00a0|\s)*\s*<\/p>/gi, "")
+    .replace(/<p[^>]*>\s*<br\s*\/?>\s*<\/p>/gi, "");
+
+  if (pageTitle) {
+    const normalized = pageTitle.replace(/\s+/g, " ").trim().toLowerCase();
+    out = out.replace(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i, (full, inner: string) => {
+      const text = decodeEntities(inner.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()).toLowerCase();
+      return text === normalized ? "" : full;
+    });
+  }
+
+  return out.trim();
+}
+
 export function articleHeroUrl(html: string): string | null {
   const style = html.match(/<section\b[^>]*style=["']([^"']*background-image:[^"']*)["']/i)?.[1];
   if (!style) return null;
@@ -101,7 +118,15 @@ export function articleHeroUrl(html: string): string | null {
 export function extractStockHtml(html: string): string {
   const marker = "oxy-stock-content-styles";
   const i = html.indexOf(marker);
-  if (i === -1) return "";
+  if (i === -1) {
+    const opening = html.match(
+      /^<div\b[^>]*(?:id|class)=['"][^'"]*(?:inner_content|ct-inner-content)[^'"]*['"][^>]*>/i,
+    );
+    if (!opening) return html;
+    const start = opening[0].length;
+    const end = html.lastIndexOf("</div>");
+    return end > start ? html.slice(start, end) : html.slice(start);
+  }
   const start = html.indexOf(">", i) + 1;
   if (start <= i) return "";
   let depth = 1;

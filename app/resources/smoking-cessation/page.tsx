@@ -1,4 +1,4 @@
-import { PageHero } from "@/components/site/page-primitives";
+import { PageTitle } from "@/components/site/page-primitives";
 import { JsonLd } from "@/lib/seo";
 import { site } from "@/lib/site";
 
@@ -18,19 +18,21 @@ export default function SmokingCessationPage() {
     <article>
       <JsonLd canonicalPath="/resources/smoking-cessation" metaTitle={META} metaDescription="" />
       <div className="w-full bg-white">
-        <PageHero title={TITLE} image="/media/wp-content/uploads/2017/03/Blog-img-Acupuncture-for-Addiction_640-bw.jpg" />
-        <section className="bg-cream">
-          <div className="site-container site-section">
-            <p className="max-w-3xl text-base leading-relaxed text-body md:text-lg !m-0">
-              <a
-                href={PDF}
-                className="font-medium text-olive underline underline-offset-2"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Quit Smoking-Meta-analysis
-              </a>
-            </p>
+        <section className="bg-white">
+          <div className="site-container site-section flex flex-col gap-10 md:gap-12">
+            <PageTitle className="text-center">{TITLE}</PageTitle>
+            <article className="site-card mx-auto w-full max-w-3xl p-6 md:p-8">
+              <p className="text-base leading-relaxed text-body md:text-lg !m-0">
+                <a
+                  href={PDF}
+                  className="font-medium text-olive underline underline-offset-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Quit Smoking-Meta-analysis
+                </a>
+              </p>
+            </article>
           </div>
         </section>
       </div>

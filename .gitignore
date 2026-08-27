@@ -43,3 +43,9 @@ _extract/scraped
 .grok/
 .agents/
 .playwright-mcp/
+
+# local verification scratch
+.tmp-verify/
+/*.png
+!public/**/*.png
+!public/icon.png

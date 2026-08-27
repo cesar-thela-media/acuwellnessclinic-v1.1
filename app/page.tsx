@@ -19,8 +19,8 @@ export default function HomePage() {
     <article className="home-page">
       <JsonLd canonicalPath={doc.canonicalPath} metaTitle={doc.metaTitle} metaDescription={doc.metaDescription} />
       <Hero29 />
-      <GetStarted />
       <AboutUs />
+      <GetStarted />
       <Blog />
     </article>
   );
