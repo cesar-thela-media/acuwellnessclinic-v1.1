@@ -91,16 +91,48 @@ export default function FAQ() {
   return (
     <div className="w-full bg-white">
       <section className="bg-white">
-        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
-          <div className="flex flex-col items-center gap-5 text-center">
+        <div className="site-container site-section flex flex-col gap-8 md:gap-12">
+          <div className="flex flex-col items-center gap-4 text-center md:gap-5">
             <PageTitle>Treatment Modalities</PageTitle>
             <p className="max-w-3xl whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
               {INTRO}
             </p>
           </div>
 
-          <div className="overflow-hidden rounded-[14px] border border-forest/15 bg-white">
-            <table className="w-full border-collapse text-left">
+          {/* Mobile: stacked cards (table is too wide / hard to read). */}
+          <ul className="flex list-none flex-col gap-3 p-0 m-0 md:hidden">
+            {rows.map((row, index) => (
+              <li key={row.name}>
+                <article className="site-card flex gap-3.5 p-4">
+                  <Link
+                    href={row.href}
+                    className="site-media h-16 w-16 shrink-0 overflow-hidden"
+                  >
+                    <img
+                      src={row.image}
+                      alt={row.alt}
+                      loading={index > 2 ? "lazy" : "eager"}
+                      className="!h-full w-full object-cover object-center"
+                    />
+                  </Link>
+                  <div className="flex min-w-0 flex-col gap-1.5">
+                    <h2 className="font-heading text-base font-semibold tracking-tight text-forest !m-0">
+                      <Link href={row.href} className="!text-forest hover:!text-olive">
+                        {row.name}
+                      </Link>
+                    </h2>
+                    <p className="text-sm leading-relaxed text-body !m-0">
+                      <Description href={row.href} text={row.description} />
+                    </p>
+                  </div>
+                </article>
+              </li>
+            ))}
+          </ul>
+
+          {/* Desktop / tablet: original two-column table. */}
+          <div className="site-table-scroll hidden overflow-hidden rounded-[14px] border border-forest/15 bg-white md:block">
+            <table className="w-full min-w-[36rem] border-collapse text-left">
               <thead>
                 <tr className="border-b border-forest/15 bg-cream">
                   <th className="px-4 py-4 font-heading text-sm font-semibold tracking-tight text-forest underline decoration-forest/40 underline-offset-4 sm:px-6 sm:text-base">
@@ -125,7 +157,7 @@ export default function FAQ() {
                       <div className="flex items-center gap-3 sm:gap-4">
                         <Link
                           href={row.href}
-                          className="site-media hidden h-14 w-14 shrink-0 overflow-hidden sm:block sm:h-16 sm:w-16"
+                          className="site-media h-14 w-14 shrink-0 overflow-hidden sm:h-16 sm:w-16"
                         >
                           <img
                             src={row.image}

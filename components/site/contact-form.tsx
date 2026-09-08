@@ -105,7 +105,7 @@ export function ContactForm() {
       <Button
         type="submit"
         disabled={status === "sending"}
-        className="h-11 w-fit rounded-[14px] border border-forest/20 bg-olive font-medium text-white hover:bg-forest"
+        className="h-11 w-full rounded-[14px] border border-forest/20 bg-olive font-medium text-white hover:bg-forest sm:w-fit"
       >
         Submit Form
       </Button>

@@ -29,16 +29,16 @@ export function CancellationsLateArrivals() {
   return (
     <div className="w-full bg-white">
       <section className="bg-white">
-        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
+        <div className="site-container site-section flex flex-col gap-8 md:gap-12">
           <PageTitle className="text-center">Cancellations and Late Arrivals</PageTitle>
 
           <p className="mx-auto max-w-3xl whitespace-pre-wrap text-center text-base leading-relaxed text-body md:text-lg !m-0">
             {INTRO}
           </p>
 
-          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="flex min-w-0 flex-col gap-5">
-              <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+          <div className="grid grid-cols-1 items-start gap-4 lg:grid-cols-2 lg:gap-8">
+            <div className="flex min-w-0 flex-col gap-4">
+              <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
                 <SectionHeading>Late Arrivals</SectionHeading>
                 <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                   {LATE_ARRIVALS_1}
@@ -48,7 +48,7 @@ export function CancellationsLateArrivals() {
                 </p>
               </article>
 
-              <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+              <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
                 <SectionHeading>Cancellations</SectionHeading>
                 <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                   {CANCEL_INTRO}
@@ -68,17 +68,17 @@ export function CancellationsLateArrivals() {
               </article>
             </div>
 
-            <div className="flex min-w-0 flex-col gap-5">
-              <div className="site-media w-full">
+            <div className="flex min-w-0 flex-col gap-4">
+              <div className="site-media order-first w-full lg:order-none">
                 <img
                   src="/media/wp-content/uploads/2017/01/time.jpg"
                   alt=""
                   width={509}
                   height={339}
-                  className="aspect-[4/3] w-full object-cover object-center"
+                  className="aspect-[16/10] w-full object-cover object-center sm:aspect-[4/3]"
                 />
               </div>
-              <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+              <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
                 <SectionHeading>{EXAMPLE_INTRO}</SectionHeading>
                 <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                   {EXAMPLE_1}

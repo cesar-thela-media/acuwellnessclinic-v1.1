@@ -71,8 +71,8 @@ export function FirstVisit() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-5 md:gap-6">
-            <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+          <div className="grid grid-cols-1 gap-4 md:gap-6">
+            <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
               <SectionHeading>Your treatment plan</SectionHeading>
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                 {PLAN_P}
@@ -84,7 +84,7 @@ export function FirstVisit() {
               </ul>
             </article>
 
-            <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+            <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
               <SectionHeading>Getting the most out of treatment</SectionHeading>
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                 {MOST_P}
@@ -108,7 +108,7 @@ export function FirstVisit() {
               </ul>
             </article>
 
-            <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+            <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
               <SectionHeading>How treatment works</SectionHeading>
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                 {WORK_1}
@@ -118,7 +118,7 @@ export function FirstVisit() {
               </p>
             </article>
 
-            <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+            <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
               <SectionHeading>Your role in the healing process</SectionHeading>
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                 {ROLE_1}
@@ -128,7 +128,7 @@ export function FirstVisit() {
               </p>
             </article>
 
-            <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+            <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
               <SectionHeading>Acupuncture is not an instant fix</SectionHeading>
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                 {FIX_1}

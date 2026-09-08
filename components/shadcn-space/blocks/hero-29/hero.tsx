@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { site } from "@/lib/site";
 import { gsap, useGSAP } from "@/lib/gsap";
@@ -11,25 +11,27 @@ const TITLE = "DO THE THINGS THAT MAKE YOU HAPPY";
 const CTA = "Schedule An Appointment";
 const CTA_SECONDARY = "What We Treat";
 
-/** Welcome video — cover crop + overlay hide YouTube chrome/captions/end cards. */
-const HERO_VIDEO_ID = "S2ewQXzt8oM";
-const HERO_VIDEO_SRC =
-  `https://www.youtube-nocookie.com/embed/${HERO_VIDEO_ID}` +
-  `?autoplay=1&mute=1&controls=0&loop=1&playlist=${HERO_VIDEO_ID}` +
-  `&rel=0&modestbranding=1&playsinline=1&iv_load_policy=3` +
-  `&cc_load_policy=0&disablekb=1&fs=0`;
-
 const Hero29 = () => {
   const ref = useRef<HTMLElement>(null);
-  // Default on so SSR markup includes the embed; client turns it off for reduced-motion.
-  const [playVideo, setPlayVideo] = useState(true);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const sync = () => setPlayVideo(!mq.matches);
-    sync();
-    mq.addEventListener("change", sync);
-    return () => mq.removeEventListener("change", sync);
+    const el = videoRef.current;
+    if (!el) return;
+    el.defaultMuted = true;
+    el.muted = true;
+    el.setAttribute("muted", "");
+    const tryPlay = () => {
+      const play = el.play();
+      if (play && typeof play.catch === "function") {
+        play.catch(() => {
+          /* Autoplay can fail in some embeds; poster/bg remains. */
+        });
+      }
+    };
+    tryPlay();
+    el.addEventListener("canplay", tryPlay);
+    return () => el.removeEventListener("canplay", tryPlay);
   }, []);
 
   useGSAP(
@@ -51,19 +53,24 @@ const Hero29 = () => {
     <section
       ref={ref}
       className="home-hero relative w-full overflow-hidden bg-forest"
-      style={{ backgroundImage: `url("${site.media.hero}")` }}
+      style={{ backgroundImage: `url("${site.media.heroPoster}")` }}
     >
-      {playVideo ? (
-        <div className="home-hero-video absolute inset-0 overflow-hidden" aria-hidden="true">
-          <iframe
-            src={HERO_VIDEO_SRC}
-            title=""
-            allow="autoplay; encrypted-media; picture-in-picture"
-            tabIndex={-1}
-            loading="eager"
-          />
-        </div>
-      ) : null}
+      <div className="home-hero-video absolute inset-0 overflow-hidden" aria-hidden="true">
+        <video
+          ref={videoRef}
+          className="absolute inset-0 h-full w-full object-cover"
+          src={`${site.media.heroVideo}?v=4`}
+          poster={site.media.heroPoster}
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          disablePictureInPicture
+          controls={false}
+          tabIndex={-1}
+        />
+      </div>
 
       <div aria-hidden="true" className="home-hero-overlay absolute inset-0 z-[1]" />
 
@@ -72,6 +79,9 @@ const Hero29 = () => {
           <span className="h-1.5 w-1.5 shrink-0 bg-olive" aria-hidden="true" />
           {CHIP}
         </span>
+        <p className="hero-enter font-heading text-sm font-semibold tracking-[0.14em] text-white/90 uppercase !m-0 sm:text-base">
+          Welcome to Si Shou
+        </p>
         <h1 className="home-hero-title hero-enter w-full max-w-4xl font-display text-[1.75rem] leading-[1.1] font-semibold tracking-[-0.02em] text-white sm:text-5xl md:text-6xl lg:text-7xl">
           {TITLE}
         </h1>

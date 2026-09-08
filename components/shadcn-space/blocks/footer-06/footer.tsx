@@ -135,11 +135,11 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-forest/15 pt-6 sm:flex-row">
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-forest/15 pt-6 sm:mt-12 sm:flex-row">
           <p className="font-heading text-xs tracking-wide text-forest/55 !m-0 text-center sm:text-left">
             &copy; {new Date().getFullYear()} {site.name}. All rights reserved.
           </p>
-          <div className="flex items-center gap-6 text-xs text-forest/55 font-heading">
+          <div className="flex max-w-full flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-forest/55 font-heading sm:justify-end sm:gap-6">
             <a
               href={site.media.privacyPdf}
               target="_blank"

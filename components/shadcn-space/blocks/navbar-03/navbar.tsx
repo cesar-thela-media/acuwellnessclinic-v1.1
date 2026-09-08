@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, Phone, X } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -277,72 +277,124 @@ const Navbar = () => {
                 {open ? <X size={20} /> : <Menu size={20} />}
               </button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[min(24rem,90vw)] bg-cream">
-              <SheetHeader>
-                <SheetTitle className="font-heading text-forest">{site.name}</SheetTitle>
+            <SheetContent
+              side="right"
+              showCloseButton={false}
+              className="flex w-[min(22rem,92vw)] flex-col gap-0 border-l border-forest/10 bg-cream p-0 sm:max-w-sm"
+            >
+              <SheetHeader className="shrink-0 border-b border-forest/10 bg-white/70 px-5 py-4 text-left">
+                <div className="flex items-center justify-between gap-3">
+                  <SheetTitle className="sr-only">{site.name}</SheetTitle>
+                  <Link
+                    href="/"
+                    onClick={() => setOpen(false)}
+                    className="flex min-w-0 items-center gap-3"
+                  >
+                    <img
+                      src={site.media.logo}
+                      alt=""
+                      width={120}
+                      height={48}
+                      className="h-10 w-auto max-w-[7.5rem] object-contain"
+                    />
+                    <span className="font-display text-lg font-semibold tracking-tight text-forest">
+                      {site.styledName}
+                    </span>
+                  </Link>
+                  <SheetClose asChild>
+                    <button
+                      type="button"
+                      aria-label="Close menu"
+                      className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-[14px] border border-forest/15 text-forest transition-colors hover:bg-forest/5"
+                    >
+                      <X size={18} />
+                    </button>
+                  </SheetClose>
+                </div>
               </SheetHeader>
-              <nav className="mt-6 flex flex-col gap-1">
-                {nav.map((item) =>
-                  "children" in item && item.children ? (
-                    <Collapsible key={item.label}>
-                      <div className="flex items-center">
+
+              <nav
+                className="min-h-0 flex-1 overflow-y-auto px-3 py-4"
+                aria-label="Mobile"
+              >
+                <ul className="flex list-none flex-col gap-1 p-0 m-0">
+                  {nav.map((item) =>
+                    "children" in item && item.children ? (
+                      <li key={item.label}>
+                        <Collapsible className="group/item">
+                          <div className="flex items-center gap-1 rounded-[14px] hover:bg-white/80">
+                            <SheetClose asChild>
+                              <Link
+                                href={item.href}
+                                className="min-w-0 flex-1 px-3 py-3 font-heading text-[15px] font-semibold tracking-tight text-forest"
+                              >
+                                {item.label}
+                              </Link>
+                            </SheetClose>
+                            <CollapsibleTrigger
+                              className="mr-1 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-[12px] text-forest/55 transition-colors hover:bg-forest/5 hover:text-forest [&[data-state=open]>svg]:rotate-180"
+                              aria-label={`Toggle ${item.label}`}
+                            >
+                              <ChevronDown
+                                size={18}
+                                className="transition-transform duration-200"
+                              />
+                            </CollapsibleTrigger>
+                          </div>
+                          <CollapsibleContent className="overflow-hidden data-[state=closed]:animate-out data-[state=open]:animate-in">
+                            <ul className="mb-2 ml-3 flex list-none flex-col gap-0.5 border-l-2 border-olive/50 py-1 pl-3 m-0">
+                              {item.children.map((child) => (
+                                <li key={child.label}>
+                                  <SheetClose asChild>
+                                    <Link
+                                      href={child.href}
+                                      className="block rounded-[12px] px-3 py-2.5 text-sm font-medium leading-snug text-forest/70 transition-colors hover:bg-white hover:text-forest"
+                                    >
+                                      {child.label}
+                                    </Link>
+                                  </SheetClose>
+                                </li>
+                              ))}
+                            </ul>
+                          </CollapsibleContent>
+                        </Collapsible>
+                      </li>
+                    ) : (
+                      <li key={item.label}>
                         <SheetClose asChild>
                           <Link
                             href={item.href}
-                            className="flex-1 rounded-xl px-3 py-3 font-heading text-base font-semibold text-forest transition-colors hover:bg-forest/5"
+                            className="block rounded-[14px] px-3 py-3 font-heading text-[15px] font-semibold tracking-tight text-forest transition-colors hover:bg-white/80"
                           >
                             {item.label}
                           </Link>
                         </SheetClose>
-                        <CollapsibleTrigger
-                          asChild
-                          className="flex h-9 w-9 items-center justify-center rounded-lg text-forest/60 transition-colors hover:bg-forest/5"
-                          aria-label={`Toggle ${item.label}`}
-                        >
-                          <ChevronDown size={16} />
-                        </CollapsibleTrigger>
-                      </div>
-                      <CollapsibleContent className="ml-3 flex flex-col gap-0.5 border-l border-forest/15 pl-4">
-                        {item.children.map((child) => (
-                          <SheetClose asChild key={child.label}>
-                            <Link
-                              href={child.href}
-                              className="rounded-lg px-3 py-2 text-sm font-medium text-forest/75 transition-colors hover:bg-forest/5 hover:text-forest"
-                            >
-                              {child.label}
-                            </Link>
-                          </SheetClose>
-                        ))}
-                      </CollapsibleContent>
-                    </Collapsible>
-                  ) : (
-                    <SheetClose asChild key={item.label}>
-                      <Link
-                        href={item.href}
-                        className="rounded-xl px-3 py-3 font-heading text-base font-semibold text-forest transition-colors hover:bg-forest/5"
-                      >
-                        {item.label}
-                      </Link>
-                    </SheetClose>
-                  ),
-                )}
+                      </li>
+                    ),
+                  )}
+                </ul>
               </nav>
-              <div className="mt-8 flex flex-col gap-4 border-t border-forest/15 pt-6">
+
+              <div className="mt-auto shrink-0 border-t border-forest/10 bg-white/80 px-5 py-5">
                 <a
                   href={`tel:${site.phoneTel}`}
-                  className="font-heading text-base font-semibold text-forest"
+                  className="mb-4 inline-flex items-center gap-2.5 font-heading text-base font-semibold text-forest transition-colors hover:text-olive"
                 >
+                  <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-olive/15 text-olive">
+                    <Phone size={16} aria-hidden="true" />
+                  </span>
                   {site.phoneDisplay}
                 </a>
-                <div className="flex items-center gap-5">
+                <div className="mb-4 flex items-center gap-2.5">
                   <SheetClose asChild>
                     <a
                       href={site.social.facebook}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-medium text-forest/75 hover:text-forest"
+                      aria-label="Facebook"
+                      className="inline-flex h-10 w-10 items-center justify-center rounded-[14px] border border-forest/15 text-forest transition-colors hover:border-olive hover:text-olive"
                     >
-                      Facebook
+                      <FacebookIcon size={16} />
                     </a>
                   </SheetClose>
                   <SheetClose asChild>
@@ -350,9 +402,10 @@ const Navbar = () => {
                       href={site.social.instagram}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-medium text-forest/75 hover:text-forest"
+                      aria-label="Instagram"
+                      className="inline-flex h-10 w-10 items-center justify-center rounded-[14px] border border-forest/15 text-forest transition-colors hover:border-olive hover:text-olive"
                     >
-                      Instagram
+                      <InstagramIcon size={16} />
                     </a>
                   </SheetClose>
                 </div>
@@ -360,7 +413,7 @@ const Navbar = () => {
                   href={site.booking.header}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex h-11 items-center justify-center rounded-[14px] border border-forest/20 bg-olive px-6 font-heading text-sm font-semibold !text-white transition-colors hover:bg-forest hover:!text-white"
+                  className="inline-flex h-12 w-full items-center justify-center rounded-[14px] bg-olive px-4 text-center font-heading text-sm font-semibold !text-white transition-colors hover:bg-forest hover:!text-white"
                 >
                   Schedule An Appointment
                 </a>

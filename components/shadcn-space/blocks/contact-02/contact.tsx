@@ -29,27 +29,27 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 sm:gap-6">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6">
             {providers.map((provider) => (
               <article
                 key={provider.name}
-                className="site-card flex flex-col items-center gap-5 p-6 text-center sm:p-8"
+                className="site-card flex flex-col items-center gap-4 p-5 text-center sm:gap-5 sm:p-8"
               >
-                <div className="site-media h-36 w-36 overflow-hidden rounded-full sm:h-40 sm:w-40">
+                <div className="site-media h-28 w-28 overflow-hidden rounded-full sm:h-40 sm:w-40">
                   <img
                     src={provider.image}
                     alt={provider.name}
                     className="!h-full w-full object-cover object-center"
                   />
                 </div>
-                <h2 className="font-heading text-xl font-semibold tracking-tight text-forest sm:text-2xl !m-0">
+                <h2 className="font-heading text-lg font-semibold tracking-tight text-forest text-balance sm:text-xl md:text-2xl !m-0">
                   {provider.name}
                 </h2>
                 <a
                   href={BOOK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="site-button site-button--primary"
+                  className="site-button site-button--primary sm:w-auto"
                 >
                   Schedule Appointment With {provider.name}
                 </a>

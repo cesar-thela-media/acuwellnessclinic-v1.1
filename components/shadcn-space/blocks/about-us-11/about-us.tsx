@@ -14,7 +14,7 @@ export default function AboutUs() {
         </h2>
       </div>
       <div className="w-full px-4 pb-5 sm:px-6 md:px-8 md:pb-6">
-        <div className="home-video-frame relative aspect-video w-full overflow-hidden bg-forest">
+        <div className="home-video-frame relative mx-auto aspect-video w-full max-w-5xl overflow-hidden bg-forest">
           <iframe
             src={videoEmbedUrl()}
             title="Welcome to Si Shou"

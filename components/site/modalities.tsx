@@ -18,11 +18,11 @@ function ModalityPage({
   return (
     <div className="w-full bg-white">
       <section className="bg-white">
-        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
+        <div className="site-container site-section flex flex-col gap-8 md:gap-12">
           <PageTitle className="text-center">{title}</PageTitle>
 
-          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="flex min-w-0 flex-col gap-5">
+          <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2 lg:gap-12">
+            <div className="flex min-w-0 flex-col gap-4 sm:gap-5 lg:order-1">
               {paragraphs.map((p) => (
                 <p
                   key={p.slice(0, 48)}
@@ -32,21 +32,21 @@ function ModalityPage({
                 </p>
               ))}
             </div>
-            <div className="site-media w-full">
+            <div className="site-media order-first w-full lg:order-2">
               <img
                 src={image}
                 alt={imageAlt}
-                className="aspect-[4/3] w-full object-cover object-center"
+                className="aspect-[16/10] w-full object-cover object-center sm:aspect-[4/3]"
               />
             </div>
           </div>
 
           {sections.length ? (
-            <div className="grid grid-cols-1 gap-5 md:gap-6">
+            <div className="grid grid-cols-1 gap-4 md:gap-6">
               {sections.map((section) => (
                 <article
                   key={section.heading}
-                  className="site-card flex flex-col gap-4 p-6 md:p-8"
+                  className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8"
                 >
                   <SectionHeading>{section.heading}</SectionHeading>
                   <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">

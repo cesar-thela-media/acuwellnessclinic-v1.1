@@ -9,11 +9,11 @@ export default function MapBand() {
   return (
     <div className="w-full bg-white">
       <section className="bg-white">
-        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
+        <div className="site-container site-section flex flex-col gap-8 md:gap-12">
           <PageTitle className="text-center">Map & Directions</PageTitle>
 
-          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="site-card p-6 md:p-8">
+          <div className="grid grid-cols-1 items-start gap-5 lg:grid-cols-2 lg:gap-12">
+            <div className="site-card order-2 p-5 sm:p-6 md:p-8 lg:order-1">
               <p className="text-base leading-relaxed text-body md:text-lg !m-0">
                 Sì Shòu Acupuncture and Wellness, PLLC
                 <br />
@@ -21,15 +21,18 @@ export default function MapBand() {
                 <br />
                 Austin, TX 78735
                 <br />
-                (512) 387-4002
+                <a href="tel:5123874002" className="font-semibold text-olive hover:text-forest">
+                  (512) 387-4002
+                </a>
               </p>
             </div>
-            <div className="site-media relative aspect-[4/3] w-full sm:aspect-[16/10]">
+            <div className="site-media relative order-1 aspect-[4/3] w-full sm:aspect-[16/10] lg:order-2">
               <iframe
                 src={EMBED}
                 title="Si Shou Acupuncture and Wellness map"
                 className="absolute inset-0 h-full w-full border-0"
                 allowFullScreen
+                loading="lazy"
               />
             </div>
           </div>

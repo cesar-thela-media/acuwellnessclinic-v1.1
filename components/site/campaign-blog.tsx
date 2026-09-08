@@ -303,7 +303,7 @@ export function CampaignBlog({
               {site.styledName} is here to help.
             </p>
           </div>
-          <Link href="/contact" className="site-button site-button--primary shrink-0">
+          <Link href="/contact" className="site-button site-button--primary w-full shrink-0 sm:w-auto">
             Contact us
             <ArrowUpRight size={14} aria-hidden="true" />
           </Link>

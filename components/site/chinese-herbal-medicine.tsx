@@ -9,11 +9,11 @@ export function ChineseHerbalMedicine() {
   return (
     <div className="w-full bg-white">
       <section className="bg-white">
-        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
+        <div className="site-container site-section flex flex-col gap-8 md:gap-12">
           <PageTitle className="text-center">What is Chinese Herbal Medicine?</PageTitle>
 
-          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="flex min-w-0 flex-col gap-5">
+          <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2 lg:gap-12">
+            <div className="flex min-w-0 flex-col gap-4 sm:gap-5 lg:order-1">
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                 {P1}
               </p>
@@ -21,13 +21,13 @@ export function ChineseHerbalMedicine() {
                 {P2}
               </p>
             </div>
-            <div className="site-media w-full">
+            <div className="site-media order-first w-full lg:order-2">
               <img
                 src="/media/wp-content/uploads/2017/01/chinese-herbs.jpg"
                 alt="Chinese herbs"
                 width={2753}
                 height={1785}
-                className="aspect-[4/3] w-full object-cover object-center"
+                className="aspect-[16/10] w-full object-cover object-center sm:aspect-[4/3]"
               />
             </div>
           </div>

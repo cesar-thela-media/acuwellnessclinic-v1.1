@@ -133,9 +133,9 @@ export function ResourcesVideos() {
   return (
     <div className="w-full bg-white">
       <section className="bg-white">
-        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
+        <div className="site-container site-section flex flex-col gap-8 md:gap-12">
           <PageTitle className="text-center">Videos</PageTitle>
-          <article className="site-card mx-auto flex w-full max-w-4xl flex-col gap-5 p-5 sm:p-6 md:p-8">
+          <article className="site-card mx-auto flex w-full max-w-4xl flex-col gap-4 p-4 sm:gap-5 sm:p-6 md:p-8">
             <SectionHeading>Videos</SectionHeading>
             <p className="text-base leading-relaxed text-body md:text-lg !m-0">What is NADA?</p>
             <div className="site-media overflow-hidden">
@@ -233,7 +233,7 @@ export function ResourcesFacialRejuvenation() {
           </div>
 
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
-            <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+            <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
               <p className="font-heading text-base font-semibold text-forest !m-0">
                 {FACIAL_BENEFITS_HEAD}
               </p>
@@ -252,7 +252,7 @@ export function ResourcesFacialRejuvenation() {
                 ))}
               </ul>
             </article>
-            <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+            <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
               <p className="font-heading text-base font-semibold text-forest !m-0">
                 {FACIAL_GENERAL_HEAD}
               </p>

@@ -26,7 +26,7 @@ export default function UpcomingEvents() {
                 width="800"
                 height="600"
                 loading="lazy"
-                className="block h-[min(70vh,600px)] min-h-[30rem] w-full border-0"
+                className="block h-[min(65vh,560px)] min-h-[22rem] w-full border-0 sm:min-h-[28rem] md:min-h-[30rem]"
               />
             </div>
             <aside className="flex flex-col items-center gap-4 lg:items-start">
@@ -35,7 +35,7 @@ export default function UpcomingEvents() {
                 alt="Si Shou Acupuncture and Wellness"
                 width={2362}
                 height={2362}
-                className="h-auto w-[12.5rem] max-w-full object-contain"
+                className="h-auto w-36 max-w-full object-contain sm:w-[12.5rem]"
               />
             </aside>
           </div>

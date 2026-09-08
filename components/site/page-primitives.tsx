@@ -7,7 +7,11 @@ export function PageTitle({
   children: React.ReactNode;
   className?: string;
 }) {
-  return <h1 className={cn("site-title", className)}>{children}</h1>;
+  return (
+    <h1 className={cn("site-title mx-auto w-full text-center", className)}>
+      {children}
+    </h1>
+  );
 }
 
 export function SectionHeading({

@@ -27,31 +27,31 @@ const AboutUs06 = () => {
   return (
     <div className="w-full bg-white">
       <section className="bg-white">
-        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
-          <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
+        <div className="site-container site-section flex flex-col gap-8 md:gap-12">
+          <div className="mx-auto flex max-w-3xl flex-col items-center gap-3 text-center sm:gap-4">
             <PageTitle>About Us</PageTitle>
-            <p className="text-lg leading-snug text-forest md:text-xl !m-0">
+            <p className="text-base leading-snug text-forest sm:text-lg md:text-xl !m-0">
               <strong>{QUESTION}</strong>
             </p>
           </div>
 
-          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="flex min-w-0 flex-col gap-6 lg:py-2">
+          <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2 lg:gap-12">
+            <div className="flex min-w-0 flex-col gap-4 sm:gap-6 lg:order-1 lg:py-2">
               <p className="site-body-copy text-body whitespace-pre-wrap !m-0">{P1}</p>
               <p className="site-body-copy text-body !m-0">{P2}</p>
             </div>
-            <div className="site-media w-full">
+            <div className="site-media order-first w-full lg:order-2">
               <img
                 src="/media/wp-content/uploads/2017/09/pexels-photo-157310.jpeg"
                 alt="Colorful acupuncture meridian illustration"
                 width={1280}
                 height={720}
-                className="aspect-[4/3] w-full object-cover object-center"
+                className="aspect-[16/10] w-full object-cover object-center sm:aspect-[4/3]"
               />
             </div>
           </div>
 
-          <article className="site-card flex flex-col gap-8 p-6 md:gap-10 md:p-8">
+          <article className="site-card flex flex-col gap-6 p-5 sm:gap-8 sm:p-6 md:gap-10 md:p-8">
             <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[12.5rem_1fr] lg:gap-12">
               <img
                 src="/media/wp-content/uploads/2019/02/Artboard-1@sishou.png"
@@ -72,7 +72,7 @@ const AboutUs06 = () => {
               {GUARDIANS.map((row) => (
                 <div
                   key={row.guardian}
-                  className="rounded-[14px] border border-forest/10 bg-cream/50 p-5 md:p-6"
+                  className="rounded-[14px] border border-forest/10 bg-cream/50 p-4 sm:p-5 md:p-6"
                 >
                   <p className="font-heading text-[11px] font-semibold tracking-[0.14em] text-olive uppercase !m-0">
                     {COLS[0]}

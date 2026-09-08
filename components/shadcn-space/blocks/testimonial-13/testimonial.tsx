@@ -1,5 +1,6 @@
 import { PageTitle } from "@/components/site/page-primitives";
 import { site } from "@/lib/site";
+import { cn } from "@/lib/utils";
 
 const testimonials = [
   {
@@ -93,55 +94,66 @@ const testimonials = [
 export default function Testimonial() {
   return (
     <div className="w-full bg-white">
-      <section className="bg-white">
-        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
-          <div className="flex flex-col items-center gap-5 text-center">
-            <PageTitle>Testimonials</PageTitle>
-            <a
-              href={site.social.reviews}
-              target="_self"
-              className="site-button site-button--primary"
-            >
-              Leave A Review
-            </a>
-          </div>
+      <header className="border-b border-forest/10 bg-cream">
+        <div className="site-container flex flex-col items-center gap-5 py-12 text-center md:py-16">
+          <PageTitle className="mx-auto w-full text-center">Testimonials</PageTitle>
+          <a
+            href={site.social.reviews}
+            target="_self"
+            className="site-button site-button--primary"
+          >
+            Leave A Review
+          </a>
+        </div>
+      </header>
 
-          <div className="columns-1 gap-5 sm:columns-2 sm:gap-6 xl:columns-3">
-            {testimonials.map((item) => (
-              <article
-                key={item.title}
-                className="site-card mb-5 break-inside-avoid p-5 sm:mb-6 sm:p-6"
-              >
-                <div className="mb-4 font-display text-4xl leading-none text-olive/80" aria-hidden="true">
+      <div className="w-full">
+        {testimonials.map((item, index) => (
+          <section
+            key={item.title}
+            className={cn(
+              "border-b border-forest/10",
+              index % 2 === 0 ? "bg-white" : "bg-cream/60",
+            )}
+          >
+            <article className="site-container site-section--compact mx-auto grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-[minmax(0,14rem)_minmax(0,1fr)] md:gap-10 lg:gap-14">
+              <div className="flex min-w-0 flex-col gap-2 md:gap-3 md:pt-1">
+                <p
+                  className="font-display text-4xl leading-none text-olive/70 sm:text-5xl md:text-6xl !m-0"
+                  aria-hidden="true"
+                >
                   “
-                </div>
-                <h2 className="font-heading text-lg font-semibold tracking-tight text-forest sm:text-xl !m-0">
+                </p>
+                <h2 className="font-heading text-lg font-semibold tracking-tight text-forest text-balance sm:text-xl md:text-2xl !m-0">
                   {item.title}
                 </h2>
-                <div className="mt-3 flex flex-col gap-3">
+              </div>
+
+              <div className="flex min-w-0 flex-col gap-3 border-l-2 border-olive/70 pl-4 sm:gap-4 sm:pl-5 md:pl-8">
+                <div className="flex flex-col gap-3 sm:gap-4">
                   {item.quotes.map((quote) => (
                     <blockquote
                       key={quote.slice(0, 48)}
-                      className="whitespace-pre-wrap text-sm leading-relaxed text-body !m-0 sm:text-[0.9375rem]"
+                      className="whitespace-pre-wrap text-[0.9375rem] leading-relaxed text-body !m-0 sm:text-base md:text-lg"
                     >
                       {quote}
                     </blockquote>
                   ))}
                 </div>
                 {item.attribution.length > 0 ? (
-                  <p className="mt-4 border-t border-forest/10 pt-3 font-heading text-sm font-semibold text-forest !m-0">
+                  <footer className="pt-1 font-heading text-sm font-semibold tracking-wide text-forest">
                     {item.attribution.map((line) => (
-                      <span key={line} className="block">
+                      <p key={line} className="!m-0">
                         {line}
-                      </span>
+                      </p>
                     ))}
-                  </p>
+                  </footer>
                 ) : null}
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+              </div>
+            </article>
+          </section>
+        ))}
+      </div>
     </div>
   );
 }

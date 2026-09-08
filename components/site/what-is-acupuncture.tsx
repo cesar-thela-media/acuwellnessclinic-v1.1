@@ -23,11 +23,11 @@ export function WhatIsAcupuncture() {
   return (
     <div className="w-full bg-white">
       <section className="bg-white">
-        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
+        <div className="site-container site-section flex flex-col gap-8 md:gap-12">
           <PageTitle className="text-center">What Is Acupuncture?</PageTitle>
 
-          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="flex min-w-0 flex-col gap-5 lg:py-1">
+          <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2 lg:gap-12">
+            <div className="flex min-w-0 flex-col gap-4 sm:gap-5 lg:order-1 lg:py-1">
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                 {P1}
               </p>
@@ -35,26 +35,26 @@ export function WhatIsAcupuncture() {
                 {P2}
               </p>
             </div>
-            <div className="site-media w-full">
+            <div className="site-media order-first w-full lg:order-2">
               <img
                 src="/media/wp-content/uploads/2011/07/color-meridians.jpg"
                 alt="Colorful acupuncture meridian illustration"
                 width={1280}
                 height={960}
-                className="aspect-[4/3] w-full object-cover object-center"
+                className="aspect-[16/10] w-full object-cover object-center sm:aspect-[4/3]"
               />
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-5 md:gap-6">
-            <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+          <div className="grid grid-cols-1 gap-4 md:gap-6">
+            <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
               <SectionHeading>What is Qi?</SectionHeading>
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                 {P_QI}
               </p>
             </article>
 
-            <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+            <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
               <SectionHeading>How does Qi move?</SectionHeading>
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                 {P_MOVE_1}
@@ -65,17 +65,17 @@ export function WhatIsAcupuncture() {
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                 {P_MOVE_3}
               </p>
-              <p className="border-l-2 border-olive pl-4 text-lg font-semibold leading-snug text-forest md:text-xl !m-0">
+              <p className="border-l-2 border-olive pl-4 text-base font-semibold leading-snug text-forest sm:text-lg md:text-xl !m-0">
                 {CALL_1}
               </p>
             </article>
 
-            <article className="site-card flex flex-col gap-4 p-6 md:p-8">
+            <article className="site-card flex flex-col gap-3 p-5 sm:gap-4 sm:p-6 md:p-8">
               <SectionHeading>How does Acupuncture Work?</SectionHeading>
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
                 {P_WORK}
               </p>
-              <p className="border-l-2 border-olive pl-4 text-lg font-semibold leading-snug text-forest md:text-xl !m-0">
+              <p className="border-l-2 border-olive pl-4 text-base font-semibold leading-snug text-forest sm:text-lg md:text-xl !m-0">
                 {CALL_2}
               </p>
             </article>

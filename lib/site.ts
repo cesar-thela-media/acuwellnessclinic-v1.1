@@ -55,6 +55,8 @@ export const site = {
     logoOnDark: "/media/wp-content/uploads/2019/02/Artboard-1@sishou-cropped-white.png",
     logoCircle: "/media/wp-content/uploads/2019/02/Artboard-1@sishou-1024x1024.png",
     hero: "/media/wp-content/uploads/2017/01/chinese-herbs.jpg",
+    heroVideo: "/media/hero/hero-pour-bg.mp4",
+    heroPoster: "/media/hero/hero-pour-poster.jpg",
     neuropathy: "/media/wp-content/uploads/2017/08/Foot-soak.jpg",
     privacyPdf:
       "/media/wp-content/uploads/2011/10/SSAW-Privacy-Policy-Jan-2017.pdf",

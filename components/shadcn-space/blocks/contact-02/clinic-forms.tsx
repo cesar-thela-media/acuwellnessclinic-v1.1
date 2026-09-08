@@ -10,12 +10,12 @@ export default function ClinicForms() {
   return (
     <div className="w-full bg-white">
       <section className="bg-white">
-        <div className="site-container site-section flex flex-col gap-10 md:gap-12">
+        <div className="site-container site-section flex flex-col gap-8 md:gap-12">
           <PageTitle className="text-center">Clinic Forms</PageTitle>
 
-          <div className="mx-auto grid w-full max-w-4xl grid-cols-1 items-stretch gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.9fr)] lg:gap-8">
-            <article className="site-card flex flex-col gap-5 p-6 md:p-8">
-              <p className="text-lg font-semibold leading-snug text-forest md:text-xl !m-0">
+          <div className="mx-auto grid w-full max-w-4xl grid-cols-1 items-stretch gap-4 sm:gap-6 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.9fr)] lg:gap-8">
+            <article className="site-card flex flex-col gap-4 p-5 sm:gap-5 sm:p-6 md:p-8">
+              <p className="text-base font-semibold leading-snug text-forest sm:text-lg md:text-xl !m-0">
                 {HEADING}
               </p>
               <p className="whitespace-pre-wrap text-base leading-relaxed text-body md:text-lg !m-0">
@@ -23,10 +23,10 @@ export default function ClinicForms() {
               </p>
             </article>
 
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-4 sm:gap-5">
               <a
                 href={site.booking.portal}
-                className="site-card group flex flex-1 flex-col justify-between gap-5 p-6 transition-colors hover:border-olive/40 md:p-7"
+                className="site-card group flex flex-1 flex-col justify-between gap-4 p-5 transition-colors hover:border-olive/40 sm:gap-5 sm:p-6 md:p-7"
               >
                 <div className="flex items-start justify-between gap-3">
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-[14px] bg-olive/15 text-forest">
@@ -51,7 +51,7 @@ export default function ClinicForms() {
                 href={site.media.privacyPdf}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="site-card group flex flex-1 flex-col justify-between gap-5 p-6 transition-colors hover:border-olive/40 md:p-7"
+                className="site-card group flex flex-1 flex-col justify-between gap-4 p-5 transition-colors hover:border-olive/40 sm:gap-5 sm:p-6 md:p-7"
               >
                 <div className="flex items-start justify-between gap-3">
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-[14px] bg-olive/15 text-forest">
