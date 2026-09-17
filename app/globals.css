@@ -155,7 +155,9 @@ img {
 }
 
 .site-title {
-  margin: 0;
+  margin-block: 0;
+  margin-inline: auto;
+  width: 100%;
   max-width: min(50rem, 100%);
   color: var(--site-charcoal);
   font-family: var(--font-display);
@@ -164,6 +166,7 @@ img {
   line-height: 1.08;
   letter-spacing: -0.035em;
   overflow-wrap: break-word;
+  text-align: center;
   text-wrap: balance;
 }
 
