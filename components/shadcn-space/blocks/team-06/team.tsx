@@ -7,7 +7,7 @@ const BOOK = site.booking.header;
 
 const members = [
   {
-    name: "Kate Gannon",
+    name: "Kate Gannon, MAHM, DAHM, LAc, DIP. OM (NCCAOM)",
     image: "/media/wp-content/uploads/2026/08/Gannon-AOMASept2022-R.jpeg",
     srcSet: undefined as string | undefined,
     sizes: undefined as string | undefined,
